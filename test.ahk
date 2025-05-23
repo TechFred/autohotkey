@@ -808,6 +808,8 @@ restart_app:
         FindImage("btn_return.bmp", AllRegion, 50, 1000, true)
     }
 
+; Trouve une image sur l'écran
+; @param path : chemin de l'image à trouver   
     FindImage(path, region, tolerance := 0, sleepDelay := 1000, doClick := true) {
         x1 := region[1]
         y1 := region[2]

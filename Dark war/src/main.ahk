@@ -12,9 +12,12 @@ OutputDebug "loading"
 ;libraries
 #Include lib/logger.ahk
 #Include lib/imagefinder.ahk
+#Include lib/clicks.ahk
 
 ;actions
-
+#Include actions\claim.ahk
+#Include actions\login.ahk
+#Include actions\back.ahk
 
 LoggerInstance := Logger(A_ScriptDir "\run.log", "DEBUG")
 
@@ -23,6 +26,10 @@ LoggerInstance.Info("Starting script - " A_ScriptDir)
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
 ImageFinderInstance.FindImage("switch_NIILeBalafre.bmp", [0, 0, 1920, 1080], 0, 1000, true)
+
+Remove_Congrat()
+Claim()
+Claim_All()
 
 for User in Users {
 

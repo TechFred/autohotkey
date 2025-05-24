@@ -17,7 +17,7 @@ class Logger {
             return  ; skip because below minimum level
 
         timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm")
-        entry := "[" level "] " timestamp " - " msg "`n"
+        entry := "[" level "] " timestamp " - " msg
         FileAppend(entry, this.logFile)
         OutputDebug(entry)
     }

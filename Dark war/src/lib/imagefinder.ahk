@@ -30,7 +30,6 @@ class ImageFinder {
             }
         } catch as e {
             LoggerInstance.Warn("Error in FindImage: " e.Message)
-            LoggerInstance.Debug("Error details: " e.StackTrace)
             LoggerInstance.Debug("Image path: " this.assetsPath path)
             FoundX := -1
             FoundY := -1
@@ -82,7 +81,7 @@ class ImageFinder {
     ; @param attempts : le nombre de tentatives de recherche
     ; @param paths : les noms des fichiers image à chercher
     ; @return : un objet contenant les coordonnées x et y de l'image trouvée, et un booléen indiquant si l'image a été trouvée
-    LoopFindAnyImage(region, tolerance := 0, clickDelay := 1000, doClick := true, loopDelay := 1000,  attempts := 5 paths*) {
+    LoopFindAnyImage(region, tolerance := 0, clickDelay := 1000, doClick := true, loopDelay := 1000,  attempts := 5, paths*) {
         loop attempts {
             res := this.FindAnyImage(region, tolerance, clickDelay, doClick, paths*)
             if (res.Found)

@@ -26,7 +26,7 @@ User["Balafré"] := { active: false, state: 148, img: "switch_balafre.bmp", orde
 */
 
 Users := [ ;
-    ;{ name: "LeBalafré", active: false, state: 148, img: "switch_NIILeBalafre.bmp", order: 1,boomer_run: true }, ;
+    { name: "LeBalafré", active: false, state: 148, img: "switch_NIILeBalafre.bmp", order: 1,boomer_run: true }, ;
     { name: "Balafré", active: false, state: 148, img: "switch_balafre.bmp", order: 2, boomer_run: true }, ;
     { name: "MiniBalafré", active: false, state: 148, img: "switch_minibalafre.bmp", order: 3, boomer_run: true }, ;
 ] ;
@@ -541,7 +541,9 @@ restart_app:
             FindImage("help.bmp", right_menu2_region, 50, 1000, true)
 
             ;Click on the lens
-            FindPixelColour(0xDEDEFA, lens_icon_region, 25, sleepDelay := 2000, doClick := true)
+            OutputDebug("mouseclick")
+            MouseClick("left", 853, 797)
+            ;FindPixelColour(0xDEDEFA, lens_icon_region, 25, sleepDelay := 2000, doClick := true)
 
             FindImage("boomers_BW.bmp", AllRegion, 10, 2000, true) ;select boomers
             FindImage("search.jpg", AllRegion, 50, 2000, true) ; search

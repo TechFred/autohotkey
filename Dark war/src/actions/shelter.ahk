@@ -1,42 +1,55 @@
 #Requires AutoHotkey v2.0
 
-world_shelter_icon := "world_shelter_icon.bmp"
-word_icon := "world.bmp"
-shelter_icon := "shelter.bmp"
+; Icon paths
+worldShelterIcon := "world_shelter_icon.bmp"
+worldIcon := "world.bmp"
+shelterIcon := "shelter.bmp"
+AndroidIcon := "crash_darkwar_icon.bmp"
 
-getcurrentscreen() {
-    loggerintstance.debug("Get screen region")
-    if (ImageFinderInstance.LoopFindImage(word_icon, Regions.icon.word_icon, tolerance := 50, clickDelay := 1000, doClick := false, loopDelay := 50, attempts := 5).found) {
-        loggerintstance.debug("shelter")
-        return "shelter"
-    } else if (ImageFinderInstance.LoopFindImage(shelter_icon, Regions.icon.word_icon, tolerance := 50, clickDelay := 1000, doClick := false, loopDelay := 50, attempts := 5).found) {
-        loggerintstance.debug("world")
-        return "world"
+world_shelter_icon_2 := Image("world_shelter_icon_2.bmp", 100, Regions.AllRegion)
+
+; Define screen state constants
+global SCREEN_SHELTER := "shelter"
+global SCREEN_WORLD := "world"
+global SCREEN_UNKNOWN := "unknown"
+global SCREEN_ANDROID := "android"
+
+getCurrentScreen() {
+    centerShelter()
+
+    loggerInstance.debug("Detecting current screen")
+
+    if (ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
+        loggerInstance.debug("Detected: shelter screen")
+        return SCREEN_SHELTER
+
+    } else if (ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
+        loggerInstance.debug("Detected: world screen")
+        return SCREEN_WORLD
+    } else if (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, false, 50, 5).found) {
+        loggerInstance.debug("Detected: Android screen")
+        return SCREEN_ANDROID
     } else {
-        loggerintstance.debug("Unknown")
-        return "unknown"
+        loggerInstance.debug("Detected: unknown screen")
+        return SCREEN_UNKNOWN
     }
 }
 
-goto_world() {
-    loggerintstance.debug("goto world")
-    ImageFinderInstance.LoopFindImage(word_icon, Regions.icon.word_icon, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5)
-    return getcurrentscreen()
+goToWorld() {
+    centerShelter()
+    loggerInstance.debug("Navigating to world screen")
+    ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
+    return getCurrentScreen()
 }
 
-goto_shelter() {
-    loggerintstance.debug("goto shelter")
-    ImageFinderInstance.LoopFindImage(shelter_icon, Regions.icon.word_icon, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5)
-    return getcurrentscreen()
+goToShelter() {
+    centerShelter()
+    loggerInstance.debug("Navigating to shelter screen")
+    ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
+    return getCurrentScreen()
 }
 
-shelter_center() {
-    loggerintstance.debug("center shelter")
-    found := false
-    if (getcurrentscreen() = "world") {
-        loggerintstance.debug("center shelter incon found")
-        found := ImageFinderInstance.LoopFindImage(world_shelter_icon, Regions.AllRegion, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5).found
-    }
-    return found
-
+centerShelter() {
+    loggerInstance.debug("Attempting to center on shelter")
+    return ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 20, 5, world_shelter_icon_2).found
 }

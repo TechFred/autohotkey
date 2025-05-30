@@ -30,5 +30,5 @@ CoordMode "Mouse", "Client"  ; important!
 
     ; Optional: copy to clipboard
     A_Clipboard := "[" startX "," startY "," endX "," endY "]"
-    ToolTip 
+    ToolTip "[" startX "," startY "," endX "," endY "]"
 }

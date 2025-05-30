@@ -26,9 +26,9 @@ User["Balafré"] := { active: false, state: 148, img: "switch_balafre.bmp", orde
 */
 
 Users := [ ;
-    { name: "LeBalafré", active: false, state: 148, img: "switch_NIILeBalafre.bmp", order: 1,boomer_run: true }, ;
-    { name: "Balafré", active: false, state: 148, img: "switch_balafre.bmp", order: 2, boomer_run: true }, ;
-    { name: "MiniBalafré", active: false, state: 148, img: "switch_minibalafre.bmp", order: 3, boomer_run: true }, ;
+    { name: "LeBalafré", active: false, state: 148, img: "switch_NIILeBalafre.bmp", order: 1,boomer_run: false }, ;
+    { name: "Balafré", active: false, state: 148, img: "switch_balafre.bmp", order: 2, boomer_run: false }, ;
+    { name: "MiniBalafré", active: false, state: 148, img: "switch_minibalafre.bmp", order: 3, boomer_run: false }, ;
 ] ;
 
 ;Assets path
@@ -559,9 +559,9 @@ restart_app:
                 }
 
                 ; march
-                march_1 := (FindImage("March.jpg ", AllRegion, 50, 3000, true))
-                march_2 := (FindImage("March_2.bmp ", AllRegion, 50, 3000, true))
-                march_3 := (FindImage("March_3.bmp ", AllRegion, 50, 3000, true))
+                march_1 := (FindImage("March.jpg", AllRegion, 50, 3000, true))
+                march_2 := (FindImage("March_2.bmp", AllRegion, 50, 3000, true))
+                march_3 := (FindImage("March_3.bmp", AllRegion, 50, 3000, true))
 
                 if (march_1.Found or march_2.Found or march_3.Found) {
                     Sleep(60000) ;wait for march

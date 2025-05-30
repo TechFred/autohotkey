@@ -12,3 +12,23 @@ ClickCenter(region, clickDelay) {
     MouseClick("left", centerX, centerY)
     Sleep(clickDelay)
 }
+
+ClickLoop(clickDelay := 1000, attempts := 10, Image1 := "", Image2 := "") {
+
+    loop {
+        img := ImageFinderInstance.FindAnyImageObjects(clickDelay, true, Image1)
+        if (img.Found) {
+            loggerInstance.debug(Image1.path " found")
+            i := 0
+        } else if (IsObject(Image2) && ImageFinderInstance.FindAnyImageObjects(clickDelay, false, Image2).found) {
+            loggerInstance.debug(Image2.path " found -> stopping")
+            break
+        } else {
+            loggerInstance.debug(Image1.path " not found")
+            i += 1
+            Sleep(250)
+        }
+
+    } until (i > attempts)
+
+}

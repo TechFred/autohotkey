@@ -1,34 +1,72 @@
 #Requires AutoHotkey v2.0
 
-btn_return := "btn_return.bmp"
-btn_return_white := "btn_return_white.bmp"
-btn_return_white_2 := "btn_return_white_2.bmp"
+; Image paths
+btnReturn := "btn_return.bmp"
+btnReturnWhite := "btn_return_white.bmp"
+btnReturnWhite2 := "btn_return_white_2.bmp"
 
+exitDailyTask := "daily_task_exit.bmp"
+exitEvent := "splash_event_x.bmp"
+exitGuy := "splash_guy_x.bmp"
+exitGeneric := "splash_x.bmp"
 
+;images objects
+O_btnReturn := Image(btnReturn, 25, Regions.icons.back)
+O_btnReturnWhite := Image(btnReturnWhite, 25, Regions.icons.back)
+O_btnReturnWhite2 := Image(btnReturnWhite2, 25, Regions.icons.back)
 
-Click_brownback(){
-    LoggerInstance.Debug("clicking brown back Button")
-    img := ImageFinderInstance.LoopFindImage(btn_return, Regions.icon.back, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5)
-    return img.found
+O_exitDailyTask := image(exitDailyTask, 25, Regions.AllRegion)
+O_exitEvent := image(exitEvent, 25, Regions.AllRegion)
+O_exitGuy := image(exitGuy, 25, Regions.AllRegion)
+O_exitGeneric := image(exitGeneric, 25, Regions.AllRegion)
+O_TransblackX := image("transblack_x.bmp", 10, Regions.AllRegion, "TransBlack")
+
+; Click individual back buttons
+clickBrownBack() {
+    LoggerInstance.Debug("Clicking brown back button")
+    result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 0, 5, O_btnReturn)
+    return result.found
 }
 
-Click_whiteback(){
-    LoggerInstance.Debug("clicking white back Button")
-    img := ImageFinderInstance.LoopFindImage(btn_return_white, Regions.icon.back, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5)
-    return img.found
+clickWhiteBack() {
+    LoggerInstance.Debug("Clicking white back button")
+    result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 0, 5, O_btnReturnWhite2)
+    return result.found
 }
 
-Click_back(){
-    LoggerInstance.Debug("clicking any back Button")
+; Click any back button (composite function)
+clickAnyBack() {
+    LoggerInstance.Debug("Clicking any back button")
 
-    imagePaths := [
-        btn_return,
-        btn_return_white,
-        btn_return_white_2,
-
+    ImagesObjects := [
+        O_btnReturn,
+        O_btnReturnWhite,
+        O_btnReturnWhite2
     ]
 
-    img := ImageFinderInstance.LoopFindAnyImage(Regions.icon.back, tolerance := 50, clickDelay := 1000, doClick := true, loopDelay := 50, attempts := 5, imagePaths)
-    return img.found
+    result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 0, 5, ImagesObjects*)
+    ;result := ImageFinderInstance.LoopFindAnyImage(Regions.icons.back, tolerance := 50, clickDelay := 3000, doClick := true, loopDelay := 100, attempts := 5, imagePaths*)
+    return result.found
+}
+
+; Click any X-style exit button
+clickAnyX() {
+    LoggerInstance.Debug("Clicking any X/exit button")
+
+    ImagesObjects := [
+        O_TransblackX,
+        O_exitDailyTask,
+        O_exitEvent,
+        O_exitGuy,
+        O_exitGeneric
+    ]
+    result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 0, 5, ImagesObjects*)
+    ;result := ImageFinderInstance.LoopFindAnyImage(Regions.AllRegion, tolerance := 50, clickDelay := 3000, doClick := true, loopDelay := 100, attempts := 5, imagePaths*)
+    return result.found
+}
+
+ClickTransblackX() {
+
+    result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 100, 5, O_TransblackX)
 
 }

@@ -6,8 +6,12 @@ class Image {
         this.tolerance := tolerance
         this.region := region
 
-        if !(transcolor = "") {
-            this.transcolor := "*" transcolor
+        if (transcolor != "") {
+            if (SubStr(transcolor, 1, 1) != "*") {
+                this.transcolor := "*" transcolor
+            } else {
+                this.transcolor := transcolor
+            }
         } else {
             this.transcolor := ""
         }

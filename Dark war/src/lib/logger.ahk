@@ -1,8 +1,10 @@
 class Logger {
-    __New(logPath := A_ScriptDir "\run.log", minLevel := "INFO") {
-        this.logFile := logPath
-        this.levels := ["DEBUG", "INFO", "WARN"]
+    __New(basePath := A_ScriptDir, minLevel := "DEBUG") {
         this.minLevel := minLevel
+        this.levels := ["DEBUG", "INFO", "WARN"]
+        this.basePath := basePath
+        this.infoLog := basePath "\run-info.log"
+        this.debugLog := Format("{1}\{2}-run-debug.log", basePath, FormatTime(A_Now, "yyyy-MM-dd"))
     }
 
     _levelValue(level) {
@@ -16,9 +18,15 @@ class Logger {
         if (this._levelValue(level) < this._levelValue(this.minLevel))
             return  ; skip because below minimum level
 
-        timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm")
-        entry := "[" level "] " timestamp " - " msg
-        FileAppend(entry, this.logFile)
+        timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm:ss")
+        entry := "[" level "] " timestamp " - " msg 
+
+        FileAppend(entry "`n", this.debugLog)  ; Always write to debug log
+
+        if (level != "DEBUG") {
+            FileAppend(entry "`n", this.infoLog)  ; Only INFO and WARN go here
+        }
+
         OutputDebug(entry)
     }
 
@@ -35,6 +43,7 @@ class Logger {
     }
 
     Clear() {
-        FileDelete(this.logFile)
+        FileDelete(this.infoLog)
+        FileDelete(this.debugLog)
     }
 }

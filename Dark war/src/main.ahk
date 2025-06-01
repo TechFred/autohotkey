@@ -1,9 +1,7 @@
 #Requires AutoHotkey v2.0
 
-
-
 ;Instances
-LoggerInstance := Logger(A_ScriptDir "\run.log", "DEBUG")
+LoggerInstance := Logger(A_ScriptDir, "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
 ; Windows
@@ -22,9 +20,6 @@ BlockInput("MouseMove")
 
 ; Starting
 LoggerInstance.Info("Starting script - " A_ScriptDir)
-
-debug := false
-;debug := true
 
 if debug = false {
     StartDarkWar()
@@ -59,9 +54,13 @@ if debug {
     ;levelup()
     ;ClickReddot(1000, Regions.events.main)
     premiumCenter()
+    events()
 
-    Events_new_btn := Image("Events_new_bnt.bmp", 50, Regions.AllRegion)
-    res := ImageFinderInstance.FindAnyImageObjects(1000, false, Events_new_btn)
+    O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
+    O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
+    O_reddot_number_transblack_bottom.region := Regions.events.bottom
+
+    res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack_bottom)
     MouseMove(res.x, res.y)
     MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
 
@@ -69,10 +68,16 @@ if debug {
 }
 
 ; Special
+Sleep(2000)
+Hospital()
+
+
 if getCurrentScreen() = SCREEN_WORLD {
     boomers()
     ExitApp
 }
+
+
 
 ;Login and start
 
@@ -178,7 +183,8 @@ Complete_run(u) {
 }
 
 BlockInput("MouseMoveOff")
-msgbox ("done")
+LoggerInstance.Info("Done")
+;msgbox ("done")
 ExitApp()
 
 ; ===== HOTKEY: ESC to exit =====

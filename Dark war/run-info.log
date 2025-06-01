@@ -1,0 +1,521 @@
+[INFO] 2025-05-30 08:24:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 08:24:09 - Debugging mode enabled
+[INFO] 2025-05-30 08:24:48 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 08:24:48 - Debugging mode enabled
+[INFO] 2025-05-30 08:32:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 08:32:24 - Debugging mode enabled
+[INFO] 2025-05-30 08:33:03 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 08:33:03 - Debugging mode enabled
+[INFO] 2025-05-30 08:36:03 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 08:36:07 - DarkWar running
+[INFO] 2025-05-30 08:36:07 - Starting User:LeBalafré
+[INFO] 2025-05-30 08:36:07 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:36:15 - World found
+[INFO] 2025-05-30 08:36:58 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 08:36:59 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:37:23 - Splash guy found
+[INFO] 2025-05-30 08:38:43 - CurrentUser is active - returning
+[INFO] 2025-05-30 08:43:31 - Bommer loop: 4 Or out of energy -> Quitting
+[INFO] 2025-05-30 08:44:36 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 08:45:24 - Starting User:Balafré
+[INFO] 2025-05-30 08:45:24 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:45:32 - World found
+[INFO] 2025-05-30 08:46:14 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 08:46:16 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:46:41 - Splash guy found
+[INFO] 2025-05-30 08:48:03 - CurrentUser is active - returning
+[WARN] 2025-05-30 08:51:27 - Error - not in world
+[WARN] 2025-05-30 08:51:43 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 08:51:43 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:52:07 - Splash guy found
+[INFO] 2025-05-30 08:53:31 - CurrentUser is active - returning
+[INFO] 2025-05-30 08:57:51 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 08:58:57 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 08:59:35 - Starting User:MiniBalafré
+[INFO] 2025-05-30 08:59:35 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 08:59:43 - World found
+[INFO] 2025-05-30 09:00:26 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 09:00:27 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 09:00:48 - Splash guy found
+[INFO] 2025-05-30 09:01:40 - CurrentUser is active - returning
+[INFO] 2025-05-30 09:27:41 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 09:28:45 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-05-30 09:30:53 - Crash detected for user MiniBalafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-30 09:30:53 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 09:37:36 - CurrentUser is active - returning
+[INFO] 2025-05-30 09:40:24 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 09:41:28 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 09:42:03 - Done
+[INFO] 2025-05-30 13:16:54 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 15:11:35 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 15:11:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 15:11:48 - DarkWar running
+[INFO] 2025-05-30 15:12:04 - Starting User:LeBalafré
+[INFO] 2025-05-30 15:12:04 - Loading game ... Waiting for splash
+[WARN] 2025-05-30 15:18:23 - Unknow screen
+[WARN] 2025-05-30 16:28:36 - Unknowscreen. trying to restart
+[INFO] 2025-05-30 16:28:46 - Starting DarkWar
+[INFO] 2025-05-30 16:29:10 - DarkWar running
+[WARN] 2025-05-30 16:29:10 - Crash detected for user LeBalafré: Expected a String but got a Class.
+[INFO] 2025-05-30 16:29:10 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 16:29:38 - Splash guy found
+[INFO] 2025-05-30 16:30:51 - CurrentUser is active - returning
+[INFO] 2025-05-30 17:30:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 17:30:40 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 17:30:44 - DarkWar running
+[INFO] 2025-05-30 17:30:44 - Starting User:LeBalafré
+[INFO] 2025-05-30 17:30:44 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 17:30:53 - World found
+[INFO] 2025-05-30 17:31:34 - CurrentUser is active - returning
+[INFO] 2025-05-30 17:37:13 - Bommer loop: 5 Or out of energy -> Quitting
+[INFO] 2025-05-30 17:38:34 - Starting User:Balafré
+[INFO] 2025-05-30 17:38:34 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 17:38:42 - World found
+[INFO] 2025-05-30 17:39:26 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 17:39:27 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 17:39:51 - Splash guy found
+[INFO] 2025-05-30 17:41:14 - CurrentUser is active - returning
+[INFO] 2025-05-30 17:41:33 - Found Levelup
+[INFO] 2025-05-30 17:52:10 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 17:58:45 - Starting User:MiniBalafré
+[INFO] 2025-05-30 17:58:45 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 17:58:53 - World found
+[INFO] 2025-05-30 17:59:37 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 17:59:38 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 18:00:02 - Splash guy found
+[INFO] 2025-05-30 18:00:55 - CurrentUser is active - returning
+[WARN] 2025-05-30 18:09:50 - Error - not in world
+[WARN] 2025-05-30 18:10:20 - Unknow screen
+[INFO] 2025-05-30 18:26:02 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-30 18:38:04 - Done
+[INFO] 2025-05-30 21:22:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 21:22:27 - DarkWar running
+[INFO] 2025-05-30 21:22:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 21:22:38 - DarkWar running
+[INFO] 2025-05-30 21:22:52 - Starting User:LeBalafré
+[INFO] 2025-05-30 21:22:52 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 21:23:16 - Splash guy found
+[INFO] 2025-05-30 21:24:30 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 21:24:31 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 21:24:56 - Splash guy found
+[INFO] 2025-05-30 21:26:09 - CurrentUser is active - returning
+[WARN] 2025-05-30 21:31:56 - Error - not in world
+[WARN] 2025-05-30 21:32:36 - Unknow screen
+[WARN] 2025-05-30 21:36:05 - Crash detected for user LeBalafré: Expected a String but got a Class.
+[INFO] 2025-05-30 21:36:05 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 21:36:46 - Splash guy found
+[INFO] 2025-05-30 21:37:59 - CurrentUser is active - returning
+[INFO] 2025-05-30 22:29:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 22:29:15 - DarkWar running
+[INFO] 2025-05-30 22:29:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-30 22:29:45 - DarkWar running
+[INFO] 2025-05-30 22:29:45 - Starting User:LeBalafré
+[INFO] 2025-05-30 22:29:45 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 22:29:53 - World found
+[INFO] 2025-05-30 22:30:33 - CurrentUser is active - returning
+[WARN] 2025-05-30 22:54:16 - Error - not in world
+[WARN] 2025-05-30 22:59:41 - Error - not in world
+[WARN] 2025-05-30 23:00:11 - Unknow screen
+[INFO] 2025-05-30 23:03:03 - Starting User:Balafré
+[INFO] 2025-05-30 23:03:03 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:04:14 - CurrentUser is not active - Switching
+[INFO] 2025-05-30 23:04:15 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:04:40 - Splash guy found
+[INFO] 2025-05-30 23:06:01 - CurrentUser is active - returning
+[WARN] 2025-05-30 23:09:00 - Unknow screen
+[WARN] 2025-05-30 23:12:24 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 23:12:24 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:13:04 - Splash guy found
+[WARN] 2025-05-30 23:15:47 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 23:15:47 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:16:27 - Splash guy found
+[WARN] 2025-05-30 23:17:44 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 23:17:44 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:18:11 - Splash guy found
+[INFO] 2025-05-30 23:19:24 - CurrentUser is active - returning
+[WARN] 2025-05-30 23:28:45 - Error - not in world
+[WARN] 2025-05-30 23:29:27 - Unknow screen
+[WARN] 2025-05-30 23:32:55 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 23:32:55 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:33:19 - Splash guy found
+[INFO] 2025-05-30 23:34:30 - CurrentUser is active - returning
+[WARN] 2025-05-30 23:36:36 - Unknow screen
+[WARN] 2025-05-30 23:40:00 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-30 23:40:00 - Loading game ... Waiting for splash
+[INFO] 2025-05-30 23:40:40 - Splash guy found
+[INFO] 2025-05-30 23:41:51 - CurrentUser is active - returning
+[WARN] 2025-05-30 23:49:29 - Error - not in world
+[WARN] 2025-05-30 23:49:59 - Unknow screen
+[INFO] 2025-05-31 00:00:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-05-31 00:01:05 - Error - not in world
+[INFO] 2025-05-31 00:01:27 - DarkWar running
+[WARN] 2025-05-31 00:01:46 - Error - not in world
+[WARN] 2025-05-31 00:03:38 - Unknow screen
+[WARN] 2025-05-31 00:05:57 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 00:05:57 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 00:07:06 - CurrentUser is active - returning
+[INFO] 2025-05-31 00:07:31 - Found Levelup
+[INFO] 2025-05-31 00:24:26 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-31 00:25:32 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-05-31 00:33:06 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 00:33:06 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 00:39:41 - CurrentUser is active - returning
+[INFO] 2025-05-31 00:42:35 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-31 00:44:55 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-05-31 00:51:58 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 00:51:58 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 00:52:07 - World found
+[INFO] 2025-05-31 00:52:47 - CurrentUser is active - returning
+[INFO] 2025-05-31 00:55:43 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-31 00:56:48 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-05-31 01:04:02 - Unknow screen
+[INFO] 2025-05-31 09:37:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 09:37:14 - Starting DarkWar
+[INFO] 2025-05-31 09:37:38 - DarkWar running
+[INFO] 2025-05-31 09:38:00 - Starting User:LeBalafré
+[INFO] 2025-05-31 09:38:00 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 09:38:21 - Splash guy found
+[INFO] 2025-05-31 09:39:36 - CurrentUser is not active - Switching
+[INFO] 2025-05-31 09:39:37 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 09:40:01 - Splash guy found
+[INFO] 2025-05-31 09:41:35 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 09:41:38 - DarkWar running
+[INFO] 2025-05-31 09:41:39 - Starting User:LeBalafré
+[INFO] 2025-05-31 09:41:39 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 09:41:46 - World found
+[INFO] 2025-05-31 09:42:29 - CurrentUser is active - returning
+[WARN] 2025-05-31 09:44:00 - Unknow screen
+[WARN] 2025-05-31 09:50:52 - Unknow screen
+[INFO] 2025-05-31 10:06:03 - Bommer loop: 5 Or out of energy -> Quitting
+[INFO] 2025-05-31 10:21:44 - Bommer loop: 2 Or out of energy -> Quitting
+[INFO] 2025-05-31 10:22:45 - Starting User:Balafré
+[INFO] 2025-05-31 10:22:45 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 10:22:53 - World found
+[INFO] 2025-05-31 10:23:35 - CurrentUser is not active - Switching
+[INFO] 2025-05-31 10:23:36 - Loading game ... Waiting for splash
+[WARN] 2025-05-31 10:29:27 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 10:29:27 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 10:29:52 - Splash guy found
+[INFO] 2025-05-31 10:31:02 - CurrentUser is active - returning
+[WARN] 2025-05-31 10:35:20 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 10:35:20 - Loading game ... Waiting for splash
+[WARN] 2025-05-31 10:38:44 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 10:38:44 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 10:39:07 - Splash guy found
+[INFO] 2025-05-31 10:40:18 - CurrentUser is active - returning
+[WARN] 2025-05-31 10:42:51 - Unknow screen
+[WARN] 2025-05-31 10:46:16 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 10:46:16 - Loading game ... Waiting for splash
+[WARN] 2025-05-31 10:51:55 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 10:51:55 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 10:52:19 - Splash guy found
+[INFO] 2025-05-31 10:53:31 - CurrentUser is active - returning
+[WARN] 2025-05-31 10:57:05 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 10:57:05 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 10:57:13 - World found
+[INFO] 2025-05-31 10:57:53 - CurrentUser is active - returning
+[INFO] 2025-05-31 11:04:56 - Starting User:MiniBalafré
+[INFO] 2025-05-31 11:04:56 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 11:05:04 - World found
+[INFO] 2025-05-31 11:05:45 - CurrentUser is not active - Switching
+[INFO] 2025-05-31 11:05:46 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 11:06:07 - Splash guy found
+[INFO] 2025-05-31 11:08:07 - CurrentUser is active - returning
+[INFO] 2025-05-31 11:08:55 - Found Levelup
+[INFO] 2025-05-31 13:44:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 13:44:42 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 13:44:48 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 13:44:51 - DarkWar running
+[INFO] 2025-05-31 13:44:52 - Starting User:LeBalafré
+[INFO] 2025-05-31 13:44:52 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 13:45:00 - World found
+[INFO] 2025-05-31 13:45:39 - CurrentUser is active - returning
+[WARN] 2025-05-31 13:49:09 - Crash detected for user LeBalafré: This value of type "String" has no method named "Call".
+[INFO] 2025-05-31 13:49:09 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 13:55:40 - CurrentUser is active - returning
+[WARN] 2025-05-31 13:56:28 - Unknow screen
+[INFO] 2025-05-31 14:00:42 - Starting User:Balafré
+[INFO] 2025-05-31 14:00:42 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:00:50 - World found
+[INFO] 2025-05-31 14:02:13 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 14:02:17 - DarkWar running
+[INFO] 2025-05-31 14:02:31 - Starting User:LeBalafré
+[INFO] 2025-05-31 14:02:31 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:02:51 - Splash guy found
+[INFO] 2025-05-31 14:04:01 - CurrentUser is active - returning
+[INFO] 2025-05-31 14:07:14 - Starting User:Balafré
+[INFO] 2025-05-31 14:07:14 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:07:22 - World found
+[INFO] 2025-05-31 14:08:03 - CurrentUser is not active - Switching
+[INFO] 2025-05-31 14:08:04 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:08:26 - Splash guy found
+[INFO] 2025-05-31 14:09:37 - CurrentUser is active - returning
+[INFO] 2025-05-31 14:17:55 - Starting User:MiniBalafré
+[INFO] 2025-05-31 14:17:55 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:18:03 - World found
+[INFO] 2025-05-31 14:18:44 - CurrentUser is not active - Switching
+[INFO] 2025-05-31 14:18:45 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 14:19:08 - Splash guy found
+[INFO] 2025-05-31 14:20:18 - CurrentUser is active - returning
+[INFO] 2025-05-31 14:40:08 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 14:40:12 - DarkWar running
+[INFO] 2025-05-31 14:58:48 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-05-31 15:26:02 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:26:06 - DarkWar running
+[INFO] 2025-05-31 15:26:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:26:27 - DarkWar running
+[INFO] 2025-05-31 15:30:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:30:29 - DarkWar running
+[INFO] 2025-05-31 15:30:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:30:49 - DarkWar running
+[INFO] 2025-05-31 15:32:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:32:09 - DarkWar running
+[INFO] 2025-05-31 15:32:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:32:39 - DarkWar running
+[INFO] 2025-05-31 15:34:03 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:34:06 - DarkWar running
+[INFO] 2025-05-31 15:35:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:35:04 - DarkWar running
+[INFO] 2025-05-31 15:35:25 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:35:29 - DarkWar running
+[INFO] 2025-05-31 15:36:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:36:40 - DarkWar running
+[INFO] 2025-05-31 15:36:52 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:36:56 - DarkWar running
+[INFO] 2025-05-31 15:37:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:37:39 - DarkWar running
+[INFO] 2025-05-31 15:38:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:38:24 - DarkWar running
+[INFO] 2025-05-31 15:39:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:39:21 - DarkWar running
+[INFO] 2025-05-31 15:39:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:39:53 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:40:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:40:04 - DarkWar running
+[INFO] 2025-05-31 15:42:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:42:13 - DarkWar running
+[INFO] 2025-05-31 15:42:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:42:33 - DarkWar running
+[INFO] 2025-05-31 15:43:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:43:26 - DarkWar running
+[INFO] 2025-05-31 15:44:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:44:10 - DarkWar running
+[INFO] 2025-05-31 15:44:40 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:44:44 - DarkWar running
+[INFO] 2025-05-31 15:44:59 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:45:03 - DarkWar running
+[INFO] 2025-05-31 15:49:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:50:00 - DarkWar running
+[INFO] 2025-05-31 15:51:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:51:35 - DarkWar running
+[INFO] 2025-05-31 15:52:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:52:22 - DarkWar running
+[INFO] 2025-05-31 15:56:57 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 15:57:01 - DarkWar running
+[INFO] 2025-05-31 15:57:29 - Starting User:LeBalafré
+[INFO] 2025-05-31 15:57:29 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 16:00:04 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 16:00:08 - DarkWar running
+[INFO] 2025-05-31 16:04:46 - Starting User:LeBalafré
+[INFO] 2025-05-31 16:04:46 - Loading game ... Waiting for splash
+[WARN] 2025-05-31 16:08:08 - Crash detected for user LeBalafré: Expected a String but got a Class.
+[INFO] 2025-05-31 16:08:08 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 16:13:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 16:13:21 - DarkWar running
+[INFO] 2025-05-31 17:01:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 17:01:34 - DarkWar running
+[INFO] 2025-05-31 17:02:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 22:38:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 22:43:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-05-31 22:43:04 - DarkWar running
+[INFO] 2025-05-31 22:43:24 - Starting User:LeBalafré
+[INFO] 2025-05-31 22:43:24 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 22:43:45 - Splash guy found
+[INFO] 2025-05-31 22:45:01 - CurrentUser is active - returning
+[INFO] 2025-05-31 23:17:33 - Bommer loop: 4 Or out of energy -> Quitting
+[INFO] 2025-05-31 23:18:39 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-05-31 23:21:34 - Unknow screen
+[INFO] 2025-05-31 23:32:04 - Starting User:Balafré
+[INFO] 2025-05-31 23:32:04 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 23:32:12 - World found
+[INFO] 2025-05-31 23:32:54 - CurrentUser is active - returning
+[WARN] 2025-05-31 23:36:26 - Error - not in world
+[WARN] 2025-05-31 23:37:09 - Unknow screen
+[WARN] 2025-05-31 23:40:39 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 23:40:39 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 23:41:08 - Splash guy found
+[INFO] 2025-05-31 23:42:03 - CurrentUser is active - returning
+[WARN] 2025-05-31 23:44:43 - Unknow screen
+[WARN] 2025-05-31 23:48:07 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 23:48:07 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 23:48:45 - Splash guy found
+[INFO] 2025-05-31 23:50:03 - CurrentUser is active - returning
+[WARN] 2025-05-31 23:50:40 - Error, Shelter not found - Quitting
+[WARN] 2025-05-31 23:51:20 - Unknow screen
+[WARN] 2025-05-31 23:54:45 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-05-31 23:54:45 - Loading game ... Waiting for splash
+[INFO] 2025-05-31 23:55:23 - Splash guy found
+[INFO] 2025-05-31 23:56:33 - CurrentUser is active - returning
+[INFO] 2025-06-01 00:00:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 00:00:10 - DarkWar running
+[INFO] 2025-06-01 00:00:26 - Starting User:LeBalafré
+[INFO] 2025-06-01 00:00:26 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:02:06 - Bommer loop: 14 Or out of energy -> Quitting
+[INFO] 2025-06-01 00:03:04 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:03:36 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:03:36 - Crash detected for user LeBalafré: This value of type "String" has no property named "found".
+[INFO] 2025-06-01 00:03:36 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 00:05:47 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 00:05:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 00:13:44 - Unknow screen
+[INFO] 2025-06-01 00:14:28 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:14:54 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:14:54 - Crash detected for user Balafré: This value of type "String" has no property named "found".
+[INFO] 2025-06-01 00:14:54 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:15:18 - CurrentUser is active - returning
+[INFO] 2025-06-01 00:15:38 - World found
+[INFO] 2025-06-01 00:17:49 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:17:53 - Unknow screen
+[WARN] 2025-06-01 00:20:10 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:20:53 - Unknow screen
+[INFO] 2025-06-01 00:21:39 - Bommer loop: 6 Or out of energy -> Quitting
+[WARN] 2025-06-01 00:23:09 - Error - not in world
+[INFO] 2025-06-01 00:23:22 - Starting User:MiniBalafré
+[INFO] 2025-06-01 00:23:22 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:29:16 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 00:29:17 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 00:29:22 - Crash detected for user LeBalafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 00:29:22 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:29:41 - Splash guy found
+[INFO] 2025-06-01 00:29:44 - Splash guy found
+[INFO] 2025-06-01 00:30:34 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:31:00 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:31:00 - Crash detected for user MiniBalafré: This value of type "String" has no property named "found".
+[INFO] 2025-06-01 00:31:00 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:31:20 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 00:31:21 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:31:40 - Splash guy found
+[INFO] 2025-06-01 00:31:44 - Splash guy found
+[INFO] 2025-06-01 00:32:35 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 00:32:36 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:33:00 - Splash guy found
+[WARN] 2025-06-01 00:33:01 - Unknow screen
+[INFO] 2025-06-01 00:34:06 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:34:25 - Crash detected for user LeBalafré: Expected a String but got a Class.
+[INFO] 2025-06-01 00:34:25 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 00:34:26 - Crash detected for user MiniBalafré: Expected a String but got a Class.
+[INFO] 2025-06-01 00:34:26 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:34:49 - Splash guy found
+[INFO] 2025-06-01 00:34:50 - Splash guy found
+[INFO] 2025-06-01 00:35:45 - CurrentUser is active - returning
+[INFO] 2025-06-01 00:36:11 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 00:36:12 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:36:37 - Splash guy found
+[WARN] 2025-06-01 00:37:00 - Unknow screen
+[INFO] 2025-06-01 00:37:55 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:39:05 - Unknow screen
+[WARN] 2025-06-01 00:40:25 - Unknow screen
+[WARN] 2025-06-01 00:41:26 - Unknow screen
+[WARN] 2025-06-01 00:46:16 - Crash detected for user LeBalafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 00:46:16 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:46:24 - World found
+[INFO] 2025-06-01 00:47:01 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:47:27 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:47:27 - Crash detected for user LeBalafré: This value of type "String" has no property named "found".
+[INFO] 2025-06-01 00:47:27 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:49:31 - CurrentUser is active - returning
+[WARN] 2025-06-01 00:49:46 - Error, Shelter not found - Quitting
+[WARN] 2025-06-01 00:49:46 - Crash detected for user LeBalafré: This value of type "String" has no property named "found".
+[INFO] 2025-06-01 00:49:46 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 00:50:30 - Bommer loop: 6 Or out of energy -> Quitting
+[WARN] 2025-06-01 00:51:48 - Error - not in world
+[WARN] 2025-06-01 00:52:13 - Error, not in menu
+[INFO] 2025-06-01 00:52:13 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 00:52:24 - Unknow screen
+[WARN] 2025-06-01 01:01:34 - Unknow screen
+[INFO] 2025-06-01 11:29:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 11:29:56 - Starting DarkWar
+[INFO] 2025-06-01 11:30:20 - DarkWar running
+[INFO] 2025-06-01 11:30:41 - Starting User:Balafré
+[INFO] 2025-06-01 11:30:41 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 11:33:10 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 11:33:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 11:33:25 - DarkWar running
+[INFO] 2025-06-01 11:33:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 11:33:45 - Starting DarkWar
+[INFO] 2025-06-01 11:34:08 - DarkWar running
+[INFO] 2025-06-01 11:34:32 - Starting User:Balafré
+[INFO] 2025-06-01 11:34:32 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 11:34:58 - Splash guy found
+[INFO] 2025-06-01 11:37:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 11:37:36 - DarkWar running
+[INFO] 2025-06-01 11:37:56 - Starting User:Balafré
+[INFO] 2025-06-01 11:37:56 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 11:38:01 - Splash guy found
+[INFO] 2025-06-01 11:39:20 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 11:39:22 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 11:39:47 - Splash guy found
+[INFO] 2025-06-01 11:41:27 - CurrentUser is active - returning
+[INFO] 2025-06-01 12:08:45 - Bommer loop: 4 Or out of energy -> Quitting
+[INFO] 2025-06-01 12:27:51 - Bommer loop: 4 Or out of energy -> Quitting
+[WARN] 2025-06-01 12:35:13 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 12:35:13 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 12:42:21 - CurrentUser is active - returning
+[INFO] 2025-06-01 12:45:43 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 12:46:50 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-06-01 12:50:56 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-06-01 12:50:56 - Loading game ... Waiting for splash
+[WARN] 2025-06-01 12:57:03 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-06-01 12:57:03 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 12:57:50 - Splash guy found
+[INFO] 2025-06-01 12:59:08 - CurrentUser is active - returning
+[INFO] 2025-06-01 13:02:29 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 13:03:37 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-06-01 13:10:52 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 13:10:52 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 13:11:00 - World found
+[INFO] 2025-06-01 13:11:45 - CurrentUser is active - returning
+[INFO] 2025-06-01 13:14:37 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 15:53:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-01 15:53:25 - DarkWar running
+[INFO] 2025-06-01 15:53:42 - Starting User:LeBalafré
+[INFO] 2025-06-01 15:53:42 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 15:53:47 - Splash guy found
+[INFO] 2025-06-01 15:55:08 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 15:55:09 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 15:55:32 - Splash guy found
+[INFO] 2025-06-01 15:56:49 - CurrentUser is active - returning
+[INFO] 2025-06-01 15:57:09 - Found Levelup
+[INFO] 2025-06-01 16:16:24 - Bommer loop: 4 Or out of energy -> Quitting
+[INFO] 2025-06-01 16:17:29 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 16:24:32 - Starting User:Balafré
+[INFO] 2025-06-01 16:24:32 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:24:40 - World found
+[INFO] 2025-06-01 16:25:27 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 16:25:28 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:25:50 - Splash guy found
+[INFO] 2025-06-01 16:27:08 - CurrentUser is active - returning
+[WARN] 2025-06-01 16:30:34 - Error - not in world
+[WARN] 2025-06-01 16:30:50 - Crash detected for user Balafré: Expected a String but got a Class.
+[INFO] 2025-06-01 16:30:50 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:31:34 - Splash guy found
+[INFO] 2025-06-01 16:32:51 - CurrentUser is active - returning
+[INFO] 2025-06-01 16:39:29 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 16:40:36 - Bommer loop: 1 Or out of energy -> Quitting
+[WARN] 2025-06-01 16:41:32 - Crash detected for user Balafré: This value of type "String" has no method named "Call".
+[INFO] 2025-06-01 16:41:32 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:41:40 - World found
+[INFO] 2025-06-01 16:42:25 - CurrentUser is active - returning
+[INFO] 2025-06-01 16:45:20 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 16:46:27 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 16:52:39 - Starting User:MiniBalafré
+[INFO] 2025-06-01 16:52:39 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:52:47 - World found
+[INFO] 2025-06-01 16:53:32 - CurrentUser is not active - Switching
+[INFO] 2025-06-01 16:53:33 - Loading game ... Waiting for splash
+[INFO] 2025-06-01 16:53:56 - Splash guy found
+[INFO] 2025-06-01 16:55:09 - CurrentUser is active - returning
+[INFO] 2025-06-01 17:04:37 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-01 17:08:21 - Bommer loop: 2 Or out of energy -> Quitting
+[WARN] 2025-06-01 17:10:51 - Unknow screen
+[INFO] 2025-06-01 17:18:05 - Done

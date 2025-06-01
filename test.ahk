@@ -125,6 +125,7 @@ restart_app:
             if !healing {
                 count+= 1
                 OutputDebug "healing not found " count
+                MouseClick("left")
                 if (count > 60) {
                     OutputDebug "healing not found " count
 

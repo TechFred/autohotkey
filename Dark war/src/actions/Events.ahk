@@ -98,6 +98,7 @@ ShadowCalls() {
             ;Click Help
             ImageFinderInstance.FindAnyImageObjects(2000, true, O_claim_green_main)
             ImageFinderInstance.FindAnyImageObjects(1000, true, ShadowCall_Assist_title)
+            ImageFinderInstance.FindAnyImageObjects(1000, true, ShadowCall_Congrat_bob)
         }
 
     }

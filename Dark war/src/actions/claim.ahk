@@ -14,7 +14,8 @@ Claim(ClickDelay := 1000, maxloop := 100) {
         "Energy_claim.bmp",
         "Events_claim.bmp",
         "Events_claim_2.bmp",
-        "Levelup_claim.bmp"
+        "Levelup_claim.bmp", 
+        "luckytoken_claim.bmp"
     ]
     j := 0
     i := 0

@@ -9,12 +9,15 @@ O_NIILeBalafre := Image("switch_NIILeBalafre.bmp", 50, Regions.AllRegion)
 O_Balafre := Image("switch_balafre.bmp", 50, Regions.AllRegion)
 O_MiniBalafre := Image("switch_minibalafre.bmp", 50, Regions.AllRegion)
 
-Users := [ ;
+Users := [ 
     { name: "LeBalafré", active: false, state: 148, img: O_NIILeBalafre, order: 1, boomer_run: true, energy_run : true }, ;
     { name: "Balafré", active: false, state: 148, img: O_Balafre, order: 2, boomer_run: true, energy_run : true }, ;
     { name: "MiniBalafré", active: false, state: 148, img: O_MiniBalafre, order: 3, boomer_run: true, energy_run : true }, ;
 ] ;
 
+
+debug := false
+;debug := trueS
 
 /*
 ====== Includes ======
@@ -58,7 +61,7 @@ Users := [ ;
 #include src\actions\Events.ahk
 #include src\actions\levelup.ahk
 #include src\actions\premium.ahk
-
+#include src\actions\Hospital.ahk
 
 
 

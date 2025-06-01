@@ -35,12 +35,37 @@ premiumCenter() {
                 i += 1
             }
 
-            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) { ;If events menu is not found, go back
-                LoggerInstance.Debug("Events title not found -> going back")
-                clickAnyX()
-                iconPlayerClickBlind()
+
+            ;if title is lost, try to go back until it's found
+            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
+                LoggerInstance.Debug("Events title not found -> starting recovery sequence")
+
+                actions := [iconPlayerClickBlind(), clickAnyX(), clickAnyBack()]
+
+                for action in actions {
+                    action.Call()
+                    if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
+                        LoggerInstance.Debug("Events title found after action: " action.Name)
+                        break
+                    }
+                }
             }
-            ;Click on reddot in the menu
+
+            /*
+                        if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) { ;If events menu is not found, go back
+                            LoggerInstance.Debug("Events title not found -> going back")
+                            iconPlayerClickBlind()
+                            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
+                                clickAnyX()
+                                if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
+                                    clickAnyBack()
+                                }
+                            }
+            
+                        }
+            */
+
+            ;Click on reddot in the menu?
 
         } until i > 5
     }

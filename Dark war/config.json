@@ -1,0 +1,29 @@
+[
+    {
+        "name": "LeBalafré",
+        "active": false,
+        "state": 148,
+        "img": "O_NIILeBalafre",
+        "order": 1,
+        "boomer_run": true,
+        "energy_run": true
+    },
+    {
+        "name": "Balafré",
+        "active": false,
+        "state": 148,
+        "img": "O_Balafre",
+        "order": 2,
+        "boomer_run": true,
+        "energy_run": true
+    },
+    {
+        "name": "MiniBalafré",
+        "active": false,
+        "state": 148,
+        "img": "O_MiniBalafre",
+        "order": 3,
+        "boomer_run": true,
+        "energy_run": true
+    }
+]

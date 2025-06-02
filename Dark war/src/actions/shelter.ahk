@@ -26,7 +26,7 @@ getCurrentScreen() {
     } else if (ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
         loggerInstance.debug("Detected: world screen")
         return SCREEN_WORLD
-    } else if (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, false, 50, 5).found) {
+    } else if (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, false, 50, 2).found) {
         loggerInstance.debug("Detected: Android screen")
         return SCREEN_ANDROID
     } else {

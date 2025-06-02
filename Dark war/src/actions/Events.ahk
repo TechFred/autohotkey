@@ -36,18 +36,13 @@ ImagesNew:= [
 
 
 events() {
-    ShadowCallComplete := false
     iconEventsClick()
     if ImageFinderInstance.FindAnyImageObjects(1000, false, Events_title).found {
         LoggerInstance.Debug("Events menu")
 
         i := 0
         loop 20 {
-
-            if !(ShadowCallComplete) {
-                ShadowCalls()
-                ShadowCallComplete := true
-            }
+            ShadowCalls()
             TitanClaim()
 
             ;ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack)

@@ -2,6 +2,7 @@
 
 iconHelp := "help.bmp"
 iconHelp_2 := "help_2.bmp"
+iconHelp_3 := "help_3.bmp"
 
 iconEscort := "escort.bmp"
 iconOptimise := "optimise.bmp"
@@ -37,7 +38,8 @@ iconHelpClick() {
 
     imagePaths := [
         iconHelp,
-        iconHelp_2
+        iconHelp_2,
+        iconHelp_3
     ]
 
     return ImageFinderInstance.LoopFindAnyImage(Regions.AllRegion, 50, 1000, true, 0, 2, imagePaths*)
@@ -81,7 +83,13 @@ iconOptimiseClick() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, imageObjects*)
+    res := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, imageObjects*)
+    if res.found = true{
+        MouseClick("left", res.x, res.y+10)
+        sleep (1000)
+    }
+
+    return res
 }
 
 iconCombatClick() {
@@ -135,8 +143,8 @@ iconTasksClick() {
 iconPlayerClick() {
     return ImageFinderInstance.LoopFindImage(iconPlayer, Regions.icons.player, 50, 1000, true, 500, 5)
 }
-iconPlayerClickBlind() {
-    ClickCenter(Regions.icons.player, 2000)
+iconPlayerClickBlind(DelayClick := 2000) {
+    ClickCenter(Regions.icons.player, DelayClick)
 }
 
 iconVipClick() {

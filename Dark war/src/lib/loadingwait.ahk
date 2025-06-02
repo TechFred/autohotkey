@@ -8,7 +8,7 @@ LoadingWait() {
     found := false
     World := 0
     loop 10 {
-        if (ImageFinderInstance.FindAnyImageObjects(1000,false, O_splashGuy).found) {
+        if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_splashGuy).found) {
             Sleep(5000) ; Give time to load
             LoggerInstance.Info("Splash guy found")
             found := true
@@ -18,7 +18,7 @@ LoadingWait() {
         ; If world is shown for more than 6 seconds, break
         if (getCurrentScreen() = SCREEN_SHELTER) {
             World += 1
-            LoggerInstance.debug("World found : " World) 
+            LoggerInstance.debug("World found : " World)
             if (World > 3) {
                 LoggerInstance.Info("World found")
                 found := true
@@ -27,6 +27,11 @@ LoadingWait() {
 
         } else {
             World := 0
+        }
+
+        ; If android icon, click on it. 
+        if (getCurrentScreen() = SCREEN_ANDROID) {
+            ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 10000, true, 50, 2)
         }
         Sleep(2000)
 

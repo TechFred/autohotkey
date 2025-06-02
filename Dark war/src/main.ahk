@@ -88,7 +88,7 @@ if getCurrentScreen() = SCREEN_WORLD {
 ;Login and start
 
 for u in Users {
-    LoggerInstance.info("Starting User:" u.name)
+    LoggerInstance.info("Starting User: " u.name)
     done := false
 
     loop {
@@ -96,10 +96,12 @@ for u in Users {
         try {
             loop {
                 LoggerInstance.Debug("Starting logging loop")
+                LoggerInstance.info("Waiting for loading...")
                 LoadingWait()
+                LoggerInstance.info("Waiting for Splash...")
                 splash()
                 CrashDetection()
-
+                LoggerInstance.info("Logging in as: " u.name)
             } until LoginAndSetUser(u)
 
             Complete_run(u)
@@ -113,48 +115,58 @@ for u in Users {
 Complete_run(u) {
 
     ; Food
+    LoggerInstance.info("Food")
     CrashDetection()
     iconHelpClick()
     food()
     optimise()
 
     ;Levelup
+    LoggerInstance.info("Level up")
     CrashDetection()
     iconHelpClick()
     levelup()
 
     ; Escorts
+    LoggerInstance.info("Escorts")
     CrashDetection()
     iconHelpClick()
     escorts()
 
     ;Combat
+    LoggerInstance.info("Combat")
     CrashDetection()
     iconHelpClick()
     combat()
 
     ;Alliance
+    LoggerInstance.info("Alliance")
     CrashDetection()
     iconHelpClick()
     alliance()
 
     ;Tasks
+    LoggerInstance.info("Tasks")
+
     CrashDetection()
     iconHelpClick()
     Task()
 
     ;BattleRewards
+    LoggerInstance.info("Battle Rewards")
     CrashDetection()
     iconHelpClick()
     BattleRewards()
 
     ;Expeditions
+    LoggerInstance.info("Expeditions")
     CrashDetection()
     iconHelpClick()
     expeditions()
 
     ;Energy
     if (u.energy_run) {
+        LoggerInstance.info("Energy")
         CrashDetection()
         iconHelpClick()
         energy()
@@ -162,10 +174,12 @@ Complete_run(u) {
 
     ;boomers
     if (u.boomer_run) {
+        LoggerInstance.info("Boomers")
         CrashDetection()
         iconHelpClick()
         boomers()
         if (u.energy_run) {
+            LoggerInstance.info("Energy and boomers (2)")
             CrashDetection()
             iconHelpClick()
             energy()
@@ -174,16 +188,19 @@ Complete_run(u) {
     }
 
     ;events
+    LoggerInstance.info("Events")
     CrashDetection()
     iconHelpClick()
     events()
 
     ;premiumCenter
+    LoggerInstance.info("Premium Center")
     CrashDetection()
     iconHelpClick()
     premiumCenter()
 
     ;End script
+    LoggerInstance.info("Ending script")
     CrashDetection()
     iconHelpClick()
 }

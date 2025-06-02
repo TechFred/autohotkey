@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 
 CrashDetection() {
+    LoggerInstance.debug("Crash verification")
     if (getCurrentScreen() = SCREEN_UNKNOWN) {
         WinActivateGame()
         Checkfix_Screen_Unknown()
@@ -34,7 +35,7 @@ Checkfix_Screen_Android() {
 Checkfix_Screen_Unknown() {
     i := 0
     if (getCurrentScreen() = SCREEN_UNKNOWN) {
-        LoggerInstance.warn("Unknow screen")
+        LoggerInstance.warn("Unknow screen - Trying to find a working screen")
         loop {
             clickAnyBack()
             clickAnyBack()

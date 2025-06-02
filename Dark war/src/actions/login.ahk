@@ -14,7 +14,7 @@ LoginAndSetUser(CurrentUser) {
     } until M
 
     if !M {
-        LoggerInstance.WARN("Error, not in menu")
+        LoggerInstance.WARN("Error, not in survivor profile")
         return false
     }
 

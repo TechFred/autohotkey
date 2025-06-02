@@ -1,26 +1,32 @@
 #Requires AutoHotkey v2.0
 
 splash() {
-    sleep (1000)
-
     count := 0
     loop 10 {
         if (getCurrentScreen() = SCREEN_SHELTER) {
+            iconPlayerClickBlind(1000)
+            /*
+            ;Ne fait pas ce que je veux. Le if d'après ouvre le profile de toute facon. 
             count += 1
             if count > 2 {
                 LoggerInstance.Debug("World Found")
                 break
             }
+                */
         }
-        
+
         if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_survivorProfile).found) {
             LoggerInstance.Debug("Surviror profile found")
             break
         }
-
+        iconPlayerClickBlind(250)
+        iconPlayerClickBlind(250)
+        iconPlayerClickBlind(250)
+        iconPlayerClickBlind(250)
+        iconPlayerClickBlind(250)
+        iconPlayerClickBlind(250)
+    
         clickAnyX()
-        iconPlayerClickBlind()
-        Sleep(500)
     }
 
     clickAnyX()

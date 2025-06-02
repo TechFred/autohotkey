@@ -14,8 +14,8 @@
         "state": 148,
         "img": "switch_balafre.bmp",
         "order": 2,
-        "boomer_run": true,
-        "energy_run": true
+        "boomer_run": false,
+        "energy_run": false
     },
     {
         "name": "MiniBalafre",

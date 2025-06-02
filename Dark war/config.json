@@ -1,27 +1,27 @@
 [
     {
-        "name": "LeBalafré",
+        "name": "LeBalafre",
         "active": false,
         "state": 148,
-        "img": "O_NIILeBalafre",
+        "img": "switch_NIILeBalafre.bmp",
         "order": 1,
         "boomer_run": true,
         "energy_run": true
     },
     {
-        "name": "Balafré",
+        "name": "Balafre",
         "active": false,
         "state": 148,
-        "img": "O_Balafre",
+        "img": "switch_balafre.bmp",
         "order": 2,
         "boomer_run": true,
         "energy_run": true
     },
     {
-        "name": "MiniBalafré",
+        "name": "MiniBalafre",
         "active": false,
         "state": 148,
-        "img": "O_MiniBalafre",
+        "img": "switch_minibalafre.bmp",
         "order": 3,
         "boomer_run": true,
         "energy_run": true

@@ -21,6 +21,15 @@ BlockInput("MouseMove")
 ; Starting
 LoggerInstance.Info("Starting script - " A_ScriptDir)
 
+; users
+try
+    Users := importuser()
+catch as e {
+    LoggerInstance.Warn("Crash importing users: " e.Message)
+    ExitApp()
+
+}
+
 if debug = false {
     StartDarkWar()
 }
@@ -71,13 +80,10 @@ if debug {
 Sleep(2000)
 Hospital()
 
-
 if getCurrentScreen() = SCREEN_WORLD {
     boomers()
     ExitApp
 }
-
-
 
 ;Login and start
 
@@ -99,7 +105,7 @@ for u in Users {
             Complete_run(u)
             done := true
         } catch as e {
-            LoggerInstance.Warn("Crash detected for user " u.Name ": " e.Message)
+            LoggerInstance.Warn("Crash detected for user " u.name ": " e.Message)
         }
     } until done
 }

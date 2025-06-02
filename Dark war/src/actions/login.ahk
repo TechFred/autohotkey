@@ -29,7 +29,7 @@ LoginAndSetUser(CurrentUser) {
         ImageFinderInstance.FindAnyImageObjects(1000, true, O_switch_yes)
 
     } else {
-        CurrentUser.active := true
+        CurrentUser.active:= true
         loggerInstance.info("CurrentUser is active - returning")
         iconPlayerClickBlind()
         iconPlayerClickBlind()

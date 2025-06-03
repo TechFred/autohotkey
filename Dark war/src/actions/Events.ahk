@@ -51,8 +51,9 @@ events() {
 
             if ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_bottom).found {
                 ClickReddot(1000, Regions.events.main) ;If reddot, click on it
-                Claim()
-                Claim_All()
+                ClaimOCR()
+                ClaimAllOCR()
+
 
             } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesNew*).found) {
 

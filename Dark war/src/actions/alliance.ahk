@@ -80,14 +80,14 @@ AllianceGifts() {
     LoggerInstance.debug("Alliance Gifts")
 
     if (ImageFinderInstance.LoopFindImage(alliance_gift, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 5).Found) {
-        Claim_All()
-        ;Claim(250)
+        ClaimAllOCR(,Regions.menus.bottom)
+        ClaimLoopOCR(250)
 
         ;rare gifts
 
         if (ImageFinderInstance.LoopFindImage(gift_rare, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 4).Found) {
-            Claim_All()
-            Claim(250)
+            ClaimAllOCR(,Regions.menus.bottom)
+            ClaimLoopOCR(250)
         }
 
         clickAnyBack()

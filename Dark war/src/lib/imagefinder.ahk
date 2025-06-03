@@ -28,6 +28,8 @@ class ImageFinder {
                     MouseClick("left", FoundX, FoundY)
                     Sleep(clickDelay)
                 }
+                UpdateImageStats(path)
+                SaveImageStatsToCSV()
                 found := true
             }
         } catch as e {

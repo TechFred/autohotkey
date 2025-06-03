@@ -2,8 +2,8 @@
 
 combat(){
     if (iconCombatClick().found){
-        Claim()
-        Remove_Congrat()
+        ClaimLoopOCR()
+        ;Remove_Congrat()
         clickAnyBack()
     }
 

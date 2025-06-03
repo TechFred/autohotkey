@@ -6,16 +6,6 @@ SetWorkingDir(A_ScriptDir)
 
 OutputDebug "Starting script - " A_ScriptDir
 
-/*
-O_NIILeBalafre := Image("switch_NIILeBalafre.bmp", 50, Regions.AllRegion)
-O_Balafre := Image("switch_balafre.bmp", 50, Regions.AllRegion)
-O_MiniBalafre := Image("switch_minibalafre.bmp", 50, Regions.AllRegion)
-
-Users := [{ name: "LeBalafré", active: false, state: 148, img: O_NIILeBalafre, order: 1, boomer_run: true, energy_run: true }, ;
-{ name: "Balafré", active: false, state: 148, img: O_Balafre, order: 2, boomer_run: true, energy_run: true }, ;
-{ name: "MiniBalafré", active: false, state: 148, img: O_MiniBalafre, order: 3, boomer_run: true, energy_run: true }, ;] ;
-
-*/
 debug := false
 ;debug := true
 /*
@@ -25,6 +15,7 @@ debug := false
 #Include src\config.ahk
 #Include src\regions.ahk
 #include src\GlobalImages.ahk
+
 ;libraries
 #include src\lib\logger.ahk
 #include src\lib\imagefinder.ahk
@@ -35,9 +26,14 @@ debug := false
 #include src\lib\Reddot.ahk
 #include src\lib\json.ahk
 #Include src\lib\userimport.ahk
+#include src\lib\OCR.ahk
+#Include src\lib\FindText.ahk
+#Include src\lib\ImageStats.ahk
+
 ;classes
 #include src\classes\image.ahk
 #Include src\classes\user.ahk
+
 ;actions
 #include src\actions\claim.ahk
 #include src\actions\login.ahk
@@ -60,14 +56,5 @@ debug := false
 #include src\actions\levelup.ahk
 #include src\actions\premium.ahk
 #include src\actions\Hospital.ahk
-/*
-O_NIILeBalafre := Image("switch_NIILeBalafre.bmp", 50, Regions.AllRegion)
-O_Balafre := Image("switch_balafre.bmp", 50, Regions.AllRegion)
-O_MiniBalafre := Image("switch_minibalafre.bmp", 50, Regions.AllRegion)
-
-jsonPath := A_ScriptDir "\config.json"
-jsonText := FileRead(jsonPath)
-Users := Json.Parse(jsonText) ; Capital "J" in Json
-*/
 
 #Include src/main.ahk

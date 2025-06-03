@@ -3,8 +3,8 @@
 Task() {
 
     if (iconTasksClick().found) {
-        claim_all()
-        claim()
+        ClaimOCR()
+        ClaimAllOCR()
         clickAnyX()
     }
 }

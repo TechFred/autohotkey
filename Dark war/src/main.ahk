@@ -4,6 +4,9 @@
 LoggerInstance := Logger(A_ScriptDir, "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
+;image Stats
+LoadImageStatsFromCSV()
+
 ; Windows
 winTitle := "ahk_class Qt672QWindowIcon ahk_exe HD-Player.exe"
 SetTitleMatchMode(2)
@@ -62,16 +65,53 @@ if debug {
     ;centerShelter()
     ;levelup()
     ;ClickReddot(1000, Regions.events.main)
-    premiumCenter()
-    events()
+    ;ClickReddot(1000, Regions.events.main)
+    ;ExitApp
+    ;premiumCenter()
+    ;events()
+    ;testwait()
+    ;i:= GetReddot()
+    ;MouseMove(i.x, i.y)
+    AllianceGifts()
+    ;ocrOptions := {lang:"en-us", scale:2, grayscale:1, casesense:0}
+    ;DebugOCR(ocrOptions, "Claim")
+    ;ClaimAllOCR(,Regions.menus.bottom)
+    ;ClaimLoopOCR()
+    ;RemoveCongratOCR()
+    ExitApp()
+    WaitFindText("Dark War")
+    ocrOptions := Map("scale", 5, "x", 0, "y", 0, "w", 500, "h", 500)
 
-    O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
-    O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
-    O_reddot_number_transblack_bottom.region := Regions.events.bottom
+    result := OCR.FromWindow(winTitle, ocrOptions)
 
-    res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack_bottom)
-    MouseMove(res.x, res.y)
-    MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
+    LoggerInstance.Debug(Result.Text)
+
+    ;CoordMode "Mouse", "Screen"
+    /*
+    LoggerInstance.Debug("search")
+    loop {
+        search := " Survivor Profile "
+        Sleep 500 ; Small delay to wait for the InputBox to close
+        result := OCR.FromWindow(winTitle, { scale: 5 })
+        LoggerInstance.Debug(Result.Text)
+    
+        found := result.FindString(search, { IgnoreLinebreaks: True })
+    
+        LoggerInstance.Debug(found.x "," found.y)
+        found.Highlight()
+        ; found := result.FindStrings(search, {IgnoreLinebreaks: false})
+    
+        break
+    }
+    */
+
+    ; O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
+    ; O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
+    ; O_reddot_number_transblack_bottom.region := Regions.events.bottom
+
+    ; res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack_bottom)
+    ; MouseMove(res.x, res.y)
+    ; MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
 
     ExitApp()
 }

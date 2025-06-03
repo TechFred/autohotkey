@@ -6,7 +6,7 @@
         "img": "switch_NIILeBalafre.bmp",
         "order": 1,
         "boomer_run": true,
-        "energy_run": true
+        "energy_run": false
     },
     {
         "name": "Balafre",
@@ -14,7 +14,7 @@
         "state": 148,
         "img": "switch_balafre.bmp",
         "order": 2,
-        "boomer_run": false,
+        "boomer_run": true,
         "energy_run": false
     },
     {

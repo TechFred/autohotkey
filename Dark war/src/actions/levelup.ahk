@@ -8,6 +8,7 @@ levelup() {
         LoggerInstance.Info("Found Levelup")
         MouseClick("left",1236, 71)
         Sleep(1000)
+        ClaimOCR(1000)
         Claim(1000,1)
         MouseClick("left", 1084, 655)
         Sleep(1000)

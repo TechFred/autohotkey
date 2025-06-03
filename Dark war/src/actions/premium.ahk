@@ -16,20 +16,25 @@ premiumCenter() {
 
             if ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_bottom).found {
                 ClickReddot(1000, Regions.events.main) ;If reddot, click on it
+                ClickReddot(1000, Regions.events.main) ;If reddot, click on it
+                ClickReddot(1000, Regions.events.main) ;If reddot, click on it
                 Remove_Congrat()
-                Claim()
-                Claim_All()
+                ClaimOCR()
+                ClaimAllOCR()
+                
 
             } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesNew*).found) {
 
             } else if ClickReddot(1000, Regions.menus.bottom).found {
                 ClickReddot(1000, Regions.events.main) ;If reddot, click on it
+                ClickReddot(1000, Regions.events.main) ;If reddot, click on it
+                ClickReddot(1000, Regions.events.main) ;If reddot, click on it
                 Remove_Congrat()
-                Claim()
-                Claim_All()
+                ClaimOCR()
+                ClaimAllOCR()
 
             } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesExclamation*).found) {
-
+     
             } else {
                 LoggerInstance.Debug("Nothing found, looping: " i)
                 i += 1
@@ -38,14 +43,14 @@ premiumCenter() {
 
             ;if title is lost, try to go back until it's found
             if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
-                LoggerInstance.Debug("Events title not found -> starting recovery sequence")
+                LoggerInstance.Debug("Premium title not found -> starting recovery sequence")
 
                 actions := [iconPlayerClickBlind(), clickAnyX(), clickAnyBack()]
 
                 for action in actions {
                     action.Call()
                     if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
-                        LoggerInstance.Debug("Events title found after action: " action.Name)
+                        LoggerInstance.Debug("Premium title found after action: " action.Name)
                         break
                     }
                 }

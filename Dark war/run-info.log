@@ -899,31 +899,715 @@
 [INFO] 2025-06-02 11:14:12 - Expeditions
 [INFO] 2025-06-02 11:14:16 - Energy
 [INFO] 2025-06-02 11:14:52 - Boomers
-[INFO] 2025-06-02 14:35:42 - Starting script - C:\Users\Fred\Desktop\Dark war\Autohotkey\autohotkey\Dark war
-[INFO] 2025-06-02 14:35:42 - Starting DarkWar
-[INFO] 2025-06-02 14:36:06 - DarkWar running
-[INFO] 2025-06-02 14:36:13 - Starting User: LeBalafre
-[INFO] 2025-06-02 14:36:13 - Waiting for loading...
-[INFO] 2025-06-02 14:36:13 - Loading game ... Waiting for splash
-[INFO] 2025-06-02 14:36:30 - Starting script - C:\Users\Fred\Desktop\Dark war\Autohotkey\autohotkey\Dark war
-[INFO] 2025-06-02 14:36:33 - DarkWar running
-[INFO] 2025-06-02 14:36:37 - Starting script - C:\Users\Fred\Desktop\Dark war\Autohotkey\autohotkey\Dark war
-[INFO] 2025-06-02 14:36:41 - DarkWar running
-[INFO] 2025-06-02 14:36:49 - Starting User: LeBalafre
-[INFO] 2025-06-02 14:36:49 - Waiting for loading...
-[INFO] 2025-06-02 14:36:49 - Loading game ... Waiting for splash
-[INFO] 2025-06-02 14:41:24 - Waiting for Splash...
-[WARN] 2025-06-02 14:43:46 - Unknow screen - Trying to find a working screen
-[INFO] 2025-06-02 15:05:59 - Starting script - C:\Users\Fred\Desktop\Dark war\Autohotkey\autohotkey\Dark war
-[INFO] 2025-06-02 15:06:03 - DarkWar running
-[INFO] 2025-06-02 15:06:14 - Starting User: LeBalafre
-[INFO] 2025-06-02 15:06:14 - Waiting for loading...
-[INFO] 2025-06-02 15:06:14 - Loading game ... Waiting for splash
-[INFO] 2025-06-02 15:06:31 - Starting script - C:\Users\Fred\Desktop\Dark war\Autohotkey\autohotkey\Dark war
-[INFO] 2025-06-02 15:06:31 - Starting DarkWar
-[INFO] 2025-06-02 15:06:55 - DarkWar running
-[INFO] 2025-06-02 15:07:03 - Starting User: LeBalafre
-[INFO] 2025-06-02 15:07:03 - Waiting for loading...
-[INFO] 2025-06-02 15:07:03 - Loading game ... Waiting for splash
-[INFO] 2025-06-02 15:07:08 - Splash guy found
-[INFO] 2025-06-02 15:07:08 - Waiting for Splash...
+[INFO] 2025-06-02 15:15:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:15:56 - Debugging mode enabled
+[INFO] 2025-06-02 15:16:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:16:33 - Debugging mode enabled
+[INFO] 2025-06-02 15:17:15 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:17:15 - Debugging mode enabled
+[INFO] 2025-06-02 15:19:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:19:23 - Debugging mode enabled
+[INFO] 2025-06-02 15:22:53 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:22:53 - Debugging mode enabled
+[INFO] 2025-06-02 15:23:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:23:44 - Debugging mode enabled
+[INFO] 2025-06-02 15:24:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:24:00 - Debugging mode enabled
+[INFO] 2025-06-02 15:24:48 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:24:48 - Debugging mode enabled
+[INFO] 2025-06-02 15:25:43 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:25:43 - Debugging mode enabled
+[INFO] 2025-06-02 15:26:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:26:14 - Debugging mode enabled
+[INFO] 2025-06-02 15:26:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:26:45 - Debugging mode enabled
+[INFO] 2025-06-02 15:30:43 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:30:43 - Debugging mode enabled
+[INFO] 2025-06-02 15:36:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:36:06 - Debugging mode enabled
+[INFO] 2025-06-02 15:36:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:36:22 - Debugging mode enabled
+[INFO] 2025-06-02 15:41:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:41:32 - Debugging mode enabled
+[INFO] 2025-06-02 15:42:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:42:36 - Debugging mode enabled
+[INFO] 2025-06-02 15:43:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:43:29 - Debugging mode enabled
+[INFO] 2025-06-02 15:50:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:50:24 - Debugging mode enabled
+[INFO] 2025-06-02 15:52:58 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:52:58 - Debugging mode enabled
+[INFO] 2025-06-02 15:54:19 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:54:19 - Debugging mode enabled
+[INFO] 2025-06-02 15:55:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:55:11 - Debugging mode enabled
+[INFO] 2025-06-02 15:56:12 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:56:12 - Debugging mode enabled
+[INFO] 2025-06-02 15:56:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:56:29 - Debugging mode enabled
+[INFO] 2025-06-02 15:56:57 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:56:57 - Debugging mode enabled
+[INFO] 2025-06-02 15:58:04 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:58:04 - Debugging mode enabled
+[INFO] 2025-06-02 15:59:42 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 15:59:42 - Debugging mode enabled
+[INFO] 2025-06-02 16:03:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 16:03:37 - Debugging mode enabled
+[INFO] 2025-06-02 16:04:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 16:04:01 - Debugging mode enabled
+[INFO] 2025-06-02 16:39:15 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 16:39:19 - DarkWar running
+[INFO] 2025-06-02 16:39:27 - Starting User: LeBalafre
+[INFO] 2025-06-02 16:39:27 - Waiting for loading...
+[INFO] 2025-06-02 16:39:27 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 16:41:46 - Waiting for Splash...
+[INFO] 2025-06-02 16:42:03 - Logging in as: LeBalafre
+[INFO] 2025-06-02 16:42:10 - CurrentUser is not active - Switching
+[INFO] 2025-06-02 16:42:11 - Waiting for loading...
+[INFO] 2025-06-02 16:42:11 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 16:42:30 - Splash guy found
+[INFO] 2025-06-02 16:42:30 - Waiting for Splash...
+[INFO] 2025-06-02 16:43:14 - Logging in as: LeBalafre
+[INFO] 2025-06-02 16:43:19 - CurrentUser is active - returning
+[INFO] 2025-06-02 16:43:26 - Food
+[INFO] 2025-06-02 16:43:35 - Level up
+[INFO] 2025-06-02 16:43:39 - Escorts
+[INFO] 2025-06-02 16:43:57 - Combat
+[INFO] 2025-06-02 16:44:20 - Alliance
+[INFO] 2025-06-02 16:45:32 - Tasks
+[INFO] 2025-06-02 16:45:58 - Battle Rewards
+[INFO] 2025-06-02 16:46:06 - Expeditions
+[INFO] 2025-06-02 16:47:16 - Energy
+[INFO] 2025-06-02 16:47:47 - Boomers
+[INFO] 2025-06-02 16:52:15 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-02 16:52:33 - Energy and boomers (2)
+[INFO] 2025-06-02 16:53:19 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-02 16:53:37 - Events
+[INFO] 2025-06-02 16:54:00 - Premium Center
+[WARN] 2025-06-02 16:58:45 - Crash detected for user LeBalafre: This value of type "String" has no method named "Call".
+[INFO] 2025-06-02 16:58:45 - Waiting for loading...
+[INFO] 2025-06-02 16:58:45 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 16:59:27 - Splash guy found
+[INFO] 2025-06-02 16:59:27 - Waiting for Splash...
+[INFO] 2025-06-02 17:00:13 - Logging in as: LeBalafre
+[INFO] 2025-06-02 17:00:17 - CurrentUser is active - returning
+[INFO] 2025-06-02 17:00:24 - Food
+[INFO] 2025-06-02 17:00:45 - Level up
+[INFO] 2025-06-02 17:00:48 - Escorts
+[INFO] 2025-06-02 17:01:06 - Combat
+[INFO] 2025-06-02 17:01:29 - Alliance
+[INFO] 2025-06-02 17:02:22 - Tasks
+[INFO] 2025-06-02 17:02:28 - Battle Rewards
+[INFO] 2025-06-02 17:02:36 - Expeditions
+[INFO] 2025-06-02 17:02:41 - Energy
+[INFO] 2025-06-02 17:03:12 - Boomers
+[WARN] 2025-06-02 17:03:47 - Error - not in world
+[INFO] 2025-06-02 17:03:47 - Energy and boomers (2)
+[WARN] 2025-06-02 17:04:04 - Unknow screen - Trying to find a working screen
+[INFO] 2025-06-02 17:07:24 - Bommer loop: 3 Or out of energy -> Quitting
+[INFO] 2025-06-02 17:07:42 - Events
+[INFO] 2025-06-02 17:08:32 - Premium Center
+[INFO] 2025-06-02 17:14:15 - Ending script
+[INFO] 2025-06-02 17:14:17 - Starting User: Balafre
+[INFO] 2025-06-02 17:14:17 - Waiting for loading...
+[INFO] 2025-06-02 17:14:17 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 17:14:26 - World found
+[INFO] 2025-06-02 17:14:26 - Waiting for Splash...
+[INFO] 2025-06-02 17:14:38 - Logging in as: Balafre
+[INFO] 2025-06-02 17:14:45 - CurrentUser is not active - Switching
+[INFO] 2025-06-02 17:14:46 - Waiting for loading...
+[INFO] 2025-06-02 17:14:46 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 17:15:06 - Splash guy found
+[INFO] 2025-06-02 17:15:06 - Waiting for Splash...
+[INFO] 2025-06-02 17:15:50 - Logging in as: Balafre
+[INFO] 2025-06-02 17:15:55 - CurrentUser is active - returning
+[INFO] 2025-06-02 17:16:02 - Food
+[INFO] 2025-06-02 17:16:23 - Level up
+[INFO] 2025-06-02 17:16:25 - Escorts
+[INFO] 2025-06-02 17:16:44 - Combat
+[INFO] 2025-06-02 17:17:06 - Alliance
+[INFO] 2025-06-02 17:18:13 - Tasks
+[INFO] 2025-06-02 17:18:34 - Battle Rewards
+[INFO] 2025-06-02 17:18:42 - Expeditions
+[INFO] 2025-06-02 17:18:46 - Events
+[INFO] 2025-06-02 17:18:50 - Premium Center
+[INFO] 2025-06-02 17:18:54 - Ending script
+[INFO] 2025-06-02 17:18:55 - Starting User: MiniBalafre
+[INFO] 2025-06-02 17:18:55 - Waiting for loading...
+[INFO] 2025-06-02 17:18:55 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 17:19:04 - World found
+[INFO] 2025-06-02 17:19:04 - Waiting for Splash...
+[INFO] 2025-06-02 17:19:17 - Logging in as: MiniBalafre
+[INFO] 2025-06-02 17:19:23 - CurrentUser is not active - Switching
+[INFO] 2025-06-02 17:19:24 - Waiting for loading...
+[INFO] 2025-06-02 17:19:24 - Loading game ... Waiting for splash
+[INFO] 2025-06-02 17:19:45 - Splash guy found
+[INFO] 2025-06-02 17:19:45 - Waiting for Splash...
+[INFO] 2025-06-02 17:20:28 - Logging in as: MiniBalafre
+[INFO] 2025-06-02 17:20:33 - CurrentUser is active - returning
+[INFO] 2025-06-02 17:20:40 - Food
+[INFO] 2025-06-02 17:20:50 - Level up
+[INFO] 2025-06-02 17:20:52 - Escorts
+[INFO] 2025-06-02 17:21:00 - Combat
+[INFO] 2025-06-02 17:21:21 - Alliance
+[INFO] 2025-06-02 17:22:30 - Tasks
+[INFO] 2025-06-02 17:22:35 - Battle Rewards
+[INFO] 2025-06-02 17:22:44 - Expeditions
+[INFO] 2025-06-02 17:22:49 - Energy
+[INFO] 2025-06-02 17:23:20 - Boomers
+[INFO] 2025-06-02 17:37:21 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-02 17:37:38 - Energy and boomers (2)
+[INFO] 2025-06-02 17:38:27 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-02 17:38:44 - Events
+[INFO] 2025-06-02 17:40:31 - Premium Center
+[INFO] 2025-06-02 17:40:50 - Ending script
+[INFO] 2025-06-02 17:40:51 - Done
+[INFO] 2025-06-02 20:39:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:39:21 - Debugging mode enabled
+[INFO] 2025-06-02 20:46:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:46:22 - DarkWar running
+[INFO] 2025-06-02 20:46:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:46:31 - Debugging mode enabled
+[INFO] 2025-06-02 20:57:46 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:57:46 - Debugging mode enabled
+[INFO] 2025-06-02 20:58:13 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:58:13 - Debugging mode enabled
+[INFO] 2025-06-02 20:59:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 20:59:44 - Debugging mode enabled
+[INFO] 2025-06-02 21:01:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:01:44 - Debugging mode enabled
+[INFO] 2025-06-02 21:02:58 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:02:58 - Debugging mode enabled
+[INFO] 2025-06-02 21:03:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:03:34 - Debugging mode enabled
+[INFO] 2025-06-02 21:04:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:04:01 - Debugging mode enabled
+[INFO] 2025-06-02 21:04:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:04:33 - Debugging mode enabled
+[INFO] 2025-06-02 21:06:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:06:24 - Debugging mode enabled
+[INFO] 2025-06-02 21:06:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:06:56 - Debugging mode enabled
+[INFO] 2025-06-02 21:07:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:07:34 - Debugging mode enabled
+[INFO] 2025-06-02 21:08:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:08:14 - Debugging mode enabled
+[INFO] 2025-06-02 21:10:08 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:10:08 - Debugging mode enabled
+[INFO] 2025-06-02 21:10:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:10:37 - Debugging mode enabled
+[INFO] 2025-06-02 21:10:58 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:10:58 - Debugging mode enabled
+[INFO] 2025-06-02 21:11:12 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:11:12 - Debugging mode enabled
+[INFO] 2025-06-02 21:11:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:11:34 - Debugging mode enabled
+[INFO] 2025-06-02 21:12:07 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:12:07 - Debugging mode enabled
+[INFO] 2025-06-02 21:13:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:13:44 - Debugging mode enabled
+[INFO] 2025-06-02 21:15:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:15:29 - Debugging mode enabled
+[INFO] 2025-06-02 21:17:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:17:56 - Debugging mode enabled
+[INFO] 2025-06-02 21:19:10 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:19:10 - Debugging mode enabled
+[INFO] 2025-06-02 21:19:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:19:41 - Debugging mode enabled
+[INFO] 2025-06-02 21:20:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:20:09 - Debugging mode enabled
+[INFO] 2025-06-02 21:20:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:20:36 - Debugging mode enabled
+[INFO] 2025-06-02 21:21:13 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:21:13 - Debugging mode enabled
+[INFO] 2025-06-02 21:21:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:21:29 - Debugging mode enabled
+[INFO] 2025-06-02 21:26:48 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:26:48 - Debugging mode enabled
+[INFO] 2025-06-02 21:28:51 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:28:51 - Debugging mode enabled
+[INFO] 2025-06-02 21:29:50 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:29:50 - Debugging mode enabled
+[INFO] 2025-06-02 21:32:17 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:32:17 - Debugging mode enabled
+[INFO] 2025-06-02 21:34:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:34:18 - Debugging mode enabled
+[INFO] 2025-06-02 21:36:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:36:01 - Debugging mode enabled
+[INFO] 2025-06-02 21:36:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:36:41 - Debugging mode enabled
+[INFO] 2025-06-02 21:37:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:37:11 - Debugging mode enabled
+[INFO] 2025-06-02 21:37:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:37:37 - Debugging mode enabled
+[INFO] 2025-06-02 21:38:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:38:23 - Debugging mode enabled
+[INFO] 2025-06-02 21:41:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:41:22 - Debugging mode enabled
+[INFO] 2025-06-02 21:41:54 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:41:54 - Debugging mode enabled
+[INFO] 2025-06-02 21:44:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:44:29 - Debugging mode enabled
+[INFO] 2025-06-02 21:45:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:45:11 - Debugging mode enabled
+[INFO] 2025-06-02 21:47:08 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:47:08 - Debugging mode enabled
+[INFO] 2025-06-02 21:48:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:48:05 - Debugging mode enabled
+[INFO] 2025-06-02 21:49:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:49:00 - Debugging mode enabled
+[INFO] 2025-06-02 21:51:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:51:05 - Debugging mode enabled
+[INFO] 2025-06-02 21:51:59 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:51:59 - Debugging mode enabled
+[INFO] 2025-06-02 21:54:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:54:22 - Debugging mode enabled
+[INFO] 2025-06-02 21:55:28 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:55:28 - Debugging mode enabled
+[INFO] 2025-06-02 21:56:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 21:56:11 - Debugging mode enabled
+[INFO] 2025-06-02 22:01:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:01:45 - Debugging mode enabled
+[INFO] 2025-06-02 22:02:25 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:02:25 - Debugging mode enabled
+[INFO] 2025-06-02 22:03:07 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:03:07 - Debugging mode enabled
+[INFO] 2025-06-02 22:03:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:03:31 - Debugging mode enabled
+[INFO] 2025-06-02 22:04:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:04:14 - Debugging mode enabled
+[INFO] 2025-06-02 22:05:15 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:05:15 - Debugging mode enabled
+[INFO] 2025-06-02 22:05:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:05:41 - Debugging mode enabled
+[INFO] 2025-06-02 22:05:59 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:05:59 - Debugging mode enabled
+[INFO] 2025-06-02 22:11:47 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:11:47 - Debugging mode enabled
+[INFO] 2025-06-02 22:12:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:12:41 - Debugging mode enabled
+[INFO] 2025-06-02 22:14:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:14:23 - Debugging mode enabled
+[INFO] 2025-06-02 22:15:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:15:23 - Debugging mode enabled
+[INFO] 2025-06-02 22:17:25 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:17:25 - Debugging mode enabled
+[INFO] 2025-06-02 22:20:39 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:20:39 - Debugging mode enabled
+[INFO] 2025-06-02 22:21:13 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:21:13 - Debugging mode enabled
+[INFO] 2025-06-02 22:21:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:21:36 - Debugging mode enabled
+[INFO] 2025-06-02 22:21:49 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:21:49 - Debugging mode enabled
+[INFO] 2025-06-02 22:22:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:22:21 - Debugging mode enabled
+[INFO] 2025-06-02 22:25:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:25:34 - Debugging mode enabled
+[INFO] 2025-06-02 22:28:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:28:45 - Debugging mode enabled
+[INFO] 2025-06-02 22:29:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:29:14 - Debugging mode enabled
+[INFO] 2025-06-02 22:30:19 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:30:19 - Debugging mode enabled
+[INFO] 2025-06-02 22:31:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:31:33 - Debugging mode enabled
+[INFO] 2025-06-02 22:34:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-02 22:34:21 - Debugging mode enabled
+[INFO] 2025-06-03 00:00:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 07:59:53 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 07:59:53 - Debugging mode enabled
+[INFO] 2025-06-03 08:00:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 08:00:22 - Starting DarkWar
+[INFO] 2025-06-03 08:00:46 - DarkWar running
+[INFO] 2025-06-03 08:00:59 - Starting User: MiniBalafre
+[INFO] 2025-06-03 08:00:59 - Waiting for loading...
+[INFO] 2025-06-03 08:00:59 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 08:02:51 - Waiting for Splash...
+[WARN] 2025-06-03 08:05:37 - Unknow screen - Trying to find a working screen
+[INFO] 2025-06-03 09:35:28 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:35:31 - DarkWar running
+[INFO] 2025-06-03 09:45:04 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:45:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:45:49 - DarkWar running
+[INFO] 2025-06-03 09:45:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:46:00 - DarkWar running
+[INFO] 2025-06-03 09:46:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:46:33 - DarkWar running
+[INFO] 2025-06-03 09:46:41 - Starting User: MiniBalafre
+[INFO] 2025-06-03 09:46:41 - Waiting for loading...
+[INFO] 2025-06-03 09:46:41 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 09:46:46 - Splash guy found
+[INFO] 2025-06-03 09:46:46 - Waiting for Splash...
+[INFO] 2025-06-03 09:53:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:53:26 - DarkWar running
+[INFO] 2025-06-03 09:53:33 - Starting User: MiniBalafre
+[INFO] 2025-06-03 09:53:34 - Waiting for loading...
+[INFO] 2025-06-03 09:53:34 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 09:53:39 - Splash guy found
+[INFO] 2025-06-03 09:53:39 - Waiting for Splash...
+[INFO] 2025-06-03 09:54:59 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 09:55:03 - DarkWar running
+[INFO] 2025-06-03 09:55:11 - Starting User: MiniBalafre
+[INFO] 2025-06-03 09:55:11 - Waiting for loading...
+[INFO] 2025-06-03 09:55:11 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:08:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 10:08:17 - DarkWar running
+[INFO] 2025-06-03 10:08:26 - Starting User: MiniBalafre
+[INFO] 2025-06-03 10:08:26 - Waiting for loading...
+[INFO] 2025-06-03 10:08:26 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:08:31 - Splash guy found
+[INFO] 2025-06-03 10:08:31 - Waiting for Splash...
+[INFO] 2025-06-03 10:08:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 10:08:58 - DarkWar running
+[INFO] 2025-06-03 10:09:06 - Starting User: MiniBalafre
+[INFO] 2025-06-03 10:09:06 - Waiting for loading...
+[INFO] 2025-06-03 10:09:06 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:09:11 - Splash guy found
+[INFO] 2025-06-03 10:09:11 - Waiting for Splash...
+[INFO] 2025-06-03 10:09:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 10:09:36 - DarkWar running
+[INFO] 2025-06-03 10:09:44 - Starting User: MiniBalafre
+[INFO] 2025-06-03 10:09:44 - Waiting for loading...
+[INFO] 2025-06-03 10:09:44 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:09:49 - Splash guy found
+[INFO] 2025-06-03 10:09:49 - Waiting for Splash...
+[INFO] 2025-06-03 10:10:34 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 10:10:40 - CurrentUser is not active - Switching
+[INFO] 2025-06-03 10:10:41 - Waiting for loading...
+[INFO] 2025-06-03 10:10:41 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:11:01 - Splash guy found
+[INFO] 2025-06-03 10:11:01 - Waiting for Splash...
+[INFO] 2025-06-03 10:11:46 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 10:11:50 - CurrentUser is active - returning
+[INFO] 2025-06-03 10:11:57 - Food
+[INFO] 2025-06-03 10:12:07 - Level up
+[INFO] 2025-06-03 10:12:10 - Escorts
+[INFO] 2025-06-03 10:12:18 - Combat
+[INFO] 2025-06-03 10:12:40 - Alliance
+[INFO] 2025-06-03 10:13:55 - Tasks
+[INFO] 2025-06-03 10:14:26 - Battle Rewards
+[INFO] 2025-06-03 10:14:35 - Expeditions
+[INFO] 2025-06-03 10:14:39 - Energy
+[INFO] 2025-06-03 10:15:16 - Boomers
+[INFO] 2025-06-03 10:29:34 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 10:29:52 - Energy and boomers (2)
+[INFO] 2025-06-03 10:43:19 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 10:43:37 - Events
+[INFO] 2025-06-03 10:45:39 - Premium Center
+[WARN] 2025-06-03 10:45:56 - Unknow screen - Trying to find a working screen
+[WARN] 2025-06-03 10:47:18 - Crash detected for user MiniBalafre: This value of type "String" has no method named "Call".
+[INFO] 2025-06-03 10:47:18 - Waiting for loading...
+[INFO] 2025-06-03 10:47:18 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:47:26 - World found
+[INFO] 2025-06-03 10:47:26 - Waiting for Splash...
+[INFO] 2025-06-03 10:47:39 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 10:47:44 - CurrentUser is active - returning
+[INFO] 2025-06-03 10:47:51 - Food
+[INFO] 2025-06-03 10:48:00 - Level up
+[INFO] 2025-06-03 10:48:02 - Escorts
+[INFO] 2025-06-03 10:48:09 - Combat
+[INFO] 2025-06-03 10:48:32 - Alliance
+[INFO] 2025-06-03 10:49:27 - Tasks
+[INFO] 2025-06-03 10:49:31 - Battle Rewards
+[INFO] 2025-06-03 10:49:40 - Expeditions
+[INFO] 2025-06-03 10:49:43 - Energy
+[INFO] 2025-06-03 10:50:13 - Boomers
+[INFO] 2025-06-03 10:50:31 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 10:50:49 - Energy and boomers (2)
+[INFO] 2025-06-03 10:51:38 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 10:51:55 - Events
+[INFO] 2025-06-03 10:52:00 - Premium Center
+[WARN] 2025-06-03 10:52:35 - Crash detected for user MiniBalafre: This value of type "String" has no method named "Call".
+[INFO] 2025-06-03 10:52:35 - Waiting for loading...
+[INFO] 2025-06-03 10:52:35 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 10:54:53 - Waiting for Splash...
+[INFO] 2025-06-03 10:57:30 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 10:57:34 - CurrentUser is active - returning
+[INFO] 2025-06-03 10:57:41 - Food
+[INFO] 2025-06-03 10:57:50 - Level up
+[INFO] 2025-06-03 10:57:52 - Escorts
+[INFO] 2025-06-03 10:58:00 - Combat
+[INFO] 2025-06-03 10:58:21 - Alliance
+[INFO] 2025-06-03 10:59:14 - Tasks
+[INFO] 2025-06-03 10:59:18 - Battle Rewards
+[INFO] 2025-06-03 10:59:24 - Expeditions
+[INFO] 2025-06-03 10:59:28 - Energy
+[INFO] 2025-06-03 10:59:58 - Boomers
+[INFO] 2025-06-03 11:01:28 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 11:01:46 - Energy and boomers (2)
+[INFO] 2025-06-03 11:02:34 - Bommer loop: 1 Or out of energy -> Quitting
+[INFO] 2025-06-03 11:02:51 - Events
+[INFO] 2025-06-03 11:02:55 - Premium Center
+[WARN] 2025-06-03 11:03:30 - Crash detected for user MiniBalafre: This value of type "String" has no method named "Call".
+[INFO] 2025-06-03 11:03:30 - Waiting for loading...
+[INFO] 2025-06-03 11:03:30 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 11:05:47 - Waiting for Splash...
+[INFO] 2025-06-03 11:09:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:09:41 - Debugging mode enabled
+[INFO] 2025-06-03 11:11:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:11:26 - Debugging mode enabled
+[INFO] 2025-06-03 11:34:54 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:34:54 - Debugging mode enabled
+[INFO] 2025-06-03 11:35:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:35:44 - Debugging mode enabled
+[INFO] 2025-06-03 11:36:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:36:00 - Debugging mode enabled
+[INFO] 2025-06-03 11:37:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:37:24 - Debugging mode enabled
+[INFO] 2025-06-03 11:40:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:40:56 - Debugging mode enabled
+[INFO] 2025-06-03 11:43:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:43:41 - Debugging mode enabled
+[INFO] 2025-06-03 11:59:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 11:59:32 - Debugging mode enabled
+[INFO] 2025-06-03 12:11:46 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:11:46 - Debugging mode enabled
+[INFO] 2025-06-03 12:14:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:14:37 - Debugging mode enabled
+[INFO] 2025-06-03 12:16:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:16:26 - Debugging mode enabled
+[INFO] 2025-06-03 12:17:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:17:22 - Debugging mode enabled
+[INFO] 2025-06-03 12:19:57 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:19:57 - Debugging mode enabled
+[INFO] 2025-06-03 12:21:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:21:24 - Debugging mode enabled
+[INFO] 2025-06-03 12:23:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:23:00 - Debugging mode enabled
+[INFO] 2025-06-03 12:23:59 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:23:59 - Debugging mode enabled
+[INFO] 2025-06-03 12:26:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:26:22 - Debugging mode enabled
+[INFO] 2025-06-03 12:26:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:26:55 - Debugging mode enabled
+[INFO] 2025-06-03 12:28:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:28:33 - Debugging mode enabled
+[INFO] 2025-06-03 12:32:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:32:26 - Debugging mode enabled
+[INFO] 2025-06-03 12:34:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:34:00 - Debugging mode enabled
+[INFO] 2025-06-03 12:37:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:37:31 - Debugging mode enabled
+[INFO] 2025-06-03 12:38:51 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:38:51 - Debugging mode enabled
+[INFO] 2025-06-03 12:43:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:43:56 - Debugging mode enabled
+[INFO] 2025-06-03 12:44:44 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:44:44 - Debugging mode enabled
+[INFO] 2025-06-03 12:46:50 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 12:46:50 - Debugging mode enabled
+[INFO] 2025-06-03 13:22:25 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 13:22:25 - Debugging mode enabled
+[INFO] 2025-06-03 13:25:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 13:25:09 - Debugging mode enabled
+[INFO] 2025-06-03 13:26:47 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 13:26:47 - Debugging mode enabled
+[INFO] 2025-06-03 13:27:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 13:27:33 - Debugging mode enabled
+[INFO] 2025-06-03 13:28:36 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 13:28:36 - Debugging mode enabled
+[INFO] 2025-06-03 14:06:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:06:41 - Debugging mode enabled
+[INFO] 2025-06-03 14:08:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:08:18 - Debugging mode enabled
+[INFO] 2025-06-03 14:09:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:09:21 - Debugging mode enabled
+[INFO] 2025-06-03 14:10:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:10:20 - Debugging mode enabled
+[INFO] 2025-06-03 14:10:39 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:10:39 - Debugging mode enabled
+[INFO] 2025-06-03 14:11:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:11:32 - Debugging mode enabled
+[INFO] 2025-06-03 14:29:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:29:05 - DarkWar running
+[INFO] 2025-06-03 14:29:07 - Starting User: MiniBalafre
+[INFO] 2025-06-03 14:29:07 - Waiting for loading...
+[INFO] 2025-06-03 14:29:07 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 14:29:16 - World found
+[INFO] 2025-06-03 14:29:16 - Waiting for Splash...
+[INFO] 2025-06-03 14:29:29 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 14:29:33 - CurrentUser is active - returning
+[INFO] 2025-06-03 14:29:40 - Food
+[INFO] 2025-06-03 14:29:50 - Level up
+[INFO] 2025-06-03 14:29:52 - Escorts
+[INFO] 2025-06-03 14:30:00 - Combat
+[INFO] 2025-06-03 14:31:49 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:31:53 - DarkWar running
+[INFO] 2025-06-03 14:31:55 - Starting User: MiniBalafre
+[INFO] 2025-06-03 14:31:55 - Waiting for loading...
+[INFO] 2025-06-03 14:31:55 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 14:32:04 - World found
+[INFO] 2025-06-03 14:32:04 - Waiting for Splash...
+[INFO] 2025-06-03 14:32:17 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 14:32:22 - CurrentUser is active - returning
+[INFO] 2025-06-03 14:32:29 - Food
+[INFO] 2025-06-03 14:32:37 - Level up
+[INFO] 2025-06-03 14:32:40 - Escorts
+[INFO] 2025-06-03 14:32:47 - Combat
+[INFO] 2025-06-03 14:33:09 - Alliance
+[INFO] 2025-06-03 14:35:52 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:35:52 - Debugging mode enabled
+[INFO] 2025-06-03 14:38:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:38:32 - Debugging mode enabled
+[INFO] 2025-06-03 14:39:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:39:22 - Debugging mode enabled
+[INFO] 2025-06-03 14:40:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:40:05 - Debugging mode enabled
+[INFO] 2025-06-03 14:41:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:41:23 - Debugging mode enabled
+[INFO] 2025-06-03 14:43:35 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:43:35 - Debugging mode enabled
+[INFO] 2025-06-03 14:47:52 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:47:52 - Debugging mode enabled
+[INFO] 2025-06-03 14:48:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:48:30 - Debugging mode enabled
+[INFO] 2025-06-03 14:50:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:50:34 - Debugging mode enabled
+[INFO] 2025-06-03 14:51:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:51:14 - DarkWar running
+[INFO] 2025-06-03 14:51:17 - Starting User: MiniBalafre
+[INFO] 2025-06-03 14:51:17 - Waiting for loading...
+[INFO] 2025-06-03 14:51:17 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 14:51:25 - World found
+[INFO] 2025-06-03 14:51:25 - Waiting for Splash...
+[INFO] 2025-06-03 14:51:52 - Logging in as: MiniBalafre
+[INFO] 2025-06-03 14:51:57 - CurrentUser is active - returning
+[INFO] 2025-06-03 14:52:04 - Food
+[INFO] 2025-06-03 14:52:13 - Level up
+[INFO] 2025-06-03 14:52:16 - Escorts
+[INFO] 2025-06-03 14:52:23 - Combat
+[INFO] 2025-06-03 14:52:33 - Alliance
+[INFO] 2025-06-03 14:53:23 - Tasks
+[INFO] 2025-06-03 14:53:40 - Battle Rewards
+[INFO] 2025-06-03 14:53:49 - Expeditions
+[INFO] 2025-06-03 14:53:53 - Energy
+[INFO] 2025-06-03 14:54:23 - Boomers
+[INFO] 2025-06-03 14:57:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:57:23 - DarkWar running
+[INFO] 2025-06-03 14:57:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 14:57:33 - Debugging mode enabled
+[INFO] 2025-06-03 15:00:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:00:01 - Debugging mode enabled
+[INFO] 2025-06-03 15:00:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:00:23 - Debugging mode enabled
+[INFO] 2025-06-03 15:00:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:00:56 - Debugging mode enabled
+[INFO] 2025-06-03 15:02:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:02:26 - Debugging mode enabled
+[INFO] 2025-06-03 15:03:53 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:03:53 - Debugging mode enabled
+[INFO] 2025-06-03 15:04:27 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:04:27 - Debugging mode enabled
+[INFO] 2025-06-03 15:05:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:05:40 - DarkWar running
+[INFO] 2025-06-03 15:05:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:05:49 - DarkWar running
+[INFO] 2025-06-03 15:05:51 - Starting User: LeBalafre
+[INFO] 2025-06-03 15:05:51 - Waiting for loading...
+[INFO] 2025-06-03 15:05:51 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 15:06:00 - World found
+[INFO] 2025-06-03 15:06:00 - Waiting for Splash...
+[INFO] 2025-06-03 15:06:13 - Logging in as: LeBalafre
+[INFO] 2025-06-03 15:06:20 - CurrentUser is not active - Switching
+[INFO] 2025-06-03 15:06:21 - Waiting for loading...
+[INFO] 2025-06-03 15:06:21 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 15:07:36 - Splash guy found
+[INFO] 2025-06-03 15:07:36 - Waiting for Splash...
+[INFO] 2025-06-03 15:08:21 - Logging in as: LeBalafre
+[INFO] 2025-06-03 15:08:25 - CurrentUser is active - returning
+[INFO] 2025-06-03 15:08:32 - Food
+[INFO] 2025-06-03 15:08:54 - Level up
+[INFO] 2025-06-03 15:08:58 - Found Levelup
+[INFO] 2025-06-03 15:09:23 - Escorts
+[INFO] 2025-06-03 15:09:42 - Combat
+[INFO] 2025-06-03 15:10:02 - Alliance
+[INFO] 2025-06-03 15:11:05 - Tasks
+[INFO] 2025-06-03 15:11:10 - Battle Rewards
+[INFO] 2025-06-03 15:11:18 - Expeditions
+[INFO] 2025-06-03 15:13:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:13:33 - Debugging mode enabled
+[INFO] 2025-06-03 15:15:40 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:15:40 - Debugging mode enabled
+[INFO] 2025-06-03 15:17:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:17:26 - Debugging mode enabled
+[INFO] 2025-06-03 15:18:28 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:18:28 - Debugging mode enabled
+[INFO] 2025-06-03 15:19:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:19:18 - Debugging mode enabled
+[INFO] 2025-06-03 15:20:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:20:41 - Debugging mode enabled
+[INFO] 2025-06-03 15:21:50 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:21:50 - Debugging mode enabled
+[INFO] 2025-06-03 15:22:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:22:37 - DarkWar running
+[INFO] 2025-06-03 15:22:40 - Starting User: LeBalafre
+[INFO] 2025-06-03 15:22:40 - Waiting for loading...
+[INFO] 2025-06-03 15:22:40 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 15:22:49 - World found
+[INFO] 2025-06-03 15:22:49 - Waiting for Splash...
+[INFO] 2025-06-03 15:23:02 - Logging in as: LeBalafre
+[INFO] 2025-06-03 15:23:07 - CurrentUser is active - returning
+[INFO] 2025-06-03 15:23:14 - Food
+[INFO] 2025-06-03 15:23:34 - Level up
+[INFO] 2025-06-03 15:23:37 - Escorts
+[INFO] 2025-06-03 15:25:47 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:25:51 - DarkWar running
+[INFO] 2025-06-03 15:25:53 - Starting User: LeBalafre
+[INFO] 2025-06-03 15:25:53 - Waiting for loading...
+[INFO] 2025-06-03 15:25:53 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 15:26:03 - World found
+[INFO] 2025-06-03 15:26:03 - Waiting for Splash...
+[INFO] 2025-06-03 15:26:15 - Logging in as: LeBalafre
+[INFO] 2025-06-03 15:26:20 - CurrentUser is active - returning
+[INFO] 2025-06-03 15:26:27 - Food
+[INFO] 2025-06-03 15:26:36 - Level up
+[INFO] 2025-06-03 15:26:38 - Escorts
+[INFO] 2025-06-03 15:26:46 - Combat
+[INFO] 2025-06-03 15:27:21 - Alliance
+[INFO] 2025-06-03 15:32:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:32:33 - Debugging mode enabled
+[INFO] 2025-06-03 15:32:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:32:45 - Debugging mode enabled
+[INFO] 2025-06-03 15:33:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:33:25 - DarkWar running
+[INFO] 2025-06-03 15:34:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:34:18 - Debugging mode enabled
+[INFO] 2025-06-03 15:36:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:36:24 - Debugging mode enabled
+[INFO] 2025-06-03 15:37:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:37:01 - Debugging mode enabled
+[INFO] 2025-06-03 15:38:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:38:24 - Debugging mode enabled
+[INFO] 2025-06-03 15:39:40 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:39:40 - Debugging mode enabled
+[INFO] 2025-06-03 15:40:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:40:01 - Debugging mode enabled
+[INFO] 2025-06-03 15:41:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:41:55 - Debugging mode enabled
+[INFO] 2025-06-03 15:53:46 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:53:46 - Debugging mode enabled
+[INFO] 2025-06-03 15:55:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:55:01 - Debugging mode enabled
+[INFO] 2025-06-03 15:58:47 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 15:58:47 - Debugging mode enabled
+[INFO] 2025-06-03 16:00:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 16:00:32 - DarkWar running
+[INFO] 2025-06-03 16:00:35 - Starting User: LeBalafre
+[INFO] 2025-06-03 16:00:35 - Waiting for loading...
+[INFO] 2025-06-03 16:00:35 - Loading game ... Waiting for splash
+[INFO] 2025-06-03 16:00:44 - World found
+[INFO] 2025-06-03 16:00:44 - Waiting for Splash...
+[INFO] 2025-06-03 16:00:56 - Logging in as: LeBalafre
+[INFO] 2025-06-03 16:01:01 - CurrentUser is active - returning
+[INFO] 2025-06-03 16:01:08 - Food
+[INFO] 2025-06-03 16:01:18 - Level up
+[INFO] 2025-06-03 16:01:20 - Escorts
+[INFO] 2025-06-03 16:01:28 - Combat
+[INFO] 2025-06-03 16:02:03 - Alliance
+[INFO] 2025-06-03 16:03:30 - Tasks
+[INFO] 2025-06-03 16:03:34 - Battle Rewards
+[INFO] 2025-06-03 16:03:40 - Expeditions
+[INFO] 2025-06-03 16:03:44 - Boomers
+[INFO] 2025-06-03 16:08:16 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-03 16:08:19 - DarkWar running

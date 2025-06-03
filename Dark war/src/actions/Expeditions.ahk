@@ -9,8 +9,10 @@ Expeditions() {
         loop 10 {
             if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 200, 10, O_expeditionChestAnimation).found) {
                 LoggerInstance.Debug("Chest found")
+                ClaimOCR(3000,,Regions.menus.bottom)
                 Claim(4000, 1)
                 Remove_Congrat()
+                clickAnyBack()
 
             } else {
                 LoggerInstance.Debug("No more chests -> Quitting")

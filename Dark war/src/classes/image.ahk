@@ -27,7 +27,7 @@ class Image {
         }
     }
 
-    Clone() {
-        return Image(this.path, this.tolerance, this.region, this.transcolor)
+    Clone(Tolerance := this.tolerance, Region := this.region) {
+        return Image(this.path, Tolerance, Region, this.transcolor)
     }
 }

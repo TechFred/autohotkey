@@ -4,6 +4,26 @@
 LoggerInstance := Logger(A_ScriptDir, "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
+
+; import file
+; Get first CLI parameter if provided
+configPath := A_Args.Length ? A_Args[1] : "config.json"
+
+; Fall back to default if the file doesn't exist
+if !FileExist(configPath)
+    LoggerInstance.warn("Failed to load " configPath ". Reverting to config.json")
+    configPath := "config.json"
+
+; Now read the config JSON
+try {
+    LoggerInstance.Info("loading " configPath)
+    configContent := FileRead(configPath)
+    config := JSON.Parse(configContent)
+} catch {
+    LoggerInstance.warn("Failed to load " configPath)
+    ExitApp
+}
+
 ;image Stats
 LoadImageStatsFromCSV()
 

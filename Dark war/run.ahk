@@ -6,6 +6,7 @@ SetWorkingDir(A_ScriptDir)
 
 OutputDebug "Starting script - " A_ScriptDir
 
+
 debug := false
 ;debug := true
 /*

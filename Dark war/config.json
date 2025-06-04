@@ -5,7 +5,7 @@
         "state": 148,
         "img": "switch_NIILeBalafre.bmp",
         "order": 1,
-        "boomer_run": true,
+        "boomer_run": false,
         "energy_run": false
     },
     {
@@ -14,7 +14,7 @@
         "state": 148,
         "img": "switch_balafre.bmp",
         "order": 2,
-        "boomer_run": true,
+        "boomer_run": false,
         "energy_run": false
     },
     {

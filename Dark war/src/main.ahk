@@ -4,14 +4,17 @@
 LoggerInstance := Logger(A_ScriptDir, "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
-
 ; import file
 ; Get first CLI parameter if provided
 ;configPath := A_Args.Length ? A_Args[1] : "config.json"
-configPath := A_Args[1]
+if (A_Args.Length > 0) {
+    configPath := A_Args[1]
+} else {
+    configPath := "config.json"
+}
 
 ; Fall back to default if the file doesn't exist
-if !(A_Args.Length = 1 && FileExist(configPath)){
+if !(A_Args.Length = 1 && FileExist(configPath)) {
     LoggerInstance.warn("Failed to load " configPath ". Reverting to config.json")
     configPath := "config.json"
 }

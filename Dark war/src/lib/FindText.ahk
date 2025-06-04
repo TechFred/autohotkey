@@ -125,3 +125,13 @@ MapToObject(map) {
         obj.%k% := v
     return obj
 }
+
+ocrOptionsRegion(ocrOptions, Region){
+   if Region {
+        ocrOptions["x"] := Region[1]
+        ocrOptions["y"] := Region[2]
+        ocrOptions["w"] := Region[3] - Region[1]
+        ocrOptions["h"] := Region[4] - Region[2]
+    }
+    return ocrOptions
+}

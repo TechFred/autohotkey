@@ -33,6 +33,7 @@ debug := false
 ;classes
 #include src\classes\image.ahk
 #Include src\classes\user.ahk
+#Include src\classes\screen.ahk
 
 ;actions
 #include src\actions\claim.ahk

@@ -8,24 +8,26 @@ ImagesGift := [
     O_escort_escortGift
 ]
 Escorts() {
-    iconEscortClick()
-    ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 200, 5, O_escort_menu)
-    LoggerInstance.Debug("Escort menu")
+    if iconEscortClick().found {
 
-    i := 0
-    x := 2
-    loop {
-        if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 20, 5, ImagesGift*)).found {
-            LoggerInstance.Debug("Found Chest")
-            clickAnyBack()
-            Remove_Congrat()
-            i := 0
-        } else {
-            LoggerInstance.Debug("Chest not found: " i)
-            i += 1
-        }
+        ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 200, 5, O_escort_menu)
+        LoggerInstance.Debug("Escort menu")
 
-    } until i > x
-    clickAnyBack()
-    clickAnyBack()
+        i := 0
+        x := 2
+        loop {
+            if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 20, 5, ImagesGift*)).found {
+                LoggerInstance.Debug("Found Chest")
+                clickAnyBack()
+                Remove_Congrat()
+                i := 0
+            } else {
+                LoggerInstance.Debug("Chest not found: " i)
+                i += 1
+            }
+
+        } until i > x
+        clickAnyBack()
+        clickAnyBack()
+    }
 }

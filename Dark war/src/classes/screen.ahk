@@ -4,7 +4,7 @@ class Screen {
     Region := [0, 0, 0, 0]
     Name := ""
     Regex := ""
-    searchOptions := Map("IgnoreLinebreaks", true, "SearchFunc", RegExMatch)
+    searchOptions := MapToObject(Map("IgnoreLinebreaks", true, "SearchFunc", RegExMatch))
 
     __New(Name, RegionKey, Region, Regex := "", searchOptions := "") {
         this.Name := Name
@@ -35,8 +35,8 @@ class Screen {
         }
     }
 
-    FindScreen(ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
-
+    Find(ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
+        OutputDebug("hello")
         try {
             OCRResultObj := WaitFindText(this.Regex, Map(
                 "Click", false,
@@ -59,20 +59,23 @@ global Screens := [
     ;shelter
     Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)World"),
     Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),
-    ;tops
-    Screen("Premium Center", "top", Regions.menus.top, "(?i)P.emium Center"),
-    Screen("Events", "top", Regions.menus.top, "(?i)Events"),
-    Screen("Survivor Profile", "top", Regions.menus.top, "(?i)Survivor P.ofile"),
-    Screen("Alliance", "top", Regions.menus.top, "(?i)Alliance\b"),
-    Screen("Gifts", "top", Regions.menus.top, "(?i)Gifts\b"),
-    Screen("Adventure", "top", Regions.menus.top, "(?i)Adventure"),
-    Screen("Daily Tasks", "top", Regions.menus.top, "(?i)Daily Tasks"),
-    Screen("Hero List", "top", Regions.menus.top, "(?i)Hero List"),
-    Screen("VIP", "top", Regions.menus.top, "(?i)VIP"),
+    ;titles
+    Screen("Premium Center", "title", Regions.menus.top, "(?i)P.emium Center"),
+    Screen("Events", "title", Regions.menus.top, "(?i)Events"),
+    Screen("Survivor Profile", "title", Regions.menus.top, "(?i)Survivor P..f..e"),
+    Screen("Alliance", "title", Regions.menus.top, "(?i)Alliance\b"),
+    Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
+    Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
+    Screen("Daily Tasks", "title", Regions.menus.top, "(?i)Daily Tasks"),
+    Screen("Hero List", "title", Regions.menus.top, "(?i)Hero List"),
+    Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
     ; mains
     Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
     Screen("Applications System", "main", Regions.Events.main, "(?i)Applications syst"),
     Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
     Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
-    Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs")
+    Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
+    Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
+    Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
+    Screen("Support DARkWAR SURVfval", "main", Regions.Events.main, "(?i)Support DARkWAR SURVfval")
 ]

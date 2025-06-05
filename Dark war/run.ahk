@@ -6,8 +6,8 @@ SetWorkingDir(A_ScriptDir)
 
 OutputDebug "Starting script - " A_ScriptDir
 
+debug := true
 debug := false
-;debug := true
 /*
 ====== Includes ======
 */
@@ -29,6 +29,9 @@ debug := false
 #include src\lib\OCR.ahk
 #Include src\lib\FindText.ahk
 #Include src\lib\ImageStats.ahk
+
+;special
+#Include src\lib\debug.ahk
 
 ;classes
 #include src\classes\image.ahk

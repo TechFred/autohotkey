@@ -60,7 +60,12 @@ WaitFindText(needle := "", Options := Map()) {
 
             return match
         } else {
+            LoggerInstance.debug(" -- ")
             LoggerInstance.debug("Text +NOT+ found " needle)
+            getCurrentScreenOCR()
+            result := OCR.FromWindow(winTitle, ocrOptions)
+            LoggerInstance.Debug(Result.Text)
+            LoggerInstance.debug(" -- ")
 
             if debug = true {
                 result := OCR.FromWindow(winTitle, ocrOptions)
@@ -126,8 +131,8 @@ MapToObject(map) {
     return obj
 }
 
-ocrOptionsRegion(ocrOptions, Region){
-   if Region {
+ocrOptionsRegion(ocrOptions, Region) {
+    if Region {
         ocrOptions["x"] := Region[1]
         ocrOptions["y"] := Region[2]
         ocrOptions["w"] := Region[3] - Region[1]

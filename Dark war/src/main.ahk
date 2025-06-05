@@ -69,6 +69,10 @@ if debug {
     BlockInput("MouseMoveOff")
     WinActivate(winTitle)
     WinWaitActive(winTitle)
+
+    HighlightRegionInWindow(Regions.menus.top)
+
+    Sleep(5000)
     ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
     ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
     ;iconOptimiseClick()
@@ -96,7 +100,11 @@ if debug {
     ;testwait()
     ;i:= GetReddot()
     ;MouseMove(i.x, i.y)
-    AllianceGifts()
+    getCurrentScreen()
+    OutputDebug("hello")
+    s := Screen("Guy", "main", Regions.Events.main, "(?i)Guy")
+    r:= s.Find()
+   ; AllianceGifts()
     ;ocrOptions := {lang:"en-us", scale:2, grayscale:1, casesense:0}
     ;DebugOCR(ocrOptions, "Claim")
     ;ClaimAllOCR(,Regions.menus.bottom)

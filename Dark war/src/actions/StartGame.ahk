@@ -44,7 +44,7 @@ WinActivateGame() {
         Sleep(2000)
         ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
         MouseMove(352, 15)
-        ;MouseMove(260, 15)
+        ;MouseMove(100, 15)
         Sleep(200)
         Click("left", 2)
         WinSetAlwaysOnTop(1, winTitle)

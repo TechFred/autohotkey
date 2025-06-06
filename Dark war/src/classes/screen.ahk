@@ -35,12 +35,12 @@ class Screen {
         }
     }
 
-    Find(ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
+    Find(LoopDelay := 8000, ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
         OutputDebug("hello")
         try {
             OCRResultObj := WaitFindText(this.Regex, Map(
                 "Click", false,
-                "LoopDelay", 8000,
+                "LoopDelay", LoopDelay,
                 "Region", this.Region,
                 "ocrOptions", ocrOptions
             ))
@@ -55,10 +55,11 @@ class Screen {
     }
 }
 
+/*
 global Screens := [
     ;shelter
-    Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)World"),
-    Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),
+    Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"), ; To detect screen World, shelter need to be present.
+    Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World"), ; To detect screen shelter, World need to be present.
     ;titles
     Screen("Premium Center", "title", Regions.menus.top, "(?i)P.emium Center"),
     Screen("Events", "title", Regions.menus.top, "(?i)Events"),
@@ -77,5 +78,59 @@ global Screens := [
     Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
     Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
     Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-    Screen("Support DARkWAR SURVfval", "main", Regions.Events.main, "(?i)Support DARkWAR SURVfval")
+    Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
+    ;bottom
+    Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
 ]
+
+*/
+global Screens := {
+    Shelter: {
+        World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),
+        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World")
+    },
+    titles: {
+        Premium: Screen("Premium Center", "title", Regions.menus.top, "(?i)P.emium Center"),
+        Events: Screen("Events", "title", Regions.menus.top, "(?i)Events"),
+        Survivor: Screen("Survivor Profile", "title", Regions.menus.top, "(?i)Survivor P..f..e"),
+        Alliance: Screen("Alliance", "title", Regions.menus.top, "(?i)Alliance\b"),
+        Gifts: Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
+        Adventure: Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
+        Daily: Screen("Daily Tasks", "title", Regions.menus.top, "(?i)Daily Tasks"),
+        HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Hero List"),
+        VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP")
+    },
+    Mains: {
+        Logged: Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
+        Applications: Screen("Android", "main", Regions.Events.main, "(?i)Applications syst"),
+        Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
+        Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
+        Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
+        Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
+        Support: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
+    },
+    Bottom: {
+        Loading: Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
+    }
+}
+
+GetScreenByName(name) {
+    global Screens
+    for _, screen in Screens {
+        if (screen.Name = name)
+            return screen
+    }
+    return ""
+}
+
+GetAllScreens(obj := Screens) {
+    all := []
+    for k, v in obj {
+        if IsObject(v) && v.HasKey("Name") {
+            all.Push(v)
+        } else if IsObject(v) {
+            all.Push(GetAllScreens(v)*)  ; recursively flatten and spread
+        }
+    }
+    return all
+}

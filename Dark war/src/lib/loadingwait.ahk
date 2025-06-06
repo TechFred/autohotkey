@@ -7,30 +7,35 @@ LoadingWait() {
 
     found := false
     World := 0
-    loop 10 {
-        if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_splashGuy).found) {
-            Sleep(5000) ; Give time to load
-            LoggerInstance.Info("Splash guy found")
-            found := true
-            break
-        }
+    loop 20 {
+
+        ;currentscreen := getCurrentScreen()
 
         ; If world is shown for more than 6 seconds, break
-        if (getCurrentScreen() = SCREEN_SHELTER) {
+        if (Screens.Shelter.Shelter.Find) {
             World += 1
             LoggerInstance.debug("World found : " World)
             if (World > 3) {
                 LoggerInstance.Info("World found")
-                found := true
-                break
+                return true
             }
 
         } else {
             World := 0
         }
 
-        ; If android icon, click on it. 
-        if (getCurrentScreen() = SCREEN_ANDROID) {
+        if (Screens.Mains.Guy.Find) {
+            LoggerInstance.Info("Splash guy found")
+            Sleep(5000)
+            return true
+        }
+
+        ; If android icon, click on it.
+        if (Screens.Mains.Android.Find) {
+            LoggerInstance.Warn("Android screen")
+            WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
+            
+            ;failsafe
             ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 10000, true, 50, 2)
         }
         Sleep(2000)

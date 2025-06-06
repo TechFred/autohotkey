@@ -147,6 +147,10 @@ iconPlayerClickBlind(DelayClick := 2000) {
     ClickCenter(Regions.icons.player, DelayClick)
 }
 
+iconHeroesClickBlind(DelayClick := 2000) {
+    ClickCenter(Regions.icons.heroes, DelayClick)
+}
+
 iconVipClick() {
     return ImageFinderInstance.LoopFindImage(iconVip, Regions.AllRegion, 50, 1000, true, 500, 5)
 }

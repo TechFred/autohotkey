@@ -9,14 +9,13 @@ AndroidIcon := "crash_darkwar_icon.bmp"
 world_shelter_icon_2 := Image("world_shelter_icon_2.bmp", 100, Regions.AllRegion)
 
 ; Define screen state constants
-global SCREEN_SHELTER := "shelter"
-global SCREEN_WORLD := "world"
-global SCREEN_UNKNOWN := "unknown"
-global SCREEN_ANDROID := "android"
+global SCREEN_SHELTER := "Shelter"
+global SCREEN_WORLD := "World"
+global SCREEN_UNKNOWN := "Unknown"
+global SCREEN_ANDROID := "Android"
 
 getCurrentScreen() {
     centerShelter()
-    getCurrentScreenOCR()
 
     loggerInstance.debug("Detecting current screen")
     if (ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
@@ -69,23 +68,30 @@ getCurrentScreenOCR() {
     ocrOptionsRegion(ocrOptions, Regions.Events.main)
     Main := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
 
+    ; search Bottom
+    ocrOptionsRegion(ocrOptions, Regions.menus.bottom)
+    Bottom := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+
     ocrResults := Map(
         "title", Title,
         "world_Shelter", WorldShelter,
-        "main", Main
+        "main", Main,
+        "bottom", Bottom
     )
 
+    FlatScreens := GetAllScreens()
+
     Isdetected := false
-    for s in Screens {
+    for s in FlatScreens {
         regionKey := s.RegionKey
         if regionKey && ocrResults.Has(regionKey) {
             if s.IsActive(ocrResults[regionKey]) {
                 loggerInstance.debug("Detected screen: " s.Name)
                 Isdetected := true
-                break
+                return s
             }
         } else {
-            ;loggerInstance.debug("Unknown or unmatched region for screen: " s.Name)
+            loggerInstance.debug("Unknown or unmatched region for screen: " s.Name "-" s.RegionKey)
         }
     }
 

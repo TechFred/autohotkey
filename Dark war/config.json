@@ -1,4 +1,12 @@
-[
+[    {
+        "name": "Balafre",
+        "active": false,
+        "state": 148,
+        "img": "switch_balafre.bmp",
+        "order": 2,
+        "boomer_run": true,
+        "energy_run": true
+    },
     {
         "name": "LeBalafre",
         "active": false,
@@ -6,7 +14,7 @@
         "img": "switch_NIILeBalafre.bmp",
         "order": 1,
         "boomer_run": true,
-        "energy_run": false
+        "energy_run": true
     },
     {
         "name": "Balafre",
@@ -15,7 +23,7 @@
         "img": "switch_balafre.bmp",
         "order": 2,
         "boomer_run": true,
-        "energy_run": false
+        "energy_run": true
     },
     {
         "name": "MiniBalafre",

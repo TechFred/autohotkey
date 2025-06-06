@@ -20,6 +20,8 @@ O_exitEvent := image(exitEvent, 25, Regions.AllRegion)
 O_exitGuy := image(exitGuy, 25, Regions.AllRegion)
 O_exitGeneric := image(exitGeneric, 25, Regions.AllRegion)
 O_TransblackX := image("transblack_x.bmp", 10, Regions.AllRegion, "TransBlack")
+O_Task_x := image("task_x.bmp", 20, Regions.AllRegion, "TransBlack")
+
 
 ; Click individual back buttons
 clickBrownBack() {
@@ -58,7 +60,8 @@ clickAnyX() {
         O_exitDailyTask,
         O_exitEvent,
         O_exitGuy,
-        O_exitGeneric
+        O_exitGeneric,
+        O_Task_x
     ]
     result := ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 0, 5, ImagesObjects*)
     ;result := ImageFinderInstance.LoopFindAnyImage(Regions.AllRegion, tolerance := 50, clickDelay := 3000, doClick := true, loopDelay := 100, attempts := 5, imagePaths*)

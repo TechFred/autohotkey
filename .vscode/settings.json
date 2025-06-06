@@ -1,0 +1,9 @@
+{
+    "AHK++.v2.formatter": {
+        "maxPreserveNewlines": 2,
+        "symbolWithSameCase": true,
+        "switchCaseAlignment": true,
+        "indentBetweenHotIfDirectives": true,
+        "wrapLineLength": 0
+    }
+}

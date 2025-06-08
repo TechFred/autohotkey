@@ -16,10 +16,15 @@ class Regions {
     static menus := {
         left: [829, 587, 897, 912],
         top: [825, 34, 1383, 108],
-        bottom: [824, 914, 1382, 1029], 
+        bottom: [824, 914, 1382, 1029],
         left_2nd: Regions.AllRegion,
         right_2nd: Regions.AllRegion,
         lensIcon: [853, 800, 859, 803]
+    }
+
+    static DailyTasks := {
+        ClaimAll: [719,811,1546,964],
+        Claim: [1435,332,1202,854]
     }
 
     static icons := {
@@ -32,14 +37,14 @@ class Regions {
         alliance: [1314, 675, 1385, 740],
         pack_shop: [1253, 34, 1382, 98],
         premium_center: [1308, 113, 1375, 197],
-        events: [1301,192,1382,285],
+        events: [1301, 192, 1382, 285],
         battle_rewards: [839, 697, 884, 749],
         tasks: [836, 839, 882, 891],
         player: [826, 33, 897, 110],
         back: [838, 931, 904, 1005],
         heal: [908, 767, 970, 828],
-        levelup: [1130,846,1263,961],
-        Heroes: [823,908,948,1028]
+        levelup: [1130, 846, 1263, 961],
+        Heroes: [823, 908, 948, 1028]
     }
 
     static Events := {

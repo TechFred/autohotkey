@@ -43,3 +43,10 @@ HighlightRegionInWindow(region, duration := 5000) {
         MsgBox "Error highlighting region: " e.stack
     }
 }
+
+debugGetTextRegion(region := Regions.AllRegion, ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
+
+        ocrOptionsRegion(ocrOptions, region)
+    T := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+    LoggerInstance.Debug(T.Text)
+}

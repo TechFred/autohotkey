@@ -1,8 +1,8 @@
 #Requires AutoHotkey v2.0
 
 /*
-WaitFindText("RetryText", Map("Click", true, "ClickDelay", 2000, "LoopDelay", 8000, "Region", Regions.AllRegion, "ocrOptions", Map("scale", 5)))
-WaitFindText("RetryText", Map(
+WaitFindText("(?i)RetryText", Map("Click", true, "ClickDelay", 2000, "LoopDelay", 8000, "Region", Regions.AllRegion, "ocrOptions", Map("scale", 5)))
+WaitFindText("(?i)RetryText", Map(
     "Click", true,
     "ClickDelay", 2000,
     "LoopDelay", 8000,
@@ -64,13 +64,16 @@ WaitFindText(needle := "", Options := Map()) {
             LoggerInstance.debug("Text +NOT+ found " needle)
             getCurrentScreenOCR()
             result := OCR.FromWindow(winTitle, ocrOptions)
-            LoggerInstance.Debug(Result.Text)
+            LoggerInstance.Debug(result.Text)
             LoggerInstance.debug(" -- ")
 
-            if debug = true {
+            if DebugmodeOCR = true {
                 result := OCR.FromWindow(winTitle, ocrOptions)
-                LoggerInstance.Debug(Result.Text)
-                DebugOCR(ocrOptions, needle, searchOptions)
+                LoggerInstance.Debug(result.Text)
+                if debugmodeOCRDeeper = true {
+                    DebugOCR(ocrOptions, needle, searchOptions)
+                }
+
             }
             return false
         }
@@ -104,7 +107,7 @@ DebugOCR(ocrOptions, needle, searchOptions) {
     LoggerInstance.debug("debug - finding " needle)
     try {
         result := OCR.FromWindow(winTitle, ocrOptions)
-        sleep (1000)
+        Sleep (1000)
         ;WinClose("ahk_class AutoHotkeyGUI")
         WinActivate(winTitle)
 
@@ -116,7 +119,7 @@ DebugOCR(ocrOptions, needle, searchOptions) {
 
     } finally {
         OCR.DisplayImage := false
-        LoggerInstance.Debug(Result.Text)
+        LoggerInstance.Debug(result.Text)
 
     }
 
@@ -140,3 +143,5 @@ ocrOptionsRegion(ocrOptions, Region) {
     }
     return ocrOptions
 }
+
+

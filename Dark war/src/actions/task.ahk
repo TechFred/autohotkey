@@ -3,8 +3,9 @@
 Task() {
 
     if (iconTasksClick().found) {
-        ClaimOCR()
-        ClaimAllOCR()
+        ClaimAllOCR(,Regions.DailyTasks.ClaimAll)
+        ClaimOCR(,,Regions.DailyTasks.Claim)
+        
         clickAnyX()
     }
 }

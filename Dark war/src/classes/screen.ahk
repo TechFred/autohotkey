@@ -35,8 +35,7 @@ class Screen {
         }
     }
 
-    Find(LoopDelay := 8000, ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
-        OutputDebug("hello")
+    WaitForMatch(LoopDelay := 8000, ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
         try {
             OCRResultObj := WaitFindText(this.Regex, Map(
                 "Click", false,
@@ -55,41 +54,13 @@ class Screen {
     }
 }
 
-/*
-global Screens := [
-    ;shelter
-    Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"), ; To detect screen World, shelter need to be present.
-    Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World"), ; To detect screen shelter, World need to be present.
-    ;titles
-    Screen("Premium Center", "title", Regions.menus.top, "(?i)P.emium Center"),
-    Screen("Events", "title", Regions.menus.top, "(?i)Events"),
-    Screen("Survivor Profile", "title", Regions.menus.top, "(?i)Survivor P..f..e"),
-    Screen("Alliance", "title", Regions.menus.top, "(?i)Alliance\b"),
-    Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
-    Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
-    Screen("Daily Tasks", "title", Regions.menus.top, "(?i)Daily Tasks"),
-    Screen("Hero List", "title", Regions.menus.top, "(?i)Hero List"),
-    Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
-    ; mains
-    Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
-    Screen("Applications System", "main", Regions.Events.main, "(?i)Applications syst"),
-    Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
-    Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
-    Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
-    Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-    Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-    Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
-    ;bottom
-    Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
-]
+class Screens {
+    static Shelter := {
+        World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"), ; If Shelter is detected -> World
+        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World") ; If World is detected -> Shelter
+    }
 
-*/
-global Screens := {
-    Shelter: {
-        World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),
-        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World")
-    },
-    titles: {
+    static Titles := {
         Premium: Screen("Premium Center", "title", Regions.menus.top, "(?i)P.emium Center"),
         Events: Screen("Events", "title", Regions.menus.top, "(?i)Events"),
         Survivor: Screen("Survivor Profile", "title", Regions.menus.top, "(?i)Survivor P..f..e"),
@@ -97,40 +68,44 @@ global Screens := {
         Gifts: Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
         Adventure: Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
         Daily: Screen("Daily Tasks", "title", Regions.menus.top, "(?i)Daily Tasks"),
-        HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Hero List"),
+        HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Her[o0] List"),
         VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP")
-    },
-    Mains: {
+    }
+
+    static Mains := {
         Logged: Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
         Applications: Screen("Android", "main", Regions.Events.main, "(?i)Applications syst"),
         Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
         Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-        Support: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
-    },
-    Bottom: {
+        Android: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
+    }
+
+    static Bottom := {
         Loading: Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
     }
+
+
+
 }
 
-GetScreenByName(name) {
-    global Screens
-    for _, screen in Screens {
-        if (screen.Name = name)
-            return screen
-    }
-    return ""
-}
-
-GetAllScreens(obj := Screens) {
+GetAllScreensFlat() {
     all := []
-    for k, v in obj {
-        if IsObject(v) && v.HasKey("Name") {
-            all.Push(v)
-        } else if IsObject(v) {
-            all.Push(GetAllScreens(v)*)  ; recursively flatten and spread
+    for _, section in Screens.OwnProps() {
+        for _, screen in section.OwnProps() {
+            if IsObject(screen) && screen.HasOwnProp("Name") {
+                all.Push(screen)
+            }
         }
     }
     return all
 }
+
+    GetScreenByName(name) {
+        for _, screen in Screens {
+            if (screen.Name = name)
+                return screen
+        }
+        return ""
+    }

@@ -21,7 +21,7 @@ if !(A_Args.Length = 1 && FileExist(configPath)) {
 ; Now read the config JSON
 try {
     LoggerInstance.Info("loading " configPath)
-    configContent := FileRead(configPath)
+    configContent := FileRead(configPath, "UTF-8")
     config := JSON.Parse(configContent)
 } catch {
     LoggerInstance.warn("Failed to load " configPath)
@@ -57,15 +57,42 @@ catch as e {
 
 }
 
-if debug = false {
+if debug = false AND GetOCRRegion = false {
     StartDarkWar()
 }
 ;
 
 ; ======= Debugging =======
+if GetOCRRegion {
+    Sleep (2000)
+    BlockInput("MouseMoveOff")
+    WinActivate(winTitle)
+    WinWaitActive(winTitle)
+    ; OCR.DisplayImage := true
+    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0)
+
+    LoggerInstance.Debug("==== Event Main ====")
+    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    LoggerInstance.Debug("==== menus top ====")
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
+    LoggerInstance.Debug("==== menus Bottom ====")
+    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+    LoggerInstance.Debug("==== All ====")
+    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+    Region1 := [1191, 336, 1357, 852]
+    LoggerInstance.Debug("==== Custom1 ====")
+    debugGetTextRegion(Region1)
+    Region1 := [807, 795, 1407, 946]
+    LoggerInstance.Debug("==== Custom2 ====")
+    debugGetTextRegion(Region1)
+
+    ExitApp()
+}
+
 if debug {
     LoggerInstance.Info("Debugging mode enabled")
-    sleep (2000)
+    Sleep (2000)
     BlockInput("MouseMoveOff")
     WinActivate(winTitle)
     WinWaitActive(winTitle)
@@ -73,6 +100,7 @@ if debug {
     HighlightRegionInWindow(Regions.menus.top)
 
     Sleep(5000)
+    Task()
     ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
     ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
     ;iconOptimiseClick()
@@ -103,8 +131,8 @@ if debug {
     getCurrentScreen()
     OutputDebug("hello")
     s := Screen("Guy", "main", Regions.Events.main, "(?i)Guy")
-    r:= s.Find()
-   ; AllianceGifts()
+    ;r := s.Find()
+    ; AllianceGifts()
     ;ocrOptions := {lang:"en-us", scale:2, grayscale:1, casesense:0}
     ;DebugOCR(ocrOptions, "Claim")
     ;ClaimAllOCR(,Regions.menus.bottom)
@@ -116,7 +144,7 @@ if debug {
 
     result := OCR.FromWindow(winTitle, ocrOptions)
 
-    LoggerInstance.Debug(Result.Text)
+    LoggerInstance.Debug(result.Text)
 
     ;CoordMode "Mouse", "Screen"
     /*
@@ -157,6 +185,9 @@ if getCurrentScreen() = SCREEN_WORLD {
     ExitApp
 }
 
+
+;sorts users
+
 ;Login and start
 
 for u in Users {
@@ -168,9 +199,9 @@ for u in Users {
         try {
             loop {
                 LoggerInstance.Debug("Starting logging loop")
-                LoggerInstance.info("Waiting for loading...")
+                LoggerInstance.info("Game is loading...")
                 LoadingWait()
-                LoggerInstance.info("Starting Splash...")
+                LoggerInstance.info("Starting splash...")
                 splash()
                 LoggerInstance.debug("Crash detection")
                 CrashDetection()
@@ -181,6 +212,8 @@ for u in Users {
             done := true
         } catch as e {
             LoggerInstance.Warn("Crash detected for user " u.name ": " e.Message)
+            LoggerInstance.debug(e.Stack)
+            CrashDetection()
         }
     } until done
 }
@@ -204,7 +237,7 @@ Complete_run(u) {
     LoggerInstance.info("Escorts")
     CrashDetection()
     iconHelpClick()
-    escorts()
+    Escorts()
 
     ;Combat
     LoggerInstance.info("Combat")
@@ -216,7 +249,7 @@ Complete_run(u) {
     LoggerInstance.info("Alliance")
     CrashDetection()
     iconHelpClick()
-    alliance()
+    Alliance()
 
     ;Tasks
     LoggerInstance.info("Tasks")
@@ -235,7 +268,7 @@ Complete_run(u) {
     LoggerInstance.info("Expeditions")
     CrashDetection()
     iconHelpClick()
-    expeditions()
+    Expeditions()
 
     ;Energy
     if (u.energy_run) {

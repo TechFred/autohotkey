@@ -3,22 +3,17 @@
 splash() {
     count := 0
     loop 10 {
-        if (getCurrentScreen() = SCREEN_SHELTER) {
-            iconPlayerClickBlind(1000)
-            /*
-            ;Ne fait pas ce que je veux. Le if d'après ouvre le profile de toute facon.
-            count += 1
-            if count > 2 {
-                LoggerInstance.Debug("World Found")
-                break
-            }
-            */
+        if (Screens.Shelter.Shelter.WaitForMatch(LoopDelay := 500)) {
+            iconHeroesClickBlind(1000)
         }
 
-        loop 2 {
-            if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_survivorProfile).found) {
-                LoggerInstance.Debug("Surviror profile found")
-                break
+        loop 3 {
+            if (Screens.titles.HeroList.WaitForMatch(LoopDelay := 500) OR Screens.titles.Survivor.WaitForMatch(LoopDelay := 500)) {
+                LoggerInstance.Debug("Heroes or profile found")
+                clickAnyX()
+                clickAnyBack()
+                return true
+
             }
             iconHeroesClickBlind(250)
             iconPlayerClickBlind(250)
@@ -28,11 +23,8 @@ splash() {
             iconPlayerClickBlind(250)
 
         }
-
+        ; If not in herolist or player profile, try Click X.
         clickAnyX()
     }
-
-    clickAnyX()
-    clickAnyBack()
 
 }

@@ -96,28 +96,14 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
         "Region", Region,
         "ocrOptions", Map("scale", 5, "grayscale", 0)
     ))
-    if (match) {
-        RemoveCongratOCR()
-    }
+    RemoveCongratOCR(, LoopDelay := 0)
 
     return match
 }
 
 ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion) {
     LoggerInstance.Debug("Searching Claim All OCR")
-     match := WaitFindText("(?i)claim all", Map(
-        "Click", true,
-        "ClickDelay", ClickDelay,
-        "LoopDelay", 3000,
-        "Region", Region
-        
-    ))
-
-    if (match) {
-        RemoveCongratOCR()
-    }
-
-    match := WaitFindText("(?i)claimall", Map(
+    match := WaitFindText("(?i)claim.all", Map(
         "Click", true,
         "ClickDelay", ClickDelay,
         "LoopDelay", 3000,
@@ -130,12 +116,12 @@ ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion) {
 
 }
 
-RemoveCongratOCR(Region := Regions.AllRegion) {
+RemoveCongratOCR(clickDelay := 2000, LoopDelay := 3000, Region := Regions.AllRegion) {
     LoggerInstance.Debug("Remove Congrat OCR")
     WaitFindText("(?i)Congrat", Map(
         "Click", true,
-        "ClickDelay", 2000,
-        "LoopDelay", 3000,
+        "ClickDelay", clickDelay,
+        "LoopDelay", LoopDelay,
         "Region", Regions.AllRegion
     ))
 }
@@ -150,20 +136,20 @@ __OCR(text) {
     ))
 }
 
-ClaimLoopOCR(ClickDelay := 2000, LoopCount := 100, Region := Regions.AllRegion) {
-    LoggerInstance.debug("Starting ClaimLoopOCR: " LoopCount )
+ClaimLoopOCR(ClickDelay := 1000, LoopCount := 100, Region := Regions.AllRegion) {
+    LoggerInstance.debug("Starting ClaimLoopOCR: " LoopCount)
     j := 0
     i := 0
     loop {
-        match := ClaimOCR(ClickDelay, 10, Regions.AllRegion)
+        match := ClaimOCR(ClickDelay, 1000, Regions.AllRegion)
         if (match) {
+
             i := 0
         } else {
             i += 1
         }
         j += 1
-
-    } until (i > 10 or j > LoopCount)
+    } until (i >= 3 or j > LoopCount)
     LoggerInstance.debug("Ending ClaimLoopOCR" " i:" i " j:" j)
 
 }

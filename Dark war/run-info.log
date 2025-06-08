@@ -1646,3 +1646,834 @@
 [INFO] 2025-06-04 15:14:55 - loading config.json
 [INFO] 2025-06-04 15:14:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
 [INFO] 2025-06-04 15:14:59 - DarkWar running
+[WARN] 2025-06-06 10:24:28 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 10:24:28 - loading config.json
+[INFO] 2025-06-06 10:24:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 10:24:32 - DarkWar running
+[INFO] 2025-06-06 10:24:35 - Starting User: Balafre
+[INFO] 2025-06-06 10:24:35 - Waiting for loading...
+[INFO] 2025-06-06 10:24:35 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 10:24:35 - Splash guy found
+[INFO] 2025-06-06 10:24:40 - Starting Splash...
+[WARN] 2025-06-06 10:27:41 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 10:27:41 - loading config.json
+[INFO] 2025-06-06 10:27:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 10:27:44 - DarkWar running
+[INFO] 2025-06-06 10:27:47 - Starting User: Balafre
+[INFO] 2025-06-06 10:27:47 - Waiting for loading...
+[INFO] 2025-06-06 10:27:47 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 10:27:47 - Splash guy found
+[INFO] 2025-06-06 10:27:52 - Starting Splash...
+[WARN] 2025-06-06 10:35:18 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 10:35:18 - loading config.json
+[INFO] 2025-06-06 10:35:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 10:35:22 - DarkWar running
+[INFO] 2025-06-06 10:35:24 - Starting User: Balafre
+[INFO] 2025-06-06 10:35:24 - Waiting for loading...
+[INFO] 2025-06-06 10:35:24 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:56 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:56 - Waiting for loading...
+[INFO] 2025-06-06 10:35:56 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:56 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:56 - Waiting for loading...
+[INFO] 2025-06-06 10:35:56 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:57 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:57 - Waiting for loading...
+[INFO] 2025-06-06 10:35:57 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:57 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:57 - Waiting for loading...
+[INFO] 2025-06-06 10:35:57 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:58 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:58 - Waiting for loading...
+[INFO] 2025-06-06 10:35:58 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:59 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:59 - Waiting for loading...
+[INFO] 2025-06-06 10:35:59 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:35:59 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:35:59 - Waiting for loading...
+[INFO] 2025-06-06 10:35:59 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:00 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:00 - Waiting for loading...
+[INFO] 2025-06-06 10:36:00 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:00 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:00 - Waiting for loading...
+[INFO] 2025-06-06 10:36:00 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:01 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:01 - Waiting for loading...
+[INFO] 2025-06-06 10:36:01 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:01 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:01 - Waiting for loading...
+[INFO] 2025-06-06 10:36:01 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:02 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:02 - Waiting for loading...
+[INFO] 2025-06-06 10:36:02 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:36:02 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:36:03 - Waiting for loading...
+[INFO] 2025-06-06 10:36:03 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:39:03 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 10:39:03 - loading config.json
+[INFO] 2025-06-06 10:39:03 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 10:39:07 - DarkWar running
+[INFO] 2025-06-06 10:39:10 - Starting User: Balafre
+[INFO] 2025-06-06 10:39:10 - Waiting for loading...
+[INFO] 2025-06-06 10:39:10 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:39:10 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:39:10 - Waiting for loading...
+[INFO] 2025-06-06 10:39:10 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:39:11 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:39:11 - Waiting for loading...
+[INFO] 2025-06-06 10:39:11 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:40:10 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 10:40:10 - loading config.json
+[INFO] 2025-06-06 10:40:10 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 10:40:14 - DarkWar running
+[INFO] 2025-06-06 10:40:16 - Starting User: Balafre
+[INFO] 2025-06-06 10:40:16 - Waiting for loading...
+[INFO] 2025-06-06 10:40:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 10:42:56 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 10:42:56 - Waiting for loading...
+[INFO] 2025-06-06 10:42:56 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:20 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:06:20 - loading config.json
+[INFO] 2025-06-06 11:06:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:06:23 - DarkWar running
+[INFO] 2025-06-06 11:06:26 - Starting User: Balafre
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:26 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:26 - Waiting for loading...
+[INFO] 2025-06-06 11:06:26 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:27 - Waiting for loading...
+[INFO] 2025-06-06 11:06:27 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:27 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[INFO] 2025-06-06 11:06:28 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:06:28 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:06:28 - Waiting for loading...
+[WARN] 2025-06-06 11:08:09 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:08:09 - loading config.json
+[INFO] 2025-06-06 11:08:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:08:12 - DarkWar running
+[INFO] 2025-06-06 11:08:15 - Starting User: Balafre
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:15 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:15 - Waiting for loading...
+[INFO] 2025-06-06 11:08:15 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:16 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:16 - Waiting for loading...
+[INFO] 2025-06-06 11:08:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:16 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:16 - Waiting for loading...
+[INFO] 2025-06-06 11:08:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:16 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:16 - Waiting for loading...
+[INFO] 2025-06-06 11:08:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:16 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:16 - Waiting for loading...
+[INFO] 2025-06-06 11:08:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:16 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:16 - Waiting for loading...
+[WARN] 2025-06-06 11:08:41 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:08:41 - loading config.json
+[INFO] 2025-06-06 11:08:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:08:45 - DarkWar running
+[INFO] 2025-06-06 11:08:47 - Starting User: Balafre
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:47 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:47 - Waiting for loading...
+[INFO] 2025-06-06 11:08:48 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:48 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:48 - Waiting for loading...
+[INFO] 2025-06-06 11:08:48 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:08:48 - Crash detected for user Balafre: This value of type "Class" has no property named "Shelter".
+[INFO] 2025-06-06 11:08:48 - Waiting for loading...
+[INFO] 2025-06-06 11:08:48 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:11:11 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:11:11 - loading config.json
+[INFO] 2025-06-06 11:11:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:11:15 - DarkWar running
+[INFO] 2025-06-06 11:11:18 - Starting User: Balafre
+[INFO] 2025-06-06 11:11:18 - Waiting for loading...
+[INFO] 2025-06-06 11:11:18 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:14:00 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:14:00 - loading config.json
+[INFO] 2025-06-06 11:14:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:14:04 - DarkWar running
+[INFO] 2025-06-06 11:14:06 - Starting User: Balafre
+[INFO] 2025-06-06 11:14:06 - Waiting for loading...
+[INFO] 2025-06-06 11:14:06 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:19:34 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:19:34 - loading config.json
+[INFO] 2025-06-06 11:19:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:19:38 - DarkWar running
+[INFO] 2025-06-06 11:19:40 - Starting User: Balafre
+[INFO] 2025-06-06 11:19:40 - Waiting for loading...
+[INFO] 2025-06-06 11:19:40 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:27 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:24:27 - loading config.json
+[INFO] 2025-06-06 11:24:27 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:24:31 - DarkWar running
+[INFO] 2025-06-06 11:24:33 - Starting User: Balafre
+[INFO] 2025-06-06 11:24:33 - Waiting for loading...
+[INFO] 2025-06-06 11:24:33 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:40 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:40 - Waiting for loading...
+[INFO] 2025-06-06 11:24:40 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:41 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:41 - Waiting for loading...
+[INFO] 2025-06-06 11:24:41 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:41 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:41 - Waiting for loading...
+[INFO] 2025-06-06 11:24:41 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:42 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:42 - Waiting for loading...
+[INFO] 2025-06-06 11:24:42 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:43 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:43 - Waiting for loading...
+[INFO] 2025-06-06 11:24:43 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:43 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:43 - Waiting for loading...
+[INFO] 2025-06-06 11:24:43 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:44 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:44 - Waiting for loading...
+[INFO] 2025-06-06 11:24:44 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:24:44 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:24:44 - Waiting for loading...
+[INFO] 2025-06-06 11:24:44 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:25:10 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:25:10 - loading config.json
+[INFO] 2025-06-06 11:25:10 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:25:13 - DarkWar running
+[INFO] 2025-06-06 11:25:16 - Starting User: Balafre
+[INFO] 2025-06-06 11:25:16 - Waiting for loading...
+[INFO] 2025-06-06 11:25:16 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:26:53 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:26:53 - Waiting for loading...
+[INFO] 2025-06-06 11:26:53 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:26:57 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:26:57 - Waiting for loading...
+[INFO] 2025-06-06 11:26:57 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:26:58 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:26:58 - Waiting for loading...
+[INFO] 2025-06-06 11:26:58 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:26:58 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[INFO] 2025-06-06 11:26:58 - Waiting for loading...
+[INFO] 2025-06-06 11:26:58 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:26:59 - Crash detected for user Balafre: This value of type "Object" has no property named "Android".
+[WARN] 2025-06-06 11:28:41 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:28:41 - loading config.json
+[INFO] 2025-06-06 11:28:41 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:28:44 - DarkWar running
+[INFO] 2025-06-06 11:28:47 - Starting User: Balafre
+[INFO] 2025-06-06 11:28:47 - Waiting for loading...
+[INFO] 2025-06-06 11:28:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:28:47 - Crash detected for user Balafre: This value of type "Object" has no property named "Android". - 35
+[INFO] 2025-06-06 11:28:47 - Waiting for loading...
+[INFO] 2025-06-06 11:28:47 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:29:17 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:29:17 - loading config.json
+[INFO] 2025-06-06 11:29:17 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:29:21 - DarkWar running
+[INFO] 2025-06-06 11:29:23 - Starting User: Balafre
+[INFO] 2025-06-06 11:29:23 - Waiting for loading...
+[INFO] 2025-06-06 11:29:23 - Loading game ... Waiting for splash
+[WARN] 2025-06-06 11:30:07 - Crash detected for user Balafre: This value of type "Object" has no property named "Android". - 35
+[WARN] 2025-06-06 11:30:12 - Crash detected for user Balafre: C:\Users\Fred\Git\autohotkey\Dark war\src\lib\loadingwait.ahk (35) : [LoadingWait] If (Screens.Mains.Android.WaitForMatch(LoopDelay := 250))
+C:\Users\Fred\Git\autohotkey\Dark war\src\main.ahk (172) : [] LoadingWait()
+> Auto-execute
+
+[WARN] 2025-06-06 11:39:39 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:39:39 - loading config.json
+[INFO] 2025-06-06 11:39:39 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:39:42 - DarkWar running
+[INFO] 2025-06-06 11:39:45 - Starting User: Balafre
+[INFO] 2025-06-06 11:39:45 - Waiting for loading...
+[INFO] 2025-06-06 11:39:45 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 11:39:55 - World found
+[INFO] 2025-06-06 11:39:55 - Starting Splash...
+[WARN] 2025-06-06 11:40:09 - Crash detected for user Balafre: This value of type "Screen" has no method named "Find".
+[WARN] 2025-06-06 11:51:17 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:51:17 - loading config.json
+[INFO] 2025-06-06 11:51:17 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:51:20 - DarkWar running
+[INFO] 2025-06-06 11:51:23 - Starting User: Balafre
+[INFO] 2025-06-06 11:51:23 - Waiting for loading...
+[INFO] 2025-06-06 11:51:23 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 11:51:27 - World found
+[INFO] 2025-06-06 11:51:27 - Starting Splash...
+[WARN] 2025-06-06 11:51:58 - Crash detected for user Balafre: This value of type "Object" has no property named "Profile".
+[WARN] 2025-06-06 11:54:58 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:54:58 - loading config.json
+[INFO] 2025-06-06 11:54:58 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:55:02 - DarkWar running
+[WARN] 2025-06-06 11:55:05 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 11:55:05 - loading config.json
+[INFO] 2025-06-06 11:55:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 11:55:09 - DarkWar running
+[INFO] 2025-06-06 11:55:11 - Starting User: Balafre
+[INFO] 2025-06-06 11:55:11 - Waiting for loading...
+[INFO] 2025-06-06 11:55:11 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 11:55:15 - World found
+[INFO] 2025-06-06 11:55:15 - Starting Splash...
+[INFO] 2025-06-06 11:55:31 - Logging in as: Balafre
+[INFO] 2025-06-06 11:55:34 - CurrentUser is active - returning
+[INFO] 2025-06-06 11:55:41 - Food
+[INFO] 2025-06-06 11:55:51 - Level up
+[INFO] 2025-06-06 11:55:53 - Escorts
+[INFO] 2025-06-06 11:55:58 - Combat
+[WARN] 2025-06-06 12:02:21 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:02:21 - loading config.json
+[INFO] 2025-06-06 12:02:21 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:02:24 - DarkWar running
+[INFO] 2025-06-06 12:02:27 - Starting User: Balafre
+[INFO] 2025-06-06 12:02:27 - Waiting for loading...
+[INFO] 2025-06-06 12:02:27 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:02:31 - World found
+[INFO] 2025-06-06 12:02:31 - Starting Splash...
+[INFO] 2025-06-06 12:02:46 - Logging in as: Balafre
+[INFO] 2025-06-06 12:02:49 - CurrentUser is active - returning
+[INFO] 2025-06-06 12:02:56 - Food
+[INFO] 2025-06-06 12:03:06 - Level up
+[INFO] 2025-06-06 12:03:08 - Escorts
+[INFO] 2025-06-06 12:03:13 - Combat
+[INFO] 2025-06-06 12:03:45 - Alliance
+[WARN] 2025-06-06 12:05:09 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:05:09 - loading config.json
+[INFO] 2025-06-06 12:05:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:05:12 - DarkWar running
+[INFO] 2025-06-06 12:05:15 - Starting User: Balafre
+[INFO] 2025-06-06 12:05:15 - Waiting for loading...
+[INFO] 2025-06-06 12:05:15 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:05:19 - World found
+[INFO] 2025-06-06 12:05:19 - Starting Splash...
+[INFO] 2025-06-06 12:05:34 - Logging in as: Balafre
+[INFO] 2025-06-06 12:05:37 - CurrentUser is active - returning
+[WARN] 2025-06-06 12:13:18 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:13:18 - loading config.json
+[INFO] 2025-06-06 12:13:18 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:13:22 - DarkWar running
+[WARN] 2025-06-06 12:13:26 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:13:26 - loading config.json
+[INFO] 2025-06-06 12:13:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:13:29 - DarkWar running
+[INFO] 2025-06-06 12:13:32 - Starting User: Balafre
+[INFO] 2025-06-06 12:13:32 - Waiting for loading...
+[INFO] 2025-06-06 12:13:32 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:13:36 - World found
+[INFO] 2025-06-06 12:13:36 - Starting Splash...
+[INFO] 2025-06-06 12:13:51 - Logging in as: Balafre
+[WARN] 2025-06-06 12:13:53 - Error, not in survivor profile
+[INFO] 2025-06-06 12:13:53 - Waiting for loading...
+[INFO] 2025-06-06 12:13:53 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:13:53 - Starting Splash...
+[INFO] 2025-06-06 12:14:08 - Logging in as: Balafre
+[WARN] 2025-06-06 12:18:16 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:18:16 - loading config.json
+[INFO] 2025-06-06 12:18:16 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:18:19 - DarkWar running
+[WARN] 2025-06-06 12:18:24 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:18:24 - loading config.json
+[INFO] 2025-06-06 12:18:24 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:18:28 - DarkWar running
+[INFO] 2025-06-06 12:18:30 - Starting User: Balafre
+[INFO] 2025-06-06 12:18:30 - Waiting for loading...
+[INFO] 2025-06-06 12:18:30 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:18:35 - World found
+[INFO] 2025-06-06 12:18:35 - Starting Splash...
+[INFO] 2025-06-06 12:18:50 - Logging in as: Balafre
+[WARN] 2025-06-06 12:19:04 - Crash detected for user Balafre: This global variable has not been assigned a value.
+[INFO] 2025-06-06 12:27:41 - Waiting for loading...
+[INFO] 2025-06-06 12:27:41 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:27:42 - Starting Splash...
+[WARN] 2025-06-06 12:31:11 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:31:11 - loading config.json
+[INFO] 2025-06-06 12:31:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:31:15 - DarkWar running
+[WARN] 2025-06-06 12:32:14 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:32:14 - loading config.json
+[INFO] 2025-06-06 12:32:14 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:32:17 - DarkWar running
+[WARN] 2025-06-06 12:32:45 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:32:45 - loading config.json
+[INFO] 2025-06-06 12:32:45 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:32:49 - DarkWar running
+[WARN] 2025-06-06 12:34:09 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:34:09 - loading config.json
+[INFO] 2025-06-06 12:34:09 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:34:13 - DarkWar running
+[WARN] 2025-06-06 12:35:33 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:35:33 - loading config.json
+[INFO] 2025-06-06 12:35:33 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:36:51 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:36:51 - loading config.json
+[INFO] 2025-06-06 12:36:51 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:40:07 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:40:07 - loading config.json
+[INFO] 2025-06-06 12:40:07 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:50:01 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:50:01 - loading config.json
+[INFO] 2025-06-06 12:50:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:50:01 - Crash importing users: Missing a required parameter.
+[WARN] 2025-06-06 12:51:06 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:51:06 - loading config.json
+[INFO] 2025-06-06 12:51:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:51:06 - Crash importing users: Missing a required parameter.
+[WARN] 2025-06-06 12:51:37 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:51:37 - loading config.json
+[INFO] 2025-06-06 12:51:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 12:51:40 - DarkWar running
+[INFO] 2025-06-06 12:51:43 - Starting User: LeBalafre
+[INFO] 2025-06-06 12:51:43 - Waiting for loading...
+[INFO] 2025-06-06 12:51:43 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:51:47 - World found
+[INFO] 2025-06-06 12:51:47 - Starting Splash...
+[INFO] 2025-06-06 12:52:02 - Logging in as: LeBalafre
+[INFO] 2025-06-06 12:52:09 - CurrentUser LeBalafre is not active - Switching
+[INFO] 2025-06-06 12:52:10 - Waiting for loading...
+[INFO] 2025-06-06 12:52:10 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 12:52:11 - Starting Splash...
+[WARN] 2025-06-06 12:53:25 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:53:25 - loading config.json
+[INFO] 2025-06-06 12:53:25 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:57:01 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:57:01 - loading config.json
+[INFO] 2025-06-06 12:57:01 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 12:57:32 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 12:57:32 - loading config.json
+[INFO] 2025-06-06 12:57:32 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 13:02:30 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:02:30 - loading config.json
+[INFO] 2025-06-06 13:02:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:02:30 - Debugging mode enabled
+[WARN] 2025-06-06 13:02:37 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:02:37 - loading config.json
+[INFO] 2025-06-06 13:02:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:02:37 - Debugging mode enabled
+[INFO] 2025-06-06 13:02:47 - CurrentUser [NII]LeBalafrÃ© is not active - Switching
+[WARN] 2025-06-06 13:08:08 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:08:08 - loading config.json
+[INFO] 2025-06-06 13:08:08 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:08:08 - Debugging mode enabled
+[WARN] 2025-06-06 13:08:26 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:08:26 - loading config.json
+[INFO] 2025-06-06 13:08:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:08:26 - Debugging mode enabled
+[INFO] 2025-06-06 13:08:36 - CurrentUser [NII]LeBalafré is not active - Switching
+[WARN] 2025-06-06 13:09:13 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:09:13 - loading config.json
+[INFO] 2025-06-06 13:09:13 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:09:17 - DarkWar running
+[INFO] 2025-06-06 13:09:19 - Starting User: [NII]LeBalafré
+[INFO] 2025-06-06 13:09:19 - Waiting for loading...
+[INFO] 2025-06-06 13:09:19 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:09:23 - World found
+[INFO] 2025-06-06 13:09:23 - Starting Splash...
+[INFO] 2025-06-06 13:09:38 - Logging in as: [NII]LeBalafré
+[INFO] 2025-06-06 13:09:46 - CurrentUser [NII]LeBalafré is not active - Switching
+[INFO] 2025-06-06 13:09:53 - Waiting for loading...
+[INFO] 2025-06-06 13:09:53 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:09:54 - Starting Splash...
+[WARN] 2025-06-06 13:20:29 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:20:29 - loading config.json
+[INFO] 2025-06-06 13:20:29 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:20:33 - DarkWar running
+[INFO] 2025-06-06 13:20:35 - Starting User: LeBalafré
+[INFO] 2025-06-06 13:20:35 - Waiting for loading...
+[INFO] 2025-06-06 13:20:35 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:20:39 - World found
+[INFO] 2025-06-06 13:20:39 - Starting Splash...
+[INFO] 2025-06-06 13:20:54 - Logging in as: LeBalafré
+[INFO] 2025-06-06 13:21:02 - CurrentUser LeBalafré is not active - Switching
+[INFO] 2025-06-06 13:21:05 - Waiting for loading...
+[INFO] 2025-06-06 13:21:05 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:21:06 - Starting Splash...
+[WARN] 2025-06-06 13:21:28 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:21:28 - loading config.json
+[INFO] 2025-06-06 13:21:28 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 13:22:30 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:22:30 - loading config.json
+[INFO] 2025-06-06 13:22:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 13:22:34 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:22:34 - loading config.json
+[INFO] 2025-06-06 13:22:34 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 13:22:54 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:22:54 - loading config.json
+[INFO] 2025-06-06 13:22:54 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:22:58 - DarkWar running
+[INFO] 2025-06-06 13:23:00 - Starting User: LeBalafré
+[INFO] 2025-06-06 13:23:00 - Waiting for loading...
+[INFO] 2025-06-06 13:23:00 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:23:04 - World found
+[INFO] 2025-06-06 13:23:04 - Starting Splash...
+[INFO] 2025-06-06 13:23:19 - Logging in as: LeBalafré
+[INFO] 2025-06-06 13:23:27 - CurrentUser LeBalafré is not active - Switching
+[INFO] 2025-06-06 13:23:31 - Waiting for loading...
+[INFO] 2025-06-06 13:23:31 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:23:32 - Starting Splash...
+[WARN] 2025-06-06 13:25:22 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 13:25:22 - loading config.json
+[INFO] 2025-06-06 13:25:22 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 13:25:26 - DarkWar running
+[INFO] 2025-06-06 13:25:34 - Starting User: LeBalafré
+[INFO] 2025-06-06 13:25:34 - Game is loading...
+[INFO] 2025-06-06 13:25:34 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 13:25:34 - Starting splash...
+[INFO] 2025-06-06 13:25:53 - Logging in as: LeBalafré
+[INFO] 2025-06-06 13:25:55 - CurrentUser LeBalafré is active - returning
+[INFO] 2025-06-06 13:25:58 - Food
+[INFO] 2025-06-06 13:26:07 - Level up
+[INFO] 2025-06-06 13:26:10 - Escorts
+[INFO] 2025-06-06 13:26:14 - Combat
+[INFO] 2025-06-06 13:26:42 - Alliance
+[INFO] 2025-06-06 13:28:26 - Tasks
+[INFO] 2025-06-06 13:28:48 - Battle Rewards
+[INFO] 2025-06-06 13:28:56 - Expeditions
+[INFO] 2025-06-06 13:29:00 - Energy
+[INFO] 2025-06-06 13:29:38 - Boomers
+[WARN] 2025-06-06 13:32:30 - Error - not in world
+[INFO] 2025-06-06 13:32:30 - Energy and boomers (2)
+[WARN] 2025-06-06 13:32:45 - Unknow screen - Trying to find a working screen
+[WARN] 2025-06-06 14:21:43 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:21:43 - loading config.json
+[INFO] 2025-06-06 14:21:43 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 14:21:47 - DarkWar running
+[INFO] 2025-06-06 14:21:49 - Starting User: LeBalafré
+[INFO] 2025-06-06 14:21:49 - Game is loading...
+[INFO] 2025-06-06 14:21:49 - Loading game ... Waiting for splash
+[INFO] 2025-06-06 14:21:54 - World found
+[INFO] 2025-06-06 14:21:54 - Starting splash...
+[INFO] 2025-06-06 14:22:09 - Logging in as: LeBalafré
+[INFO] 2025-06-06 14:22:11 - CurrentUser LeBalafré is active - returning
+[INFO] 2025-06-06 14:22:14 - Food
+[INFO] 2025-06-06 14:22:24 - Level up
+[INFO] 2025-06-06 14:22:27 - Escorts
+[INFO] 2025-06-06 14:22:31 - Combat
+[INFO] 2025-06-06 14:22:55 - Alliance
+[INFO] 2025-06-06 14:24:05 - Tasks
+[WARN] 2025-06-06 14:26:20 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:26:20 - loading config.json
+[INFO] 2025-06-06 14:26:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 14:28:54 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:28:54 - loading config.json
+[INFO] 2025-06-06 14:28:54 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 14:31:19 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:31:19 - loading config.json
+[INFO] 2025-06-06 14:31:19 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 14:31:46 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:31:46 - loading config.json
+[INFO] 2025-06-06 14:31:46 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 14:33:46 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:33:46 - loading config.json
+[INFO] 2025-06-06 14:33:46 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 14:36:26 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 14:36:26 - loading config.json
+[INFO] 2025-06-06 14:36:26 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 15:02:55 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:02:55 - loading config.json
+[INFO] 2025-06-06 15:02:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 15:02:55 - Debugging mode enabled
+[WARN] 2025-06-06 15:03:39 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:03:39 - loading config.json
+[INFO] 2025-06-06 15:03:39 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 15:03:39 - Debugging mode enabled
+[WARN] 2025-06-06 15:03:55 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:03:55 - loading config.json
+[INFO] 2025-06-06 15:03:55 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-06 15:04:05 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:04:05 - loading config.json
+[INFO] 2025-06-06 15:04:05 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 15:04:12 - Debugging mode enabled
+[WARN] 2025-06-06 15:04:28 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:04:28 - loading config.json
+[INFO] 2025-06-06 15:04:28 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 15:04:28 - Debugging mode enabled
+[WARN] 2025-06-06 15:05:49 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 15:05:49 - loading config.json
+[INFO] 2025-06-06 15:05:49 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 15:05:49 - Debugging mode enabled
+[WARN] 2025-06-06 23:09:00 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-06 23:09:00 - loading config.json
+[INFO] 2025-06-06 23:09:00 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-06 23:09:04 - DarkWar running
+[WARN] 2025-06-07 00:00:06 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 00:00:06 - loading config.json
+[INFO] 2025-06-07 00:00:06 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-07 22:17:23 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:17:23 - loading config.json
+[INFO] 2025-06-07 22:17:23 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:17:26 - DarkWar running
+[INFO] 2025-06-07 22:17:34 - Starting User: LeBalafré
+[INFO] 2025-06-07 22:17:34 - Game is loading...
+[INFO] 2025-06-07 22:17:34 - Loading game ... Waiting for splash
+[INFO] 2025-06-07 22:17:35 - Starting splash...
+[INFO] 2025-06-07 22:17:47 - Logging in as: LeBalafré
+[INFO] 2025-06-07 22:17:54 - CurrentUser LeBalafré is not active - Switching
+[WARN] 2025-06-07 22:20:20 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:20:20 - loading config.json
+[INFO] 2025-06-07 22:20:20 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-07 22:20:30 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:20:30 - loading config.json
+[INFO] 2025-06-07 22:20:30 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:20:33 - DarkWar running
+[WARN] 2025-06-07 22:21:56 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:21:56 - loading config.json
+[INFO] 2025-06-07 22:21:56 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:21:59 - DarkWar running
+[WARN] 2025-06-07 22:22:11 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:22:11 - loading config.json
+[INFO] 2025-06-07 22:22:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:22:14 - DarkWar running
+[WARN] 2025-06-07 22:22:31 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:22:31 - loading config.json
+[INFO] 2025-06-07 22:22:31 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:22:35 - DarkWar running
+[WARN] 2025-06-07 22:23:11 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:23:11 - loading config.json
+[INFO] 2025-06-07 22:23:11 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-07 22:23:37 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:23:37 - loading config.json
+[INFO] 2025-06-07 22:23:37 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:23:40 - DarkWar running
+[INFO] 2025-06-07 22:23:43 - Starting User: MiniBalafré
+[INFO] 2025-06-07 22:23:43 - Game is loading...
+[INFO] 2025-06-07 22:23:43 - Loading game ... Waiting for splash
+[INFO] 2025-06-07 22:23:47 - World found
+[INFO] 2025-06-07 22:23:47 - Starting splash...
+[INFO] 2025-06-07 22:24:02 - Logging in as: MiniBalafré
+[INFO] 2025-06-07 22:24:05 - CurrentUser MiniBalafré is active - returning
+[INFO] 2025-06-07 22:24:08 - Food
+[INFO] 2025-06-07 22:24:18 - Level up
+[INFO] 2025-06-07 22:24:20 - Escorts
+[INFO] 2025-06-07 22:24:25 - Combat
+[INFO] 2025-06-07 22:24:51 - Alliance
+[WARN] 2025-06-07 22:31:53 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:31:53 - loading config.json
+[INFO] 2025-06-07 22:31:53 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[WARN] 2025-06-07 22:32:57 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:32:57 - loading config.json
+[INFO] 2025-06-07 22:32:57 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war
+[INFO] 2025-06-07 22:33:01 - DarkWar running
+[INFO] 2025-06-07 22:33:03 - Starting User: MiniBalafré
+[INFO] 2025-06-07 22:33:03 - Game is loading...
+[INFO] 2025-06-07 22:33:03 - Loading game ... Waiting for splash
+[INFO] 2025-06-07 22:33:07 - World found
+[INFO] 2025-06-07 22:33:07 - Starting splash...
+[INFO] 2025-06-07 22:33:23 - Logging in as: MiniBalafré
+[INFO] 2025-06-07 22:33:25 - CurrentUser MiniBalafré is active - returning
+[INFO] 2025-06-07 22:33:28 - Food
+[INFO] 2025-06-07 22:33:37 - Level up
+[INFO] 2025-06-07 22:33:39 - Escorts
+[INFO] 2025-06-07 22:33:44 - Combat
+[WARN] 2025-06-07 22:34:39 - Failed to load config.json. Reverting to config.json
+[INFO] 2025-06-07 22:34:39 - loading config.json
+[INFO] 2025-06-07 22:34:39 - Starting script - C:\Users\Fred\Git\autohotkey\Dark war

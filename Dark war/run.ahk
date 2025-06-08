@@ -8,6 +8,13 @@ OutputDebug "Starting script - " A_ScriptDir
 
 debug := true
 debug := false
+
+
+GetOCRRegion := true
+GetOCRRegion := false
+
+debugmodeOCRDeeper := false
+debugmodeOCR := false
 /*
 ====== Includes ======
 */

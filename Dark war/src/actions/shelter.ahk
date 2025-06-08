@@ -17,39 +17,39 @@ global SCREEN_ANDROID := "Android"
 getCurrentScreen() {
     centerShelter()
 
-    loggerInstance.debug("Detecting current screen")
+    LoggerInstance.debug("Detecting current screen")
     if (ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
-        loggerInstance.debug("Detected: shelter screen")
+        LoggerInstance.debug("Detected: shelter screen")
         return SCREEN_SHELTER
 
     } else if (ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
-        loggerInstance.debug("Detected: world screen")
+        LoggerInstance.debug("Detected: world screen")
         return SCREEN_WORLD
     } else if (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, false, 50, 2).found) {
-        loggerInstance.debug("Detected: Android screen")
+        LoggerInstance.debug("Detected: Android screen")
         return SCREEN_ANDROID
     } else {
-        loggerInstance.debug("Detected: unknown screen")
+        LoggerInstance.debug("Detected: unknown screen")
         return SCREEN_UNKNOWN
     }
 }
 
 goToWorld() {
     centerShelter()
-    loggerInstance.debug("Navigating to world screen")
+    LoggerInstance.debug("Navigating to world screen")
     ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
     return getCurrentScreen()
 }
 
 goToShelter() {
     centerShelter()
-    loggerInstance.debug("Navigating to shelter screen")
+    LoggerInstance.debug("Navigating to shelter screen")
     ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
     return getCurrentScreen()
 }
 
 centerShelter() {
-    loggerInstance.debug("Attempting to center on shelter")
+    LoggerInstance.debug("Attempting to center on shelter")
     return ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 20, 5, world_shelter_icon_2).found
 }
 
@@ -79,26 +79,26 @@ getCurrentScreenOCR() {
         "bottom", Bottom
     )
 
-    FlatScreens := GetAllScreens()
+    FlatScreens := GetAllScreensFlat()
 
     Isdetected := false
     for s in FlatScreens {
         regionKey := s.RegionKey
         if regionKey && ocrResults.Has(regionKey) {
             if s.IsActive(ocrResults[regionKey]) {
-                loggerInstance.debug("Detected screen: " s.Name)
+                LoggerInstance.debug("Detected screen: " s.Name)
                 Isdetected := true
                 return s
             }
         } else {
-            loggerInstance.debug("Unknown or unmatched region for screen: " s.Name "-" s.RegionKey)
+            LoggerInstance.debug("Unknown or unmatched region for screen: " s.Name "-" s.RegionKey)
         }
     }
 
     if !(Isdetected) {
-        loggerInstance.debug("Detected: No OCR found")
-        loggerInstance.debug("Title -" title.Text)
-        loggerInstance.debug("Main -" Main.Text)
-        loggerInstance.debug("WorldShelter -" WorldShelter.Text)
+        LoggerInstance.debug("Detected: No OCR found")
+        LoggerInstance.debug("Title -" Title.Text)
+        LoggerInstance.debug("Main -" Main.Text)
+        LoggerInstance.debug("WorldShelter -" WorldShelter.Text)
     }
 }

@@ -134,11 +134,7 @@ iconBattleRewardsClick() {
     return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconbattlerewards)
 }
 
-iconTasksClick() {
 
-    goToShelter()
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconTasks)
-}
 
 iconPlayerClick() {
     return ImageFinderInstance.LoopFindImage(iconPlayer, Regions.icons.player, 50, 1000, true, 500, 5)

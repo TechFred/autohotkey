@@ -23,8 +23,8 @@ class Regions {
     }
 
     static DailyTasks := {
-        ClaimAll: [719,811,1546,964],
-        Claim: [1435,332,1202,854]
+        ClaimAll: [738,803,1452,938],
+        Claim: [1188,328,1350,864]
     }
 
     static icons := {

@@ -18,22 +18,21 @@ O_claim_green_main.region := Regions.Events.main
 O_reddot_transblack_main := O_reddot_transblack.Clone()
 O_reddot_transblack_main.region := Regions.Events.main
 
-
 O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
 O_reddot_number_transblack_bottom.region := Regions.events.bottom
+
+O_reddot_number_transblack_main := O_reddot_number_transblack.Clone(, Regions.events.Main)
 
 ImagesExclamation := [
     O_Events_exclamation_transblack_Right,
     O_Events_exclamation_transblack_LEFT
 ]
 
-ImagesNew:= [
+ImagesNew := [
     Events_new_btn,
     Events_new_btn_2,
     Events_new_bnt_3
 ]
-
-
 
 events() {
     iconEventsClick()
@@ -47,13 +46,14 @@ events() {
 
             ;ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack)
 
-            ;Manque probablement le clic sur les élements en rouges reddot dans le bas. 
+            ;Manque probablement le clic sur les élements en rouges reddot dans le bas.
 
             if ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_bottom).found {
-                ClickReddot(1000, Regions.events.main) ;If reddot, click on it
+                LoggerInstance.Debug("Red number found in menu")
+                ClickReddot(1000, Regions.events.main)  ;If reddot, click on it
+                ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_main)
                 ClaimOCR()
                 ClaimAllOCR()
-
 
             } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesNew*).found) {
 
@@ -64,12 +64,12 @@ events() {
                 i += 1
             }
 
-            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, Events_title).found) { ;If events menu is not found, go back
+            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, Events_title).found) {  ;If events menu is not found, go back
                 LoggerInstance.Debug("Events title not found -> going back")
                 clickAnyX()
                 iconPlayerClickBlind()
             }
-            ClickReddot(1000, Regions.menus.bottom) ;Click on reddot in the menu
+            ClickReddot(1000, Regions.menus.bottom)  ;Click on reddot in the menu
 
         } until i > 5
     }

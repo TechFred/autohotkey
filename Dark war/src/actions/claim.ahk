@@ -96,7 +96,7 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
         "Region", Region,
         "ocrOptions", Map("scale", 5, "grayscale", 0)
     ))
-    RemoveCongratOCR(, LoopDelay := 0)
+    RemoveCongratOCR(, LoopDelay := 1)
 
     return match
 }
@@ -112,6 +112,8 @@ ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion) {
 
     if (match) {
         RemoveCongratOCR()
+        RemoveCongratOCR(, LoopDelay := 1)
+        RemoveCongratOCR(, LoopDelay := 1)
     }
 
 }

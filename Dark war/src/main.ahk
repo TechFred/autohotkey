@@ -68,6 +68,8 @@ if GetOCRRegion {
     BlockInput("MouseMoveOff")
     WinActivate(winTitle)
     WinWaitActive(winTitle)
+
+    
     ; OCR.DisplayImage := true
     ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0)
 
@@ -97,10 +99,33 @@ if debug {
     WinActivate(winTitle)
     WinWaitActive(winTitle)
 
+    /*
     HighlightRegionInWindow(Regions.menus.top)
-
+    LoggerInstance.debug(Screens.mains.Daily.WaitForMatch())
     Sleep(5000)
-    Task()
+    HighlightRegionInWindow(Regions.Events.main)
+    Sleep(5000)
+*/
+
+    ;events
+    CrashDetection()
+    iconEventsClick()
+    events()
+
+    ;premiumCenter
+    LoggerInstance.info("Premium Center")
+    CrashDetection()
+    iconHelpClick()
+    premiumCenter()
+
+    ;End script
+    LoggerInstance.info("Ending script")
+    CrashDetection()
+    iconHelpClick()
+
+
+
+
     ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
     ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
     ;iconOptimiseClick()

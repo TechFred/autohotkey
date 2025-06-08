@@ -56,8 +56,8 @@ class Screen {
 
 class Screens {
     static Shelter := {
-        World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"), ; If Shelter is detected -> World
-        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World") ; If World is detected -> Shelter
+        World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),  ; If Shelter is detected -> World
+        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World")  ; If World is detected -> Shelter
     }
 
     static Titles := {
@@ -67,7 +67,6 @@ class Screens {
         Alliance: Screen("Alliance", "title", Regions.menus.top, "(?i)Alliance\b"),
         Gifts: Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
         Adventure: Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
-        Daily: Screen("Daily Tasks", "title", Regions.menus.top, "(?i)Daily Tasks"),
         HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Her[o0] List"),
         VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP")
     }
@@ -79,14 +78,13 @@ class Screens {
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
         Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-        Android: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val")
+        Android: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
+        Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks")
     }
 
     static Bottom := {
         Loading: Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
     }
-
-
 
 }
 
@@ -102,10 +100,10 @@ GetAllScreensFlat() {
     return all
 }
 
-    GetScreenByName(name) {
-        for _, screen in Screens {
-            if (screen.Name = name)
-                return screen
-        }
-        return ""
+GetScreenByName(name) {
+    for _, screen in Screens {
+        if (screen.Name = name)
+            return screen
     }
+    return ""
+}

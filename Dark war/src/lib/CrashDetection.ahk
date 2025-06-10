@@ -1,16 +1,43 @@
 #Requires AutoHotkey v2.0
 
 CrashDetection() {
-    LoggerInstance.debug("Crash verification")
-    if (getCurrentScreen() = SCREEN_UNKNOWN) {
-        WinActivateGame()
-        Checkfix_Screen_Unknown()
+
+    scr := getCurrentScreenOCR()
+
+    if scr {
+        if scr.name = Screens.mains.Android.name {
+            Checkfix_Screen_Android()
+            throw Error("Game crashed")
+
+        } else if scr.name = Screens.mains.logout.name {
+
+            ;Click confim
+            WaitFindText("(?i)confirm", Map(
+                "Click", true,
+                "ClickDelay", 5000,
+                "LoopDelay", 8000,
+                "Region", Regions.Events.main,
+                "ocrOptions", Map("scale", 2)
+            ))
+
+            ;Rerun the crash detection
+            LoggerInstance.Warn("Logout screen detected, rerunning crash detection")
+            CrashDetection()
+            return
+
+        }
 
     }
 
     if (getCurrentScreen() = SCREEN_ANDROID) {
         Checkfix_Screen_Android()
-        throw Error ("Game crashed") ; C:\Users\Fred\Git\autohotkey\Dark war\src\lib\CrashDetection.ahk (13) : ==> Expected a String but got a Class.
+        throw Error("Game crashed")  ; C:\Users\Fred\Git\autohotkey\Dark war\src\lib\CrashDetection.ahk (13) : ==> Expected a String but got a Class.
+
+    }
+
+    if (getCurrentScreen() = SCREEN_UNKNOWN) {
+        WinActivateGame()
+        Checkfix_Screen_Unknown()
 
     }
 
@@ -67,7 +94,7 @@ Checkfix_Screen_Unknown() {
 RestartGame() {
     try ProcessClose("HD-Player.exe")
     WinWaitClose(winTitle)
-    sleep 10000
+    Sleep 10000
     StartDarkWar()
-     throw Error ("Game crashed")
+    throw Error("Game crashed")
 }

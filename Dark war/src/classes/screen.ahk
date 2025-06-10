@@ -73,13 +73,14 @@ class Screens {
 
     static Mains := {
         Logged: Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
-        Applications: Screen("Android", "main", Regions.Events.main, "(?i)Applications syst"),
+        Android: Screen("Android", "main", Regions.Events.main, "(?i)JEUX POPULAIRES"),
         Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
         Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
-        Android: Screen("Support Darkwar Survival", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
-        Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks")
+        Loading: Screen("Android", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
+        Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks"),
+        Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another")
     }
 
     static Bottom := {

@@ -10,7 +10,7 @@ CrashDetection() {
 
     if (getCurrentScreen() = SCREEN_ANDROID) {
         Checkfix_Screen_Android()
-        throw Error ("Game crashed")
+        throw Error ("Game crashed") ; C:\Users\Fred\Git\autohotkey\Dark war\src\lib\CrashDetection.ahk (13) : ==> Expected a String but got a Class.
 
     }
 

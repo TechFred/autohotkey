@@ -7,6 +7,7 @@ O_switch_yes := Image("switch_yes.bmp", 50, Regions.AllRegion)
 LoginAndSetUser(CurrentUser) {
     LoggerInstance.Debug("Checking user: " CurrentUser.name)
 
+    f := false
     i := 0
     loop 5 {
         iconPlayerClickBlind()
@@ -22,7 +23,8 @@ LoginAndSetUser(CurrentUser) {
 
     } until f
 
-    if WaitFindText(CurrentUser.regex, Regions.events.main) {
+    ocrOptions := Map("Region", Regions.events.main,"lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0)
+    if WaitFindText(CurrentUser.regex, ocrOptions) {
         CurrentUser.active := true
         LoggerInstance.info("CurrentUser " CurrentUser.name " is active - returning")
         clickAnyBack()
@@ -44,22 +46,21 @@ LoginAndSetUser(CurrentUser) {
             "Region", Regions.events.main
         ))
 
-        username := "(?i)\[.*\]" CurrentUser.name ; Contains [...]Username
-            WaitFindText(username, Map(
+        username := RegExReplace(CurrentUser.name, "[ilo]", ".")
+        username := "(?i)\[.{1,6}\]" username  ; Contains [...]Username
+        WaitFindText(username, Map(
             "Click", true,
             "ClickDelay", 1000,
             "LoopDelay", 5000,
             "Region", Regions.events.main
         ))
 
-            username := "(?i)Yes"
-            WaitFindText(username, Map(
+        WaitFindText("(?i)Yes", Map(
             "Click", true,
             "ClickDelay", 1000,
             "LoopDelay", 5000,
             "Region", Regions.events.main
         ))
-        
 
         ;ImageFinderInstance.FindAnyImageObjects(1000, true, O_switch_account)
         ;ImageFinderInstance.FindAnyImageObjects(1000, true, O_switch_switch_character)

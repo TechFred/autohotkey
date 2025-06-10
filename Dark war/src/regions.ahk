@@ -23,8 +23,8 @@ class Regions {
     }
 
     static DailyTasks := {
-        ClaimAll: [738,803,1452,938],
-        Claim: [1188,328,1350,864]
+        ClaimAll: [738, 803, 1452, 938],
+        Claim: [1188, 328, 1350, 864]
     }
 
     static icons := {
@@ -50,6 +50,10 @@ class Regions {
     static Events := {
         main: [822, 95, 1383, 922],
         bottom: Regions.menus.bottom
+    }
+
+    static Profile := {
+        Survivor: [852, 536, 1374, 598]
     }
 
     static APC := {

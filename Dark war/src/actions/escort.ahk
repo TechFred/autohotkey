@@ -14,12 +14,13 @@ Escorts() {
         LoggerInstance.Debug("Escort menu")
 
         i := 0
-        x := 2
+        x := 3
         loop {
-            if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 20, 5, ImagesGift*)).found {
+
+            if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 20, 5, ImagesGift*)).found || FindPixelColorRegion(Sleep := 2000, DoClick := true, targetColor := 0xF3AC41, region := Regions.Events.main) {
                 LoggerInstance.Debug("Found Chest")
+                RemoveCongratOCR()
                 clickAnyBack()
-                Remove_Congrat()
                 i := 0
             } else {
                 LoggerInstance.Debug("Chest not found: " i)

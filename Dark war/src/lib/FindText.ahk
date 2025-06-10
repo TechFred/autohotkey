@@ -30,15 +30,11 @@ WaitFindText(needle := "", Options := Map()) {
     ocrOptions := Options.Has("ocrOptions") ? Options["ocrOptions"] : Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)
     searchOptions := Options.Has("searchOptions") ? Options["searchOptions"] : Map("IgnoreLinebreaks", true, "SearchFunc", RegExMatch)
 
-    if Region {
-        ocrOptions["x"] := Region[1]
-        ocrOptions["y"] := Region[2]
-        ocrOptions["w"] := Region[3] - Region[1]
-        ocrOptions["h"] := Region[4] - Region[2]
-    }
+
+    
 
     searchOptions := MapToObject(searchOptions)
-    ocrOptions := MapToObject(ocrOptions)
+    ocrOptions := MapToObject(ocrOptionsRegion(ocrOptions, Region))
 
     ;LoggerInstance.Debug(found.text)
 
@@ -55,6 +51,9 @@ WaitFindText(needle := "", Options := Map()) {
             if doClick {
                 LoggerInstance.debug("Clicking " needle)
                 match.FindString(needle, searchOptions).Click()
+                ;match.FindString(needle, searchOptions).highlight()
+
+                
                 Sleep(ClickDelay)
             }
 
@@ -67,7 +66,7 @@ WaitFindText(needle := "", Options := Map()) {
             LoggerInstance.Debug(result.Text)
             LoggerInstance.debug(" -- ")
 
-            if DebugmodeOCR = true {
+            if debugmodeOCR = true {
                 result := OCR.FromWindow(winTitle, ocrOptions)
                 LoggerInstance.Debug(result.Text)
                 if debugmodeOCRDeeper = true {
@@ -143,5 +142,3 @@ ocrOptionsRegion(ocrOptions, Region) {
     }
     return ocrOptions
 }
-
-

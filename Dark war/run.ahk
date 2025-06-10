@@ -36,6 +36,7 @@ debugmodeOCR := false
 #include src\lib\OCR.ahk
 #Include src\lib\FindText.ahk
 #Include src\lib\ImageStats.ahk
+#Include src\lib\PixelSearch.ahk
 
 ;special
 #Include src\lib\debug.ahk

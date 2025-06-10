@@ -1,31 +1,31 @@
 [    
     {
         "name": "LeBalafré",
-        "active": false,
+        "active": true,
         "state": 148,
         "img": "switch_NIILeBalafre.bmp",
         "regex": "(?i)personal",
-        "order": 3,
-        "boomer_run": true,
+        "order": 2,
+        "boomer_run": false,
         "energy_run": true
     },
     {
         "name": "UnknownWildling",
-        "active": false,
+        "active": true,
         "state": 148,
         "img": "switch_balafre.bmp",
-        "regex": "(?i)pain",
-        "order": 2,
+        "regex": "(?i)comming",
+        "order": 1,
         "boomer_run": true,
         "energy_run": true
     },
     {
         "name": "MiniBalafré",
-        "active": false,
+        "active": true,
         "state": 148,
         "img": "switch_minibalafre.bmp",
         "regex": "(?i)Goofy",
-        "order": 1,
+        "order": 3,
         "boomer_run": true,
         "energy_run": true
     }

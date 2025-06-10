@@ -3,24 +3,26 @@
 importuser() {
     Users := []
     for u in JSON.Parse(FileRead(A_ScriptDir "\config.json", "UTF-8")) {
-        Users.Push(
-            User(
-                u["name"],
-                u["active"],
-                u["state"],
-                u["img"],
-                u["regex"],
-                u["order"],
-                u["boomer_run"],
-                u["energy_run"]
+        if u["active"] {
+            Users.Push(
+                User(
+                    u["name"],
+                    u["active"],
+                    u["state"],
+                    u["img"],
+                    u["regex"],
+                    u["order"],
+                    u["boomer_run"],
+                    u["energy_run"]
+                )
             )
-        )
+
+        }
+
     }
     SortUsersByOrder(Users)
     return Users
 }
-
-
 
 SortUsersByOrder(users) {
     ; Simple Bubble Sort (can be replaced with better one)

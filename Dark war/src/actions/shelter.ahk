@@ -100,5 +100,6 @@ getCurrentScreenOCR() {
         LoggerInstance.debug("Title -" Title.Text)
         LoggerInstance.debug("Main -" Main.Text)
         LoggerInstance.debug("WorldShelter -" WorldShelter.Text)
+        return Isdetected
     }
 }

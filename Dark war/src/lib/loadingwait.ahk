@@ -7,7 +7,7 @@ LoadingWait() {
 
     found := false
     World := 0
-    loop 10 {
+    loop 20 {
 
         ;currentscreen := getCurrentScreen()
 
@@ -30,23 +30,23 @@ LoadingWait() {
                     break
                 }
             }
-
-            if (Screens.Mains.Guy.WaitForMatch(LoopDelay := 250)) {
-                LoggerInstance.Info("Splash guy found")
-                Sleep(5000)
-                return true
-            }
-            ; If android icon, click on it.
-            if (Screens.Mains.Android.WaitForMatch(LoopDelay := 250)) {
-                LoggerInstance.Warn("Android screen")
-                WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
-
-                ;failsafe
-                ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 10000, true, 50, 2)
-            }
-            Sleep(2000)
-
         }
-        return found
+
+        if (Screens.Mains.Guy.WaitForMatch(LoopDelay := 250)) {
+            LoggerInstance.Info("Splash guy found")
+            Sleep(5000)
+            return true
+        }
+        ; If android icon, click on it.
+        if (Screens.Mains.Android.WaitForMatch(LoopDelay := 250)) {
+            LoggerInstance.Warn("Android screen")
+            WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
+
+            ;failsafe
+            ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 10000, true, 50, 2)
+        }
+        Sleep(2000)
+
     }
+    return found
 }

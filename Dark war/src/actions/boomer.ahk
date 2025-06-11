@@ -55,7 +55,7 @@ boomers() {
 
 
                 ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
-               if  (WaitFindText("(?i)RetryText", Map(
+               if  (WaitFindText("(?i)March", Map(
                     "Click", true,
                     "ClickDelay", 2000,
                     "LoopDelay", 8000,

@@ -65,8 +65,9 @@ CheckDebug() {
             debugOCRRegion()
         }
 
+        ; ===============================
         if debug {
-            DebugNormal()
+            Debugclose()
         }
 
         ExitApp()
@@ -211,5 +212,25 @@ username := RegExReplace("UnknownWildling", "[ilo]", ".")
         "LoopDelay", 5000,
         "Region", Regions.events.main
     ))
+
+}
+
+
+Debugclose(){
+Send("{PrintScreen}")
+Sleep(500)
+if WinExist(winTitle) {
+    ; Close the window gracefully
+    WinClose(winTitle)
+    LoggerInstance.Info("Close HD-Player.exe")
+
+    ; If the process doesn't close, force it
+    Sleep(5000)
+    if WinExist(winTitle) {
+        ProcessClose("HD-Player.exe")
+        LoggerInstance.warn("Force closed HD-Player.exe")
+    }
+}
+
 
 }

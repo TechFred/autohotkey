@@ -65,8 +65,6 @@ if debug = false AND GetOCRRegion = false {
 ; ======= Debugging =======
 CheckDebug()
 
-
-
 ; Special
 Sleep(2000)
 Hospital()
@@ -75,7 +73,6 @@ if getCurrentScreen() = SCREEN_WORLD {
     boomers()
     ExitApp
 }
-
 
 ;sorts users
 
@@ -203,8 +200,23 @@ Complete_run(u) {
 }
 
 BlockInput("MouseMoveOff")
+Send("{PrintScreen}")
+Sleep(500)
+if WinExist(winTitle) {
+    ; Close the window gracefully
+    WinClose(winTitle)
+    LoggerInstance.Info("Close HD-Player.exe")
+
+    ; If the process doesn't close, force it
+    Sleep(5000)
+    if WinExist(winTitle) {
+        ProcessClose("HD-Player.exe")
+        LoggerInstance.warn("Force closed HD-Player.exe")
+    }
+}
+
 LoggerInstance.Info("Done")
-;msgbox ("done")
+
 ExitApp()
 
 ; ===== HOTKEY: ESC to exit =====

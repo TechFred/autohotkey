@@ -38,7 +38,7 @@ battle_rewards_icon_transblack.bmp,2025-06-10 19:25:40,20
 battlerewards_claim_all.bmp,2025-06-10 19:25:44,20
 boomers_BW.bmp,2025-06-10 19:26:33,14
 btn_return.bmp,2025-06-10 19:31:37,518
-btn_return_white.bmp,2025-06-10 19:38:11,46
+btn_return_white.bmp,2025-06-10 20:52:09,47
 btn_return_white_2.bmp,,
 cancel.bmp,2025-06-09 23:49:05,3
 claim.bmp,,
@@ -78,7 +78,7 @@ heal_done_shooters.bmp,,
 heal_grayed.bmp,,
 heal_progress.bmp,,
 heal_selectall.bmp,,
-help.bmp,2025-06-10 19:31:48,132
+help.bmp,2025-06-10 20:52:02,133
 help.jpg,,
 help_2.bmp,,
 help_3.bmp,2025-06-03 17:12:31,17
@@ -102,8 +102,8 @@ optimise_food_2.bmp,,
 optimise_food_3.bmp,2025-06-10 11:45:56,2
 optimise_food_4.bmp,,
 optimise_resident_status.bmp,2025-06-10 16:25:44,7
-premium_icon.bmp,2025-06-10 19:33:33,19
-premium_title.bmp,2025-06-10 19:38:08,169
+premium_icon.bmp,2025-06-10 20:52:04,20
+premium_title.bmp,2025-06-10 20:52:06,176
 red_cross.bmp,,
 red_cross_transblack.bmp,,
 reddot.bmp,,
@@ -116,7 +116,7 @@ speedup.bmp,,
 speedup.png,,
 splash_event_x.bmp,2025-06-10 12:26:56,3
 splash_guy.bmp,2025-06-03 15:07:31,5
-splash_guy_x.bmp,2025-06-10 18:08:43,9
+splash_guy_x.bmp,2025-06-10 20:47:57,10
 splash_x.bmp,2025-06-10 19:24:42,84
 survivor_profile.bmp,2025-06-06 12:05:36,29
 switch_NIILeBalafre.bmp,2025-06-03 15:06:20,1
@@ -139,7 +139,7 @@ wars_clock.bmp,2025-06-10 19:24:37,42
 wars_enable.bmp,2025-06-10 19:24:38,46
 wars_team_up.bmp,,
 wars_x.bmp,,
-world.bmp,2025-06-10 19:38:11,1655
+world.bmp,2025-06-10 20:52:10,1662
 world_shelter_icon.bmp,,
 world_shelter_icon_2.bmp,2025-06-10 19:31:40,72
 world_shelter_icon_transblack.bmp,,

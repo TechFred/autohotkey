@@ -21,7 +21,7 @@ iconLens := "lens.bmp"
 
 O_iconHeal := Image("Heal.bmp", 50, Regions.icons.heal)
 O_optimise_reddot := Image("Reddot.bmp", 50, Regions.icons.optimise)
-O_iconTasks := Image("daily_task.bmp", 50, Regions.icons.tasks)
+
 ;O_iconbattlerewards := Image("battle_rewards_icon.bmp", 50, Regions.icons.battle_rewards)
 O_iconbattlerewards := Image("battle_rewards_icon_transblack.bmp", 25, Regions.menus.left, TransBlack)
 

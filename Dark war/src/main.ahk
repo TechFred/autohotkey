@@ -101,6 +101,7 @@ for u in Users {
         } catch as e {
             LoggerInstance.Warn("Crash detected for user " u.name ": " e.Message)
             LoggerInstance.debug(e.Stack)
+            TakeScreenshot()
             CrashDetection()
         }
     } until done
@@ -200,8 +201,7 @@ Complete_run(u) {
 }
 
 BlockInput("MouseMoveOff")
-Send("{PrintScreen}")
-Sleep(500)
+TakeScreenshot()
 if WinExist(winTitle) {
     ; Close the window gracefully
     WinClose(winTitle)

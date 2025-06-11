@@ -78,8 +78,8 @@ WaitFindText(needle := "", Options := Map()) {
         }
 
     } catch as e {
-        OutputDebug(e.message)
-        OutputDebug(e.stack)
+        LoggerInstance.debug(e.message)
+        LoggerInstance.debug(e.stack)
         return false
     }
 }

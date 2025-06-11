@@ -7,7 +7,7 @@ SetWorkingDir(A_ScriptDir)
 OutputDebug "Starting script - " A_ScriptDir
 
 debug := true
-debug := false
+;debug := false
 
 
 GetOCRRegion := true

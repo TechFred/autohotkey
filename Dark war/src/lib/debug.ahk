@@ -53,6 +53,7 @@ debugGetTextRegion(region := Regions.AllRegion, ocrOptions := Map("lang", "en-us
 
 CheckDebug() {
 
+
     if debug = true || GetOCRRegion = true {
         LoggerInstance.Info("Debugging mode enabled")
         Sleep (2000)

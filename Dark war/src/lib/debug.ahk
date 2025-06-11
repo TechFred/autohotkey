@@ -16,7 +16,9 @@ HighlightRegion(region, duration := 5000) {
     WinSetTransparent(150, "ahk_id " guiobj.Hwnd)
 
     ; Wait, then destroy
+    Sleep(duration)
     SetTimer (*) => guiobj.Destroy(), -duration
+
 }
 
 HighlightRegionInWindow(region, duration := 5000) {
@@ -53,7 +55,7 @@ debugGetTextRegion(region := Regions.AllRegion, ocrOptions := Map("lang", "en-us
 
 CheckDebug() {
 
-    if debug = true || GetOCRRegion = true {
+    if debug = true || GetOCRRegion = true || debugimage = true {
         LoggerInstance.Info("Debugging mode enabled")
         Sleep (2000)
         BlockInput("MouseMoveOff")
@@ -64,11 +66,13 @@ CheckDebug() {
             debugOCRRegion()
         }
 
+        if debugimage {
+            DebugimageObject(O_iconseasonmgt)
+        }
         ; ===============================
         if debug {
-            DebugClaim()
-            Debugclose()
-            
+            SeasonMgt()
+
         }
 
         BlockInput("MouseMoveOff")
@@ -181,26 +185,29 @@ DebugNormal() {
 }
 
 debugOCRRegion() {
-    LoggerInstance.debug("++++ OCR Region ++++")
 
+    list_oocrOption := [
+        Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,)
+    ]
 
-    ; OCR.DisplayImage := true
-    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
+    i := 0
+    for opt in list_oocrOption {
+        LoggerInstance.debug("`n`n++++ OCR Region " i " ++++")
+        debugOCRRegionOptions(opt)
+        i += 1
+    }
 
-    LoggerInstance.Debug("==== Event Main ====")
-    debugGetTextRegion(Regions.Events.main, ocrOptions)
-    LoggerInstance.Debug("==== menus top ====")
-    debugGetTextRegion(Regions.menus.top, ocrOptions)
-    LoggerInstance.Debug("==== menus Bottom ====")
-    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
-    LoggerInstance.Debug("==== All ====")
-    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+    OCR.DisplayImage := true
+    OCR.DisplayImage := false
 
     /*
     LoggerInstance.debug("++++ OCR Region mode 5 ++++")
     ; OCR.DisplayImage := true
     ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5)
-
+    
     LoggerInstance.Debug("==== Event Main ====")
     debugGetTextRegion(Regions.Events.main, ocrOptions)
     LoggerInstance.Debug("==== menus top ====")
@@ -209,11 +216,11 @@ debugOCRRegion() {
     debugGetTextRegion(Regions.menus.bottom, ocrOptions)
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
-
+    
     LoggerInstance.debug("++++ OCR Region mode 4 monochrome ++++")
     ; OCR.DisplayImage := true
     ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4, "monochrome", 128)
-
+    
     LoggerInstance.Debug("==== Event Main ====")
     debugGetTextRegion(Regions.Events.main, ocrOptions)
     LoggerInstance.Debug("==== menus top ====")
@@ -222,11 +229,11 @@ debugOCRRegion() {
     debugGetTextRegion(Regions.menus.bottom, ocrOptions)
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
-
+    
     LoggerInstance.debug("++++ OCR Region mode 5 monochrome ++++")
     ; OCR.DisplayImage := true
     ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5, "monochrome", 128)
-
+    
     LoggerInstance.Debug("==== Event Main ====")
     debugGetTextRegion(Regions.Events.main, ocrOptions)
     LoggerInstance.Debug("==== menus top ====")
@@ -235,7 +242,7 @@ debugOCRRegion() {
     debugGetTextRegion(Regions.menus.bottom, ocrOptions)
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
-
+    
     Region1 := [1191, 336, 1357, 852]
     LoggerInstance.Debug("==== Custom1 ====")
     debugGetTextRegion(Region1)
@@ -243,6 +250,22 @@ debugOCRRegion() {
     LoggerInstance.Debug("==== Custom2 ====")
     debugGetTextRegion(Region1)
     */
+}
+
+debugOCRRegionOptions(ocrOptions) {
+
+    ;LoggerInstance.debug("`n`n++++ OCR Region ++++")
+    LoggerInstance.debug(MapToLogString(ocrOptions))
+
+    LoggerInstance.Debug("==== Event Main ====")
+    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    LoggerInstance.Debug("==== menus top ====")
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
+    LoggerInstance.Debug("==== menus Bottom ====")
+    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+    LoggerInstance.Debug("==== All ====")
+    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
 }
 
 DebugOCRclick() {
@@ -278,6 +301,38 @@ Debugclose() {
 
 }
 
-DebugClaim(){
-    ClaimloopOCR()
+DebugClaim() {
+    ClaimLoopOCR()
+}
+
+DebugimageObject(O) {
+
+    if res := ImageFinderInstance.FindAnyImageObjects(1000, false, O) {
+        MouseMove(res.x, res.y)
+        LoggerInstance.debug("Found: " res.Found " x: " res.x " y: " res.y)
+
+        R := [res.x, res.y, res.x + 20, res.y + 20]
+        HighlightRegionInWindow(R)
+        Sleep(3000)
+    } else {
+        LoggerInstance.debug("Not found: " O.name)
+    }
+
+}
+
+MapToLogString(map) {
+    result := "`n"
+    for key, value in map {
+        result .= key ": " value "`n"
+        result2 .= Format('"{}", {}, ', key, IsObject(value) ? '"' value '"' : value)
+    }
+    result2 := SubStr(result2, 1, -2)  ; remove the last comma and space
+    OutputDebug(result2)
+
+    return result
+}
+
+debugaction() {
+
+    SeasonMgt()
 }

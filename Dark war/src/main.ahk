@@ -159,6 +159,11 @@ Complete_run(u) {
     iconHelpClick()
     Expeditions()
 
+    ;Season Management
+    CrashDetection()
+    iconHelpClick()
+    SeasonMgt()
+
     ;Energy
     if (u.energy_run) {
         LoggerInstance.info("Energy")

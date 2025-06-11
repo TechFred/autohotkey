@@ -3,7 +3,7 @@
 combat(){
     if (iconCombatClick().found){
         ;Sleep (2000)
-        ClaimLoopOCR()
+        ClaimLoopOCR(2000,4)
         ;Remove_Congrat()
         clickAnyBack()
     }

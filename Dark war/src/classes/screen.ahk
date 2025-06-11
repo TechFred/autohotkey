@@ -68,7 +68,8 @@ class Screens {
         Gifts: Screen("Gifts", "title", Regions.menus.top, "(?i)Gifts\b"),
         Adventure: Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
         HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Her[o0] List"),
-        VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP")
+        VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
+        SeasonMgt: Screen("Season Management", "title", Regions.menus.top, "(?i)SeasoN M.{1,3}ageMe.{1,3}t")
     }
 
     static Mains := {

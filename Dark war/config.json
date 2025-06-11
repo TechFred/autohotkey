@@ -6,18 +6,18 @@
         "img": "switch_NIILeBalafre.bmp",
         "regex": "(?i)personal",
         "order": 1,
-        "boomer_run": false,
+        "boomer_run": true,
         "energy_run": true
     },
     {
         "name": "UnknownWildling",
-        "active": false,
+        "active": true,
         "state": 148,
         "img": "switch_balafre.bmp",
         "regex": "(?i)comming",
         "order": 2,
         "boomer_run": true,
-        "energy_run": true
+        "energy_run": false
     },
     {
         "name": "MiniBalafré",

@@ -1,6 +1,5 @@
 #Requires AutoHotkey v2.0
 
-
 O_BoomerCancel := Image("cancel.bmp", 50, Regions.AllRegion)
 O_WorldShelterIcon := Image("world_shelter_icon.bmp", 50, Regions.AllRegion)
 O_Boomer_BW := Image("boomers_BW.bmp", 50, Regions.AllRegion)
@@ -53,6 +52,16 @@ boomers() {
                     i += 1
                     break
                 }
+
+
+                ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
+               if  (WaitFindText("(?i)RetryText", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 8000,
+                    "Region", Regions.AllRegion,
+                    "ocrOptions", ocrOptions
+                )))
 
                 if ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, ImagesMarches*).found {
                     Sleep(60000)

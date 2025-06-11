@@ -13,6 +13,9 @@ debug := false
 GetOCRRegion := true
 GetOCRRegion := false
 
+debugimage := true
+debugimage := false
+
 debugmodeOCRDeeper := false
 debugmodeOCR := false
 /*
@@ -69,5 +72,6 @@ debugmodeOCR := false
 #include src\actions\levelup.ahk
 #include src\actions\premium.ahk
 #include src\actions\Hospital.ahk
+#Include src\actions\Seasonmgt.ahk
 
 #Include src/main.ahk

@@ -223,5 +223,6 @@ ExitApp()
 Esc:: {
     BlockInput("MouseMoveOff")
     BlockInput("Off")
+    WinSetAlwaysOnTop(0, winTitle)
     ExitApp()
 }

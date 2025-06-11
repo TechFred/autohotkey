@@ -52,7 +52,7 @@ events() {
                 LoggerInstance.Debug("Red number found in menu")
                 ClickReddot(1000, Regions.events.main)  ;If reddot, click on it
                 ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_main)
-                ClaimOCR()
+                ClaimOCR(,, Regions.events.main)  ;Claim all in the main menu
                 ClaimAllOCR()
 
             } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesNew*).found) {

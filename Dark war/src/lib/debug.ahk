@@ -53,7 +53,6 @@ debugGetTextRegion(region := Regions.AllRegion, ocrOptions := Map("lang", "en-us
 
 CheckDebug() {
 
-
     if debug = true || GetOCRRegion = true {
         LoggerInstance.Info("Debugging mode enabled")
         Sleep (2000)
@@ -67,9 +66,14 @@ CheckDebug() {
 
         ; ===============================
         if debug {
+            DebugClaim()
             Debugclose()
+            
         }
 
+        BlockInput("MouseMoveOff")
+        BlockInput("Off")
+        WinSetAlwaysOnTop(0, winTitle)
         ExitApp()
 
     }
@@ -84,7 +88,7 @@ DebugNormal() {
     HighlightRegionInWindow(Regions.Events.main)
     Sleep(5000)
     */
-   LoginAndSetUser(Users[1])
+    LoginAndSetUser(Users[1])
 
     ;events
     CrashDetection()
@@ -177,9 +181,51 @@ DebugNormal() {
 }
 
 debugOCRRegion() {
-    LoggerInstance.debug("OCR Region")
+    LoggerInstance.debug("++++ OCR Region ++++")
+
+
     ; OCR.DisplayImage := true
-    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0)
+    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
+
+    LoggerInstance.Debug("==== Event Main ====")
+    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    LoggerInstance.Debug("==== menus top ====")
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
+    LoggerInstance.Debug("==== menus Bottom ====")
+    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+    LoggerInstance.Debug("==== All ====")
+    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+    /*
+    LoggerInstance.debug("++++ OCR Region mode 5 ++++")
+    ; OCR.DisplayImage := true
+    ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5)
+
+    LoggerInstance.Debug("==== Event Main ====")
+    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    LoggerInstance.Debug("==== menus top ====")
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
+    LoggerInstance.Debug("==== menus Bottom ====")
+    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+    LoggerInstance.Debug("==== All ====")
+    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+    LoggerInstance.debug("++++ OCR Region mode 4 monochrome ++++")
+    ; OCR.DisplayImage := true
+    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4, "monochrome", 128)
+
+    LoggerInstance.Debug("==== Event Main ====")
+    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    LoggerInstance.Debug("==== menus top ====")
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
+    LoggerInstance.Debug("==== menus Bottom ====")
+    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+    LoggerInstance.Debug("==== All ====")
+    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+    LoggerInstance.debug("++++ OCR Region mode 5 monochrome ++++")
+    ; OCR.DisplayImage := true
+    ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5, "monochrome", 128)
 
     LoggerInstance.Debug("==== Event Main ====")
     debugGetTextRegion(Regions.Events.main, ocrOptions)
@@ -196,14 +242,13 @@ debugOCRRegion() {
     Region1 := [807, 795, 1407, 946]
     LoggerInstance.Debug("==== Custom2 ====")
     debugGetTextRegion(Region1)
+    */
 }
 
 DebugOCRclick() {
-;    username := RegExReplace("UnknownWildling", "[ilo]", ".") ; replace difficut OCR chars.
-; username := RegExReplace("LeBalafré", "[ilo]", ".")
-username := RegExReplace("UnknownWildling", "[ilo]", ".")
-
-
+    ;    username := RegExReplace("UnknownWildling", "[ilo]", ".") ; replace difficut OCR chars.
+    ; username := RegExReplace("LeBalafré", "[ilo]", ".")
+    username := RegExReplace("UnknownWildling", "[ilo]", ".")
 
     username := "(?i)\[.{1,6}\]" username  ; Contains [...]Username
     WaitFindText(username, Map(
@@ -215,22 +260,24 @@ username := RegExReplace("UnknownWildling", "[ilo]", ".")
 
 }
 
-
-Debugclose(){
-Send("{PrintScreen}")
-Sleep(500)
-if WinExist(winTitle) {
-    ; Close the window gracefully
-    WinClose(winTitle)
-    LoggerInstance.Info("Close HD-Player.exe")
-
-    ; If the process doesn't close, force it
-    Sleep(5000)
+Debugclose() {
+    TakeScreenshot()
+    Sleep(500)
     if WinExist(winTitle) {
-        ProcessClose("HD-Player.exe")
-        LoggerInstance.warn("Force closed HD-Player.exe")
+        ; Close the window gracefully
+        WinClose(winTitle)
+        LoggerInstance.Info("Close HD-Player.exe")
+
+        ; If the process doesn't close, force it
+        Sleep(5000)
+        if WinExist(winTitle) {
+            ProcessClose("HD-Player.exe")
+            LoggerInstance.warn("Force closed HD-Player.exe")
+        }
     }
+
 }
 
-
+DebugClaim(){
+    ClaimloopOCR()
 }

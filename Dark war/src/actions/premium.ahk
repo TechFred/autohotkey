@@ -45,12 +45,12 @@ premiumCenter() {
             if !(ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
                 LoggerInstance.Debug("Premium title not found -> starting recovery sequence")
 
-                actions := [iconPlayerClickBlind(), clickAnyX(), clickAnyBack()]
+                actions := [iconPlayerClickBlind, clickAnyX, clickAnyBack]
 
                 for action in actions {
-                    action.Call()
+                    action.call()
                     if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
-                        LoggerInstance.Debug("Premium title found after action: " action.Name)
+                        LoggerInstance.Debug("Premium title found after action: " action.name)
                         break
                     }
                 }

@@ -71,7 +71,7 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            SeasonMgt()
+            debugaction2()
 
         }
 
@@ -335,4 +335,19 @@ MapToLogString(map) {
 debugaction() {
 
     SeasonMgt()
+}
+
+debugaction2() {
+
+    actions := [iconPlayerClickBlind, clickAnyX, clickAnyBack]
+
+    for action in actions {
+        action.call()
+        LoggerInstance.Debug("Premium title found after action: " action.Name)
+        if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
+            LoggerInstance.Debug("Premium title found after action: " action.Name)
+            break
+        }
+    }
+
 }

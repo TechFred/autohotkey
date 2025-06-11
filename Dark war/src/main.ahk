@@ -108,7 +108,7 @@ for u in Users {
 }
 
 Complete_run(u) {
-
+    LoggerInstance.info("Starting main loop for user" u.name ": -Boomers:" u.boomer_run " -Energy:" u.energy_run)
     ; Food
     LoggerInstance.info("Food")
     CrashDetection()

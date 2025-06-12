@@ -1,5 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 #Warn All, OutputDebug
+#WinActivateForce
+#SingleInstance
 
 CoordMode "Mouse", "Client"
 SetWorkingDir(A_ScriptDir)

@@ -24,6 +24,15 @@ Hospital(DoLoop := true) {
         LoggerInstance.Debug("Healing found")
         ;Healed := false
         i := 0
+        y := 10
+
+        ; Logique fonctionne mal avec les boomers. Ajout d'une condition pour attendre
+        ; LoopFindAnyImageObjects(clickDelay := 1000, doClick := true, loopDelay := 1000, attempts := 5, imagesObjs*) {
+
+        if !DoLoop {
+            ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 1000, attempts := 10, O_heal_btn)
+        }
+
         loop {
             if ImageFinderInstance.FindAnyImageObjects(1000, false, O_heal_btn).found {
                 i := 0

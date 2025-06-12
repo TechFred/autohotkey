@@ -1,5 +1,11 @@
 ﻿#Requires AutoHotkey v2.0
 #Warn All, OutputDebug
+#WinActivateForce
+#SingleInstance
+
+; Windows
+winTitle := "ahk_class Qt672QWindowIcon ahk_exe HD-Player.exe"
+SetTitleMatchMode(2)
 
 CoordMode "Mouse", "Client"
 SetWorkingDir(A_ScriptDir)

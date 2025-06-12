@@ -32,9 +32,7 @@ try {
 ;image Stats
 LoadImageStatsFromCSV()
 
-; Windows
-winTitle := "ahk_class Qt672QWindowIcon ahk_exe HD-Player.exe"
-SetTitleMatchMode(2)
+
 
 ; Activate the game window
 ;if WinExist(winTitle) {

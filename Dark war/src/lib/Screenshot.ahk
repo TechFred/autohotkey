@@ -3,7 +3,7 @@
 TakeScreenshot() {
     LoggerInstance.debug("Taking screenshot...")
 
-    Run("powershell -ExecutionPolicy Bypass -File " "" A_ScriptDir "\TakeScreenshot.ps1" "")
+    Run('powershell -ExecutionPolicy Bypass -File "' A_ScriptDir '\TakeScreenshot.ps1"')
 
     /*
     ; Take screenshot and save to PNG file

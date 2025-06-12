@@ -59,7 +59,7 @@ boomers() {
                 if (WaitFindText("(?i)\bMarch\b", Map(
                     "Click", true,
                     "ClickDelay", 2000,
-                    "LoopDelay", 8000,
+                    "LoopDelay", 50,
                     "Region", Regions.AllRegion,
                     "ocrOptions", ocrOptions
                 ))) {

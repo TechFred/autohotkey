@@ -16,8 +16,9 @@ StartDarkWar() {
             )
             Sleep (20000)
             i += 1
-            LoggerInstance.debug("Starting DarkWar " i)
+            LoggerInstance.debug("Starting DarkWar attempt: " i)
         } else if (WinExist(winTitle)) {
+            listAllWindows()
             LoggerInstance.info("Trying to activate Darkwar")
             GameActive := WinActivateGame()
         }
@@ -39,8 +40,11 @@ WinActivateGame() {
     if (WinExist(winTitle)) {
         LoggerInstance.debug("Trying to activate window")
         WinActivate(winTitle)
+        LoggerInstance.debug("1")
         WinWaitActive(winTitle, "", 10000)
+        LoggerInstance.debug("2")
         WinActivate(winTitle)
+        LoggerInstance.debug("3")
 
         if WinWaitActive(winTitle, "", 10000) {
             LoggerInstance.debug("Window is active")
@@ -75,4 +79,17 @@ QuitGame(code := 99) {
     }
     LoggerInstance.Info("Done with code: " code)
     ExitApp(code)
+}
+
+listAllWindows() {
+
+    ids := WinGetList()  ; Get all window handles (HWNDs)
+
+    for this_id in ids {
+        this_title := WinGetTitle(this_id)  ; Get window title
+        this_class := WinGetClass(this_id)  ; Get window class
+        LoggerInstance.debug ("Window ID: " this_id " Title: " this_title " Class: " this_class)
+
+    }
+
 }

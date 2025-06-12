@@ -1,22 +1,22 @@
 path,lastdetect,matchcount
 APC1.bmp,,
 APC1.jpg,,
-APC1_2.bmp,2025-06-11 19:18:18,499
-Alliance.bmp,2025-06-11 19:16:04,56
-Congrat_bob.bmp,2025-06-11 09:45:20,31
+APC1_2.bmp,2025-06-11 19:59:46,504
+Alliance.bmp,2025-06-11 19:49:53,59
+Congrat_bob.bmp,2025-06-11 19:46:36,32
 Energy_claim.bmp,2025-06-11 12:42:30,35
 Events_claim.bmp,2025-06-03 10:44:08,5
 Events_claim_2.bmp,,
 Events_exclamation_transblack.bmp,,
-Events_exclamation_transblack_Left.bmp,2025-06-11 10:04:41,3
-Events_exclamation_transblack_Right.bmp,2025-06-11 09:45:26,23
+Events_exclamation_transblack_Left.bmp,2025-06-11 19:46:54,4
+Events_exclamation_transblack_Right.bmp,2025-06-11 20:02:22,27
 Events_exclamation_transblack_old.bmp,,
 Events_new.bmp,2025-06-11 09:45:01,7
 Events_new_bnt.bmp,2025-06-10 15:03:18,7
 Events_new_bnt_2.bmp,2025-06-11 09:45:22,3
 Events_new_bnt_3.bmp,2025-06-10 11:52:16,2
-Events_reddot.bmp,2025-06-11 10:04:38,8
-Events_title.bmp,2025-06-11 10:05:04,87
+Events_reddot.bmp,2025-06-11 19:46:32,9
+Events_title.bmp,2025-06-11 19:47:02,97
 Levelup.bmp,2025-06-11 09:35:36,3
 Levelup_claim.bmp,2025-06-09 22:03:30,1
 March.jpg,,
@@ -24,52 +24,52 @@ March_2.bmp,2025-06-11 16:21:13,108
 Quinn_x.bmp,,
 Reddot.bmp,2025-06-10 11:35:30,1
 ShadowCalls_title.bmp,,
-Shadow_AllyMissions.bmp,2025-06-11 09:45:04,18
+Shadow_AllyMissions.bmp,2025-06-11 19:46:37,20
 Shadow_Assist.bmp,,
 Titan_title.bmp,2025-06-10 19:33:24,41
-alliance_gift.bmp,2025-06-11 19:16:27,64
+alliance_gift.bmp,2025-06-11 19:50:26,67
 alliance_help.jpg,,
 alliance_help.png,,
 alliance_help2.png,,
-alliance_tech.bmp,2025-06-11 19:16:06,56
-alliance_wars.bmp,2025-06-11 19:16:16,55
+alliance_tech.bmp,2025-06-11 19:49:54,59
+alliance_wars.bmp,2025-06-11 19:50:14,58
 battle_rewards_icon.bmp,,
-battle_rewards_icon_transblack.bmp,2025-06-11 10:03:27,22
-battlerewards_claim_all.bmp,2025-06-11 10:03:30,22
-boomers_BW.bmp,2025-06-11 19:18:13,19
-btn_return.bmp,2025-06-11 19:17:59,607
-btn_return_white.bmp,2025-06-11 19:17:23,57
+battle_rewards_icon_transblack.bmp,2025-06-11 19:51:40,24
+battlerewards_claim_all.bmp,2025-06-11 19:51:43,24
+boomers_BW.bmp,2025-06-11 19:54:39,20
+btn_return.bmp,2025-06-11 20:06:57,642
+btn_return_white.bmp,2025-06-11 20:02:46,66
 btn_return_white_2.bmp,,
 cancel.bmp,2025-06-11 12:47:33,4
 claim.bmp,,
 claim_congrat.bmp,2025-06-03 15:23:48,31
-claim_green.bmp,2025-06-11 09:45:19,44
-combat.bmp,2025-06-11 19:15:41,48
-combat2.bmp,2025-06-10 19:02:16,15
+claim_green.bmp,2025-06-11 19:46:45,49
+combat.bmp,2025-06-11 19:44:07,50
+combat2.bmp,2025-06-11 19:49:31,16
 combat_claim.bmp,2025-06-03 10:58:04,3
 combat_claim_blue.bmp,2025-06-03 10:58:05,3
 crash_darkwar_icon.bmp,2025-06-11 19:13:49,26
-daily_task.bmp,2025-06-11 16:16:10,23
+daily_task.bmp,2025-06-11 19:51:11,24
 daily_task_claim_all.bmp,2025-06-03 10:14:02,1
 daily_task_exit.bmp,2025-06-03 14:53:40,2
 donate_exit.bmp,,
-energy_plus.bmp,2025-06-11 19:17:35,49
-escort.bmp,2025-06-11 15:09:27,6
+energy_plus.bmp,2025-06-11 19:46:05,50
+escort.bmp,2025-06-11 19:49:00,7
 escort_gift.bmp,,
-escort_truck.bmp,2025-06-11 15:09:25,7
-expedition_chest.bmp,2025-06-11 09:52:36,7
+escort_truck.bmp,2025-06-11 19:48:58,8
+expedition_chest.bmp,2025-06-11 19:35:43,8
 expedition_chest2.bmp,2025-06-11 10:03:38,1
-expedition_chest_animation.bmp,2025-06-11 10:03:40,11
+expedition_chest_animation.bmp,2025-06-11 19:35:45,12
 expedition_claim.bmp,2025-06-03 15:12:25,3
-expedition_gift.bmp,2025-06-10 19:02:02,5
+expedition_gift.bmp,2025-06-11 19:49:10,7
 get_energy.jpg,,
 get_energy_2.bmp,2025-06-10 19:06:35,9
 get_energy_3.bmp,,
 get_energy_4.bmp,2025-06-11 12:42:03,17
 gift_claim.bmp,,
-gift_rare.bmp,2025-06-11 19:16:37,56
+gift_rare.bmp,2025-06-11 19:50:39,59
 gifts_claim_all.bmp,2025-06-03 10:58:50,4
-group.jpg,2025-06-11 19:18:17,147
+group.jpg,2025-06-11 19:59:45,152
 heal.bmp,,
 heal_0.bmp,,
 heal_alliance_help.bmp,,
@@ -79,11 +79,11 @@ heal_done_shooters.bmp,,
 heal_grayed.bmp,,
 heal_progress.bmp,,
 heal_selectall.bmp,,
-help.bmp,2025-06-11 19:17:31,186
+help.bmp,2025-06-11 20:06:59,200
 help.jpg,,
 help_2.bmp,,
 help_3.bmp,2025-06-03 17:12:31,17
-icon_seasonmgt_transblack.bmp,2025-06-11 19:17:16,16
+icon_seasonmgt_transblack.bmp,2025-06-11 19:51:58,18
 lens.bmp,,
 lens.jpg,,
 lens.png,,
@@ -98,28 +98,28 @@ mb_icon.bmp,,
 mb_mutabeasthunt.bmp,,
 mb_search.bmp,,
 optimise.bmp,,
-optimise_btn.bmp,2025-06-11 09:50:28,8
+optimise_btn.bmp,2025-06-11 20:07:09,9
 optimise_food.bmp,,
 optimise_food_2.bmp,,
 optimise_food_3.bmp,2025-06-10 11:45:56,2
 optimise_food_4.bmp,,
-optimise_resident_status.bmp,2025-06-11 09:50:24,8
-premium_icon.bmp,2025-06-10 20:52:04,20
-premium_title.bmp,2025-06-10 20:52:06,176
+optimise_resident_status.bmp,2025-06-11 20:07:05,9
+premium_icon.bmp,2025-06-11 20:02:19,22
+premium_title.bmp,2025-06-11 20:02:43,195
 red_cross.bmp,,
 red_cross_transblack.bmp,,
 reddot.bmp,,
-reddot_number_transblack.bmp,2025-06-11 10:04:43,369
-reddot_transblack.bmp,2025-06-11 09:50:23,85
-reddot_transblack_2.bmp,2025-06-11 09:48:04,39
-search.jpg,2025-06-11 19:18:15,148
-shelter.bmp,2025-06-11 19:18:09,386
+reddot_number_transblack.bmp,2025-06-11 20:02:33,371
+reddot_transblack.bmp,2025-06-11 20:07:04,87
+reddot_transblack_2.bmp,2025-06-11 20:02:24,50
+search.jpg,2025-06-11 19:59:43,153
+shelter.bmp,2025-06-11 20:04:18,428
 speedup.bmp,,
 speedup.png,,
 splash_event_x.bmp,2025-06-11 10:06:24,4
 splash_guy.bmp,2025-06-03 15:07:31,5
 splash_guy_x.bmp,2025-06-11 19:14:16,12
-splash_x.bmp,2025-06-11 19:16:23,104
+splash_x.bmp,2025-06-11 19:50:21,110
 survivor_profile.bmp,2025-06-06 12:05:36,29
 switch_NIILeBalafre.bmp,2025-06-03 15:06:20,1
 switch_account.bmp,2025-06-06 12:52:10,17
@@ -130,18 +130,18 @@ switch_playericon.bmp,2025-06-11 19:14:32,4
 switch_playericon_2.bmp,,
 switch_user.bmp,,
 switch_yes.bmp,2025-06-03 15:06:21,2
-task_x.bmp,2025-06-11 16:16:24,18
+task_x.bmp,2025-06-11 19:52:41,20
 tasks_claim.bmp,,
-tech_donate.bmp,2025-06-11 19:16:07,445
-tech_donate_done.bmp,2025-06-11 19:16:07,55
-tech_thumb.bmp,2025-06-11 19:16:07,56
+tech_donate.bmp,2025-06-11 19:50:06,473
+tech_donate_done.bmp,2025-06-11 19:50:06,58
+tech_thumb.bmp,2025-06-11 19:49:55,59
 transblack_x.bmp,2025-06-03 17:10:05,9
-wars_auto_group.bmp,2025-06-11 09:41:55,5
-wars_clock.bmp,2025-06-11 19:16:18,50
-wars_enable.bmp,2025-06-11 19:16:19,55
+wars_auto_group.bmp,2025-06-11 19:50:16,6
+wars_clock.bmp,2025-06-11 19:44:45,52
+wars_enable.bmp,2025-06-11 19:50:17,58
 wars_team_up.bmp,,
 wars_x.bmp,,
-world.bmp,2025-06-11 19:18:05,1983
+world.bmp,2025-06-11 20:07:04,2097
 world_shelter_icon.bmp,,
-world_shelter_icon_2.bmp,2025-06-11 18:42:03,85
+world_shelter_icon_2.bmp,2025-06-11 20:02:12,90
 world_shelter_icon_transblack.bmp,,

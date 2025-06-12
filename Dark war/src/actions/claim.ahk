@@ -94,8 +94,18 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
         "ClickDelay", ClickDelay,
         "LoopDelay", LoopDelay,
         "Region", Region,
-        "ocrOptions", Map("lang", "en-us","scale", 3, "grayscale", 0, "mode", 4, "casesense", 0)
+        "ocrOptions", Map("lang", "en-us", "scale", 3, "grayscale", 0, "mode", 4, "casesense", 0)
     ))
+
+    if !(match) {
+        match := WaitFindText("(?i)\bclaim\b", Map(
+            "Click", true,
+            "ClickDelay", ClickDelay,
+            "LoopDelay", 1000,
+            "Region", Region,
+            "ocrOptions", Map("lang", "en-us", "scale", 5, "grayscale", 0, "mode", 4, "casesense", 0)
+        ))
+    }
 
     ;ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
     RemoveCongratOCR(, LoopDelay := 1)

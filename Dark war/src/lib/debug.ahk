@@ -39,6 +39,7 @@ HighlightRegionInWindow(region, duration := 5000) {
         WinSetTransparent(150, "ahk_id " guiobj.Hwnd)
 
         ; Auto destroy after duration
+        Sleep(duration)
         SetTimer (*) => guiobj.Destroy(), -duration
     } catch as e {
         MsgBox "Error highlighting region: " e.Message
@@ -71,8 +72,8 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            debugaction2()
-
+            ; HighlightRegionInWindow(Regions.icons.heal, 5000)
+            HospitalStatus()
         }
 
         BlockInput("MouseMoveOff")
@@ -190,7 +191,9 @@ debugOCRRegion() {
         Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,)
+        Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 1,),
+        Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,)
     ]
 
     i := 0
@@ -339,15 +342,5 @@ debugaction() {
 
 debugaction2() {
 
-    actions := [iconPlayerClickBlind, clickAnyX, clickAnyBack]
-
-    for action in actions {
-        action.call()
-        LoggerInstance.Debug("Premium title found after action: " action.Name)
-        if (ImageFinderInstance.FindAnyImageObjects(1000, false, O_premium_title).found) {
-            LoggerInstance.Debug("Premium title found after action: " action.Name)
-            break
-        }
-    }
-
+    TakeScreenshot()
 }

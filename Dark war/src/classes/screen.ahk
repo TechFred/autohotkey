@@ -81,7 +81,8 @@ class Screens {
         Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
         Loading: Screen("Android", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
         Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks"),
-        Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another")
+        Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another"),
+        Healing: Screen("Healing", "main", Regions.Events.main, "(?i)Heal Wounded Units")
     }
 
     static Bottom := {

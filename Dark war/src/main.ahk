@@ -67,9 +67,16 @@ CheckDebug()
 
 ; Special
 Sleep(2000)
+
+if Screens.mains.Healing.WaitForMatch(250) {
+    LoggerInstance.Info("Healing found, starting Healing")
+    Hospital()
+    ExitApp()
+} 
 Hospital()
 
-if getCurrentScreen() = SCREEN_WORLD {
+if Screens.Shelter.World.WaitForMatch(250) {
+    LoggerInstance.Info("World screen detected, starting Boomers")
     boomers()
     ExitApp
 }

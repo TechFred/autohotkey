@@ -5,6 +5,7 @@ O_winmaximise := ("maximise.bmp", 75, Regions.AppRegion)
 StartDarkWar() {
 
     i := 0
+    GameActive := false
     loop {
         if !WinExist(winTitle) {
             LoggerInstance.info("Starting DarkWar")
@@ -13,40 +14,46 @@ StartDarkWar() {
             Run(
                 '"C:\Program Files\BlueStacks_nxt\HD-Player.exe" --instance Nougat32 --cmd launchApp --package "com.readygo.dark.gp" --source desktop_shortcut'
             )
-            sleep (20000)
+            Sleep (20000)
             i += 1
             LoggerInstance.debug("Starting DarkWar " i)
         } else if (WinExist(winTitle)) {
-
-            WinActivateGame()
-
-            LoggerInstance.info("DarkWar running")
-            break
+            LoggerInstance.info("Trying to activate Darkwar")
+            GameActive := WinActivateGame()
         }
 
     }
-    until (i > 20)
+    until (i > 20) || GameActive
 
     if (i > 20) {
         LoggerInstance.warn("Can't start Darkwar. Exiting")
         ExitApp()
     }
+    LoggerInstance.info("DarkWar running")
 
 }
 
 WinActivateGame() {
-    if (WinExist(winTitle)) {
 
+    WindowsisActivated := false
+    if (WinExist(winTitle)) {
+        LoggerInstance.debug("Trying to activate window")
         WinActivate(winTitle)
-        WinWaitActive(winTitle)
-        Sleep(1000)
-        WinRestore(winTitle)
-        Sleep(2000)
-        ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
-        MouseMove(352, 15)
-        ;MouseMove(100, 15)
-        Sleep(200)
-        Click("left", 2)
-        WinSetAlwaysOnTop(1, winTitle)
+        WinWaitActive(winTitle, "", 10000)
+        WinActivate(winTitle)
+
+        if WinWaitActive(winTitle, "", 10000) {
+            LoggerInstance.debug("Window is active")
+            WindowsisActivated := true
+            Sleep(1000)
+            WinRestore(winTitle)
+            Sleep(2000)
+            ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
+            MouseClick("left", 352, 15, 2)
+            ;MouseMove(100, 15)
+            WinSetAlwaysOnTop(1, winTitle)
+        }
+
     }
+    return WindowsisActivated
 }

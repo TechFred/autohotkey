@@ -41,12 +41,12 @@ WinActivateGame() {
         LoggerInstance.debug("Trying to activate window")
         WinActivate(winTitle)
         LoggerInstance.debug("1")
-        WinWaitActive(winTitle, "", 10000)
+        WinWaitActive(winTitle, "", 10)
         LoggerInstance.debug("2")
         WinActivate(winTitle)
         LoggerInstance.debug("3")
 
-        if WinWaitActive(winTitle, "", 10000) {
+        if WinWaitActive(winTitle, "", 10) {
             LoggerInstance.debug("Window is active")
             WindowsisActivated := true
             Sleep(1000)

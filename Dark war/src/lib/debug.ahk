@@ -72,7 +72,7 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            ; HighlightRegionInWindow(Regions.icons.heal, 5000)
+            HighlightRegionInWindow(Regions.icons.heal, 5000)
             HospitalStatus()
         }
 

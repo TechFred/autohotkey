@@ -5,6 +5,7 @@ importuser() {
     for u in JSON.Parse(FileRead(A_ScriptDir "\config.json", "UTF-8")) {
         if u["active"] {
             Users.Push(
+                ; (name, active, state, imgPath, regex, order, boomer_run, energy_run)
                 User(
                     u["name"],
                     u["active"],
@@ -21,6 +22,7 @@ importuser() {
 
     }
     SortUsersByOrder(Users)
+    displayUsers(Users)
     return Users
 }
 
@@ -36,3 +38,5 @@ SortUsersByOrder(users) {
         }
     }
 }
+
+

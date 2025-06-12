@@ -16,8 +16,8 @@
         "img": "switch_balafre.bmp",
         "regex": "(?i)comming",
         "order": 2,
-        "boomer_run": true,
-        "energy_run": false
+        "boomer_run": false,
+        "energy_run": true
     },
     {
         "name": "MiniBalafré",
@@ -26,7 +26,7 @@
         "img": "switch_minibalafre.bmp",
         "regex": "(?i)Goofy",
         "order": 3,
-        "boomer_run": true,
+        "boomer_run": false,
         "energy_run": true
     }
 ]

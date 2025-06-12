@@ -20,3 +20,10 @@ class User {
         this.energy_run := energy_run
     }
 }
+
+
+displayUsers(users) {
+    for i, user in users {
+        LoggerInstance.Info("User " i ": " user.name ", img: " user.img.path ", order: " user.order ", Boomers: " user.boomer_run ", Energy: " user.energy_run)
+    }
+}

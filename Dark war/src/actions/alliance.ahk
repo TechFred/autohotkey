@@ -29,7 +29,7 @@ Alliance() {
     if (goToShelter() = SCREEN_SHELTER) {
         if (iconAllianceClick()) {
 
-            allianceTech()
+            AllianceTech()
             AllianceWars()
             AllianceGifts()
 
@@ -56,13 +56,13 @@ AllianceTech() {
             loop {
                 img := ImageFinderInstance.LoopFindImage(tech_donate, Regions.AllRegion, 50, 250, true, 10, 3)
                 if (img.Found) {
-                    loggerInstance.debug("Tech Donate")
+                    LoggerInstance.debug("Tech Donate")
                     i := 0
                 } else if (ImageFinderInstance.FindImage(tech_donate_done, Regions.AllRegion, tolerance := 50, clickDelay := 1000, doClick := false).found) {
-                    loggerInstance.debug("Tech Donate Done found")
+                    LoggerInstance.debug("Tech Donate Done found")
                     break
                 } else {
-                    loggerInstance.debug("Tech Donate not found")
+                    LoggerInstance.debug("Tech Donate not found")
                     i += 1
                     Sleep(250)
                 }
@@ -80,14 +80,14 @@ AllianceGifts() {
     LoggerInstance.debug("Alliance Gifts")
 
     if (ImageFinderInstance.LoopFindImage(alliance_gift, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 5).Found) {
-        ClaimAllOCR(,Regions.menus.bottom)
-        ClaimLoopOCR(250)
+        ClaimAllOCR(, Regions.menus.bottom)
+        ClaimLoopOCR(250, 3)
 
         ;rare gifts
 
         if (ImageFinderInstance.LoopFindImage(gift_rare, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 4).Found) {
-            ClaimAllOCR(,Regions.menus.bottom)
-            ClaimLoopOCR(250)
+            ClaimAllOCR(, Regions.menus.bottom)
+            ClaimLoopOCR(250, 20)
         }
 
         clickAnyBack()
@@ -99,10 +99,10 @@ AllianceGifts() {
 AllianceWars() {
     LoggerInstance.debug("Alliance Wars")
 
-    if (ImageFinderInstance.LoopFindImage(alliance_wars, Regions.AllRegion, 70, , true,  1000,  5).Found) {
+    if (ImageFinderInstance.LoopFindImage(alliance_wars, Regions.AllRegion, 70, , true, 1000, 5).Found) {
 
         ;Team Up tab
-        ImageFinderInstance.LoopFindImage(wars_team_up, Regions.AllRegion, 50,  1000, true,  10, 5)
+        ImageFinderInstance.LoopFindImage(wars_team_up, Regions.AllRegion, 50, 1000, true, 10, 5)
 
         ;Button Auto Team-Up
         ImageFinderInstance.LoopFindAnyImage(Regions.menus.bottom, 70, 1000, true, 1000, 5, ImagesWars*)

@@ -36,6 +36,7 @@ boomers() {
             centerShelter()
             ;ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_WorldShelterIcon)
             iconHelpClick()
+            HospitalStatus()
 
             if (getCurrentScreen() != SCREEN_WORLD) {
                 LoggerInstance.warn("Error - not in world")
@@ -55,14 +56,20 @@ boomers() {
 
                 ;if ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, ImagesMarches*).found
                 ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
-                if (WaitFindText("(?i)March", Map(
+                if (WaitFindText("(?i)\bMarch\b", Map(
                     "Click", true,
                     "ClickDelay", 2000,
                     "LoopDelay", 8000,
                     "Region", Regions.AllRegion,
                     "ocrOptions", ocrOptions
                 ))) {
-                    Sleep(60000)
+
+                    ; Loop for 60 secondes
+                    startTime := A_TickCount  ; Get current time in milliseconds
+                    loop{
+                        HospitalStatus()
+                        iconHelpClick()
+                    } until (A_TickCount - startTime > 60000)
                     i := 0
                     break
                 } else {

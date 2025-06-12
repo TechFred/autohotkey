@@ -77,6 +77,9 @@ boomers() {
                     i += 1
                     if (i > maxloop OR GetEnergy()) {
                         LoggerInstance.Info("Bommer loop: " i " Or out of energy -> Quitting")
+                        TakeScreenshot()
+                        Sleep(2000)
+                        LoggerInstance.warn("Screenshot taken, error")
                         ExitBoomers()
                         return
                     }

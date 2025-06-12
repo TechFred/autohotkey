@@ -29,7 +29,7 @@ boomers() {
         loop {
             if GetEnergy() {
                 LoggerInstance.Info("Out of energy -> quitting")
-                ExitBoomers
+                ExitBoomers()
                 return
             }
             ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_BoomerCancel)
@@ -40,6 +40,7 @@ boomers() {
 
             if (getCurrentScreen() != SCREEN_WORLD) {
                 LoggerInstance.warn("Error - not in world")
+                ExitBoomers()
                 return
             }
 

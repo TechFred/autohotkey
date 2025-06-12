@@ -1,8 +1,8 @@
 #Requires AutoHotkey v2.0
 
-importuser() {
+importuser(path) {
     Users := []
-    for u in JSON.Parse(FileRead(A_ScriptDir "\config.json", "UTF-8")) {
+    for u in JSON.Parse(FileRead(A_ScriptDir "\" path, "UTF-8")) {
         if u["active"] {
             Users.Push(
                 ; (name, active, state, imgPath, regex, order, boomer_run, energy_run)
@@ -38,5 +38,3 @@ SortUsersByOrder(users) {
         }
     }
 }
-
-

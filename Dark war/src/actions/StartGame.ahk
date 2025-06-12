@@ -42,16 +42,12 @@ WinActivateGame() {
         WinRestore(winTitle)
         WinSetAlwaysOnTop(1, winTitle)
         WinActivate(winTitle)
-        LoggerInstance.debug("1")
         WinWaitActive(winTitle, "", 10)
-        LoggerInstance.debug("2")
-        WinActivate(winTitle)
-        LoggerInstance.debug("3")
 
         if WinWaitActive(winTitle, "", 10) {
             LoggerInstance.debug("Window is active")
             WindowsisActivated := true
-            Sleep(1000)
+            WinRestore(winTitle)
             Sleep(2000)
             ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
             MouseClick("left", 352, 15, 2)

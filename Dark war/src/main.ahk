@@ -22,10 +22,11 @@ if !(A_Args.Length = 1 && FileExist(configPath)) {
 try {
     LoggerInstance.Info("loading " configPath)
     configContent := FileRead(configPath, "UTF-8")
-    config := JSON.Parse(configContent)
+    Users := importuser(configPath)
 } catch {
     LoggerInstance.warn("Failed to load " configPath)
-    ExitApp
+    LoggerInstance.Warn("Crash importing users: " e.Message)
+    QuitGame(2)
 }
 
 ;image Stats
@@ -48,14 +49,6 @@ BlockInput("MouseMove")
 ; Starting
 LoggerInstance.Info("Starting script - " A_ScriptDir)
 
-; users
-try
-    Users := importuser()
-catch as e {
-    LoggerInstance.Warn("Crash importing users: " e.Message)
-    ExitApp()
-
-}
 
 if debug = false AND GetOCRRegion = false {
     StartDarkWar()

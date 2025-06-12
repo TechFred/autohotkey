@@ -288,7 +288,7 @@ DebugOCRclick() {
 
 Debugclose() {
     TakeScreenshot()
-    Sleep(500)
+
     if WinExist(winTitle) {
         ; Close the window gracefully
         WinClose(winTitle)

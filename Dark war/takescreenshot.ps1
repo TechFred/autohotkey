@@ -8,5 +8,5 @@ $bmp = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
 $graphics = [System.Drawing.Graphics]::FromImage($bmp)
 $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
 
-$filename = Join-Path -Path $scriptDir -ChildPath "Screenshot\DW_$((Get-Date).ToString('yyyyMMdd_HHmmss')).png"
+$filename = Join-Path -Path $scriptDir -ChildPath "Screenshot\DW_$((Get-Date).ToString('yyyy-MM-dd_HH.mm.ss')).png"
 $bmp.Save($filename, [System.Drawing.Imaging.ImageFormat]::Png)

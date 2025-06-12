@@ -212,24 +212,11 @@ Complete_run(u) {
     iconHelpClick()
 }
 
-BlockInput("MouseMoveOff")
-TakeScreenshot()
-if WinExist(winTitle) {
-    ; Close the window gracefully
-    WinClose(winTitle)
-    LoggerInstance.Info("Close HD-Player.exe")
+QuitGame(0)
 
-    ; If the process doesn't close, force it
-    Sleep(5000)
-    if WinExist(winTitle) {
-        ProcessClose("HD-Player.exe")
-        LoggerInstance.warn("Force closed HD-Player.exe")
-    }
-}
 
-LoggerInstance.Info("Done")
 
-ExitApp()
+
 
 ; ===== HOTKEY: ESC to exit =====
 Esc:: {

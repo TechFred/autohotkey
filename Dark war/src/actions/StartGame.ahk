@@ -27,7 +27,7 @@ StartDarkWar() {
 
     if (i > 20) {
         LoggerInstance.warn("Can't start Darkwar. Exiting")
-        ExitApp()
+        QuitGame(1)
     }
     LoggerInstance.info("DarkWar running")
 
@@ -56,4 +56,23 @@ WinActivateGame() {
 
     }
     return WindowsisActivated
+}
+
+QuitGame(code := 99) {
+    BlockInput("MouseMoveOff")
+    TakeScreenshot()
+    if WinExist(winTitle) {
+        ; Close the window gracefully
+        WinClose(winTitle)
+        LoggerInstance.Info("Close HD-Player.exe")
+
+        ; If the process doesn't close, force it
+        Sleep(5000)
+        if WinExist(winTitle) {
+            ProcessClose("HD-Player.exe")
+            LoggerInstance.warn("Force closed HD-Player.exe")
+        }
+    }
+    LoggerInstance.Info("Done with code: " code)
+    ExitApp(code)
 }

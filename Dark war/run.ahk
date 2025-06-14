@@ -13,8 +13,8 @@ SetWorkingDir(A_ScriptDir)
 OutputDebug "Starting script - " A_ScriptDir
 
 debug := true
-;debug := false
-
+debug := false
+6
 
 GetOCRRegion := true
 GetOCRRegion := false

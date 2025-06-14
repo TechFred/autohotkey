@@ -75,7 +75,7 @@ class Screens {
 
     static Mains := {
         Logged: Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
-        Android: Screen("Android", "main", Regions.Events.main, "(?i)JEUX POPULAIRE|POPULAR GAMES TO PLAY"),
+        Android: Screen("Android", "main", Regions.Events.main, "(?i)POPULAR"),
         Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),

@@ -29,9 +29,12 @@ CrashDetection() {
             iconPlayerClickBlind()
             iconPlayerClickBlind()
             clickAnyBack()
+        } else if scr.name = Screens.custom.BlueStacks {
+            ToggleFullScreen()
         }
 
     }
+
     /*
         if (getCurrentScreen() = SCREEN_ANDROID) {
             Checkfix_Screen_Android()

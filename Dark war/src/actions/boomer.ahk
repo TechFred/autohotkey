@@ -3,7 +3,7 @@
 O_BoomerCancel := Image("cancel.bmp", 50, Regions.AllRegion)
 O_WorldShelterIcon := Image("world_shelter_icon.bmp", 50, Regions.AllRegion)
 O_Boomer_BW := Image("boomers_BW.bmp", 50, Regions.AllRegion)
-O_BoomerGroup := Image("group.jpg", 50, Regions.AllRegion)
+O_BoomerGroup := Image("Boomer_teamup.bmp", 50, Regions.AllRegion)
 O_BoomerSearch := Image("search.jpg", 50, Regions.AllRegion)
 
 ;march
@@ -21,32 +21,61 @@ ImagesAPC1 := [O_APC1_1, O_APC1_2]
 
 maxloop := 60
 
+iconLensClick() {
+    goToWorldOCR()
+    ClickCenter(Regions.icons.lens, 2000)
+
+}
+
 boomers() {
-    if (goToWorld() = SCREEN_WORLD) {
+    if (Screens.shelter.world.WaitForMatch(5000)) {
 
         i := 0
 
         loop {
-            if GetEnergy() {
+            if GetEnergyOCR() {
                 LoggerInstance.Info("Out of energy -> quitting")
                 ExitBoomers()
                 return
             }
-            ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_BoomerCancel)
+
+            WaitFindText("(?i)Cancel", Map(
+                "Click", true,
+                "ClickDelay", 2000,
+                "LoopDelay", 250,
+                "Region", Regions.events.main,
+                "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+            ))
+            ;ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_BoomerCancel)
             centerShelter()
             ;ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_WorldShelterIcon)
             iconHelpClick()
             HospitalStatus()
 
-            if (getCurrentScreen() != SCREEN_WORLD) {
+            if (!Screens.shelter.world.WaitForMatch(2000)) {
                 LoggerInstance.warn("Error - not in world")
                 ExitBoomers()
                 return
             }
 
             iconLensClick()
-            ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_Boomer_BW)
-            ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_BoomerSearch)
+
+            WaitFindText("(?i)Boom.r", Map(
+                "Click", true,
+                "ClickDelay", 2000,
+                "LoopDelay", 250,
+                "Region", Regions.events.main,
+                "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+            ))
+
+            WaitFindText("(?i)Search", Map(
+                "Click", true,
+                "ClickDelay", 2000,
+                "LoopDelay", 250,
+                "Region", Regions.events.bottom,
+                "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+            ))
+
             ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 50, 5, O_BoomerGroup)
 
             loop {
@@ -67,15 +96,16 @@ boomers() {
 
                     ; Loop for 60 secondes
                     startTime := A_TickCount  ; Get current time in milliseconds
-                    loop{
+                    loop {
                         HospitalStatus()
                         iconHelpClick()
+                        Sleep (1000)  ; To avoid too much loops
                     } until (A_TickCount - startTime > 60000)
                     i := 0
                     break
                 } else {
                     i += 1
-                    if (i > maxloop OR GetEnergy()) {
+                    if (i > maxloop OR GetEnergyOCR()) {
                         LoggerInstance.Info("Bommer loop: " i " Or out of energy -> Quitting")
                         TakeScreenshot()
                         LoggerInstance.warn("Screenshot taken, error")
@@ -95,5 +125,16 @@ ExitBoomers() {
     iconPlayerClickBlind()
     iconPlayerClickBlind()
     clickAnyBack()
-    goToShelter()
+    goToShelterOCR()
+}
+
+GetEnergyOCR() {
+
+    return WaitFindText("(?i)Get Energy", Map(
+        "Click", false,
+        "ClickDelay", 2000,
+        "LoopDelay", 250,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+    ))
 }

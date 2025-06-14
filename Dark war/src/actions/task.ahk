@@ -29,6 +29,6 @@ ExitTask() {
 }
 
 iconTasksClick() {
-    goToShelter()
+    goToShelterOCR()
     return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconTasks)
 }

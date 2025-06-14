@@ -72,8 +72,15 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            HighlightRegionInWindow(Regions.icons.heal, 5000)
-            HospitalStatus()
+            ;HighlightRegionInWindow(Regions.events.bottom, 5000)
+            getCurrentScreenOCR()
+            /*
+            HighlightRegionInWindow(Regions.menus.top, 5000)
+            HighlightRegionInWindow(Regions.events.main, 5000)
+            HighlightRegionInWindow(Regions.events.bottom, 5000)
+            sleep (5000)
+            */
+        
         }
 
         BlockInput("MouseMoveOff")
@@ -111,90 +118,22 @@ DebugNormal() {
     CrashDetection()
     iconHelpClick()
 
-    ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
-    ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
-    ;iconOptimiseClick()
-    ;clickAnyBack()
-    ;ClickTransblackX()
-    ;res := ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5)
-    ;msgbox getCurrentScreen()
-    ;res := ImageFinderInstance.LoopFindAnyImageObjects(1000,false, 1000, 5, O_TransblackX)
-    ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
-
-    ;res := ImageFinderInstance.LoopFindAnyImageObjects(1000,false, 1000, 5, O_exitGuy)
-    ;energy()ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack)
-    ;events()
-    ;res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack)
-    ;MouseMove(res.x, res.y)
-
-    ;res := GetReddot()
-    ;centerShelter()
-    ;levelup()
-    ;ClickReddot(1000, Regions.events.main)
-    ;ClickReddot(1000, Regions.events.main)
-    ;ExitApp
-    ;premiumCenter()
-    ;events()
-    ;testwait()
-    ;i:= GetReddot()
-    ;MouseMove(i.x, i.y)
-    getCurrentScreen()
-    OutputDebug("hello")
-    s := Screen("Guy", "main", Regions.Events.main, "(?i)Guy")
-    ;r := s.Find()
-    ; AllianceGifts()
-    ;ocrOptions := {lang:"en-us", scale:2, grayscale:1, casesense:0}
-    ;DebugOCR(ocrOptions, "Claim")
-    ;ClaimAllOCR(,Regions.menus.bottom)
-    ;ClaimLoopOCR()
-    ;RemoveCongratOCR()
-    ExitApp()
-    WaitFindText("Dark War")
-    ocrOptions := Map("scale", 5, "x", 0, "y", 0, "w", 500, "h", 500)
-
-    result := OCR.FromWindow(winTitle, ocrOptions)
-
-    LoggerInstance.Debug(result.Text)
-
-    ;CoordMode "Mouse", "Screen"
-    /*
-    LoggerInstance.Debug("search")
-    loop {
-        search := " Survivor Profile "
-        Sleep 500 ; Small delay to wait for the InputBox to close
-        result := OCR.FromWindow(winTitle, { scale: 5 })
-        LoggerInstance.Debug(Result.Text)
-    
-        found := result.FindString(search, { IgnoreLinebreaks: True })
-    
-        LoggerInstance.Debug(found.x "," found.y)
-        found.Highlight()
-        ; found := result.FindStrings(search, {IgnoreLinebreaks: false})
-    
-        break
-    }
-    */
-
-    ; O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
-    ; O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
-    ; O_reddot_number_transblack_bottom.region := Regions.events.bottom
-
-    ; res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack_bottom)
-    ; MouseMove(res.x, res.y)
-    ; MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
-
+   
 }
 
 debugOCRRegion() {
 
     list_oocrOption := [
+        Map("lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0,),
         Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 1,),
-        Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,)
+        Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,)
     ]
+
+    ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
 
     i := 0
     for opt in list_oocrOption {
@@ -206,58 +145,11 @@ debugOCRRegion() {
     OCR.DisplayImage := true
     OCR.DisplayImage := false
 
-    /*
-    LoggerInstance.debug("++++ OCR Region mode 5 ++++")
-    ; OCR.DisplayImage := true
-    ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5)
-    
-    LoggerInstance.Debug("==== Event Main ====")
-    debugGetTextRegion(Regions.Events.main, ocrOptions)
-    LoggerInstance.Debug("==== menus top ====")
-    debugGetTextRegion(Regions.menus.top, ocrOptions)
-    LoggerInstance.Debug("==== menus Bottom ====")
-    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
-    LoggerInstance.Debug("==== All ====")
-    debugGetTextRegion(Regions.AllRegion, ocrOptions)
-    
-    LoggerInstance.debug("++++ OCR Region mode 4 monochrome ++++")
-    ; OCR.DisplayImage := true
-    ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4, "monochrome", 128)
-    
-    LoggerInstance.Debug("==== Event Main ====")
-    debugGetTextRegion(Regions.Events.main, ocrOptions)
-    LoggerInstance.Debug("==== menus top ====")
-    debugGetTextRegion(Regions.menus.top, ocrOptions)
-    LoggerInstance.Debug("==== menus Bottom ====")
-    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
-    LoggerInstance.Debug("==== All ====")
-    debugGetTextRegion(Regions.AllRegion, ocrOptions)
-    
-    LoggerInstance.debug("++++ OCR Region mode 5 monochrome ++++")
-    ; OCR.DisplayImage := true
-    ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 5, "monochrome", 128)
-    
-    LoggerInstance.Debug("==== Event Main ====")
-    debugGetTextRegion(Regions.Events.main, ocrOptions)
-    LoggerInstance.Debug("==== menus top ====")
-    debugGetTextRegion(Regions.menus.top, ocrOptions)
-    LoggerInstance.Debug("==== menus Bottom ====")
-    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
-    LoggerInstance.Debug("==== All ====")
-    debugGetTextRegion(Regions.AllRegion, ocrOptions)
-    
-    Region1 := [1191, 336, 1357, 852]
-    LoggerInstance.Debug("==== Custom1 ====")
-    debugGetTextRegion(Region1)
-    Region1 := [807, 795, 1407, 946]
-    LoggerInstance.Debug("==== Custom2 ====")
-    debugGetTextRegion(Region1)
-    */
 }
 
 debugOCRRegionOptions(ocrOptions) {
 
-    ;LoggerInstance.debug("`n`n++++ OCR Region ++++")
+    LoggerInstance.debug("`n`n++++ OCR Region ++++")
     LoggerInstance.debug(MapToLogString(ocrOptions))
 
     LoggerInstance.Debug("==== Event Main ====")
@@ -268,6 +160,12 @@ debugOCRRegionOptions(ocrOptions) {
     debugGetTextRegion(Regions.menus.bottom, ocrOptions)
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+    ;LoggerInstance.Debug("==== Special ====")
+    ;debugGetTextRegion(Regions.AppRegion, ocrOptions)
+
+    ;LoggerInstance.Debug("==== World ====")
+    ;debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
 
 }
 
@@ -344,3 +242,88 @@ debugaction2() {
 
     TakeScreenshot()
 }
+
+
+
+
+
+
+
+
+
+
+/* Backups
+
+ ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
+    ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
+    ;iconOptimiseClick()
+    ;clickAnyBack()
+    ;ClickTransblackX()
+    ;res := ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5)
+    ;msgbox getCurrentScreen()
+    ;res := ImageFinderInstance.LoopFindAnyImageObjects(1000,false, 1000, 5, O_TransblackX)
+    ;MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
+
+    ;res := ImageFinderInstance.LoopFindAnyImageObjects(1000,false, 1000, 5, O_exitGuy)
+    ;energy()ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack)
+    ;events()
+    ;res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack)
+    ;MouseMove(res.x, res.y)
+
+    ;res := GetReddot()
+    ;centerShelter()
+    ;levelup()
+    ;ClickReddot(1000, Regions.events.main)
+    ;ClickReddot(1000, Regions.events.main)
+    ;ExitApp
+    ;premiumCenter()
+    ;events()
+    ;testwait()
+    ;i:= GetReddot()
+    ;MouseMove(i.x, i.y)
+    getCurrentScreen()
+    OutputDebug("hello")
+    s := Screen("Guy", "main", Regions.Events.main, "(?i)Guy")
+    ;r := s.Find()
+    ; AllianceGifts()
+    ;ocrOptions := {lang:"en-us", scale:2, grayscale:1, casesense:0}
+    ;DebugOCR(ocrOptions, "Claim")
+    ;ClaimAllOCR(,Regions.menus.bottom)
+    ;ClaimLoopOCR()
+    ;RemoveCongratOCR()
+    ExitApp()
+    WaitFindText("Dark War")
+    ocrOptions := Map("scale", 5, "x", 0, "y", 0, "w", 500, "h", 500)
+
+    result := OCR.FromWindow(winTitle, ocrOptions)
+
+    LoggerInstance.Debug(result.Text)
+
+    ;CoordMode "Mouse", "Screen"
+    
+    LoggerInstance.Debug("search")
+    loop {
+        search := " Survivor Profile "
+        Sleep 500 ; Small delay to wait for the InputBox to close
+        result := OCR.FromWindow(winTitle, { scale: 5 })
+        LoggerInstance.Debug(Result.Text)
+    
+        found := result.FindString(search, { IgnoreLinebreaks: True })
+    
+        LoggerInstance.Debug(found.x "," found.y)
+        found.Highlight()
+        ; found := result.FindStrings(search, {IgnoreLinebreaks: false})
+    
+        break
+    }
+    
+
+    ; O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
+    ; O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
+    ; O_reddot_number_transblack_bottom.region := Regions.events.bottom
+
+    ; res := ImageFinderInstance.FindAnyImageObjects(1000, false, O_reddot_number_transblack_bottom)
+    ; MouseMove(res.x, res.y)
+    ; MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
+
+    */

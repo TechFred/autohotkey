@@ -26,7 +26,7 @@ ImagesWars := [
 Alliance() {
     LoggerInstance.debug("Alliance")
 
-    if (goToShelter() = SCREEN_SHELTER) {
+    if goToShelterOCR() {
         if (iconAllianceClick()) {
 
             AllianceTech()
@@ -39,15 +39,23 @@ Alliance() {
             LoggerInstance.warn("lost in menus")
         }
 
-    } else {
+    }
+    else {
         LoggerInstance.warn("lost in menus")
     }
 
 }
 
 AllianceTech() {
+    ;
     LoggerInstance.debug("Alliance Tech")
-    if (ImageFinderInstance.LoopFindImage(alliance_tech, Regions.AllRegion, 70, 1000, true, loopDelay := 1000, attempts := 5).Found) {
+    if WaitFindText("(?i)Alliance Tech", Map(
+        "Click", true,
+        "ClickDelay", 2000,
+        "LoopDelay", 4000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("scale", 1)
+    )) {
 
         if (ImageFinderInstance.LoopFindImage(tech_thumb, Regions.AllRegion, 70, 1000, true, loopDelay := 1000, attempts := 5).Found) {
 
@@ -69,7 +77,8 @@ AllianceTech() {
 
             } until (i > 10)
 
-            clickAnyX()
+            iconPlayerClickBlind(500)
+            iconPlayerClickBlind(500)
         }
 
         clickAnyBack()
@@ -79,14 +88,26 @@ AllianceTech() {
 AllianceGifts() {
     LoggerInstance.debug("Alliance Gifts")
 
-    if (ImageFinderInstance.LoopFindImage(alliance_gift, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 5).Found) {
-        ClaimAllOCR(, Regions.menus.bottom)
-        ClaimLoopOCR(250, 3)
+    if WaitFindText("(?i)Gifts", Map(
+        "Click", true,
+        "ClickDelay", 2000,
+        "LoopDelay", 4000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 5)
+    )) {
+        ClaimAllOCR(, Regions.events.bottom)
+        ;ClaimLoopOCR(250, 3)
 
         ;rare gifts
 
-        if (ImageFinderInstance.LoopFindImage(gift_rare, Regions.AllRegion, 70, sleepDelay := 1000, true, loopDelay := 1000, attempts := 4).Found) {
-            ClaimAllOCR(, Regions.menus.bottom)
+        if WaitFindText("(?i)Rare", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 4000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("scale", 1)
+        )) {
+            ClaimAllOCR(, Regions.events.bottom)
             ClaimLoopOCR(250, 20)
         }
 
@@ -99,17 +120,41 @@ AllianceGifts() {
 AllianceWars() {
     LoggerInstance.debug("Alliance Wars")
 
-    if (ImageFinderInstance.LoopFindImage(alliance_wars, Regions.AllRegion, 70, , true, 1000, 5).Found) {
-
+    if WaitFindText("(?i)Wars", Map(
+        "Click", true,
+        "ClickDelay", 2000,
+        "LoopDelay", 4000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+    )) {
         ;Team Up tab
-        ImageFinderInstance.LoopFindImage(wars_team_up, Regions.AllRegion, 50, 1000, true, 10, 5)
+        WaitFindText("(?i)Team Up", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 4000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("scale", 1)
+        ))
 
         ;Button Auto Team-Up
-        ImageFinderInstance.LoopFindAnyImage(Regions.menus.bottom, 70, 1000, true, 1000, 5, ImagesWars*)
+        WaitFindText("(?i)Auto Team-up", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 4000,
+            "Region", Regions.events.bottom,
+            "ocrOptions", Map("scale", 5)
+        ))
 
-        ImageFinderInstance.FindImage(wars_enable, Regions.AllRegion, 50, 1000, true)
+        WaitFindText("(?i)Enable", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 4000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("scale", 1)
+        ))
 
-        clickAnyX()
+        iconPlayerClickBlind(500)
+        iconPlayerClickBlind(500)
         clickAnyBack()
     }
 

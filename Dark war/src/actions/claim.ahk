@@ -113,13 +113,14 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
     return match
 }
 
-ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion) {
+ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion, ocrOptions := Map("scale", 3, "grayscale", 1, "mode", 4, "casesense", 0)) {
     LoggerInstance.Debug("Searching Claim All OCR")
     match := WaitFindText("(?i)claim.all", Map(
         "Click", true,
         "ClickDelay", ClickDelay,
         "LoopDelay", 3000,
-        "Region", Region
+        "Region", Region,
+        "ocrOptions", ocrOptions
     ))
 
     if (match) {

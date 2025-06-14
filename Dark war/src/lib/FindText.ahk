@@ -38,7 +38,7 @@ WaitFindText(needle := "", Options := Map()) {
 
     ;LoggerInstance.Debug(found.text)
 
-    LoggerInstance.debug(winTitle)
+    ;LoggerInstance.debug(winTitle)
     ;LoggerInstance.debug(ocrOptions.x)
     try {
         ; OCR polling until text is found or timeout
@@ -61,9 +61,9 @@ WaitFindText(needle := "", Options := Map()) {
         } else {
             LoggerInstance.debug(" -- ")
             LoggerInstance.debug("Text +NOT+ found " needle)
-            getCurrentScreenOCR()
             result := OCR.FromWindow(winTitle, ocrOptions)
             LoggerInstance.Debug(result.Text)
+            getCurrentScreenOCR()
             LoggerInstance.debug(" -- ")
 
             if debugmodeOCR = true {

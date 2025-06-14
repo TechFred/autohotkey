@@ -23,8 +23,17 @@ LoginAndSetUser(CurrentUser) {
 
     } until f
 
-    ocrOptions := Map("Region", Regions.events.main,"lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0)
-    if WaitFindText(CurrentUser.regex, ocrOptions) {
+    ; WaitFindText(CurrentUser.regex, ocrOptions)
+    ;ocrOptions := Map("Region", Regions.events.main, )
+
+    if WaitFindText(CurrentUser.regex, Map(
+        "Click", false,
+        "ClickDelay", 1000,
+        "LoopDelay", 5000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3)
+    )) {
+
         CurrentUser.active := true
         LoggerInstance.info("CurrentUser " CurrentUser.name " is active - returning")
         clickAnyBack()

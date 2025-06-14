@@ -34,11 +34,49 @@ getCurrentScreen() {
     }
 }
 
+goToWorldOCR() {
+    centerShelter()
+    InWorld := false
+    LoggerInstance.debug("Navigating to world screen")
+    loop 5 {
+        if Screens.shelter.world.WaitForMatch(1000) {
+            InWorld := true
+            break
+        } else {
+            LoggerInstance.debug("Not in world clicking on world icon")
+            ClickCenter(Regions.icons.world_Shelter, 5000)
+        }
+        sleep (2000)
+    } until InWorld
+
+    return InWorld
+}
+
+
+goToShelterOCR() {
+    centerShelter()
+    InShelter := false
+    LoggerInstance.debug("Navigating to Shelter screen")
+    loop 5 {
+        if Screens.shelter.Shelter.WaitForMatch(1000) {
+            InShelter := true
+            break
+        } else {
+            LoggerInstance.debug("Not in Shelter clicking on world icon")
+            ClickCenter(Regions.icons.world_Shelter, 5000)
+        }
+        sleep (2000)
+    } until InShelter
+
+    return InShelter
+}
+
+
 goToWorld() {
     centerShelter()
     LoggerInstance.debug("Navigating to world screen")
     ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
-    return getCurrentScreen()
+    return getCurrentScreenOCR()
 }
 
 goToShelter() {
@@ -76,7 +114,8 @@ getCurrentScreenOCR() {
         "title", Title,
         "world_Shelter", WorldShelter,
         "main", Main,
-        "bottom", Bottom
+        "bottom", Bottom,
+        "custom", Main ; Comment skip
     )
 
     FlatScreens := GetAllScreensFlat()
@@ -96,7 +135,7 @@ getCurrentScreenOCR() {
     }
 
     if !(Isdetected) {
-        LoggerInstance.debug("Detected: No OCR found")
+        LoggerInstance.debug("Detected: No screen found")
         LoggerInstance.debug("Title -" Title.Text)
         LoggerInstance.debug("Main -" Main.Text)
         LoggerInstance.debug("WorldShelter -" WorldShelter.Text)

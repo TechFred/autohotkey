@@ -25,7 +25,7 @@ LoadImageStatsFromCSV() {
     loop read imageLogFile {
         if A_Index = 1 ; Skip header
             continue
-        fields := StrSplit(A_LoopReadLine, ",")
+        fields := StrSplit(A_LoopReadLine, ";")
         if fields.Length = 3
             matchCount := (fields[3] != "") ? Integer(fields[3]) : ""
         imageStats[fields[1]] := { lastdetect: fields[2], matchcount: matchCount }
@@ -37,6 +37,6 @@ SaveImageStatsToCSV() {
     file := FileOpen(imageLogFile, "w")
     file.WriteLine("path,lastdetect,matchcount")
     for path, data in imageStats
-        file.WriteLine(Format('{},{},{}', path, data.lastdetect, data.matchcount))
+        file.WriteLine(Format('{};{};{}', path, data.lastdetect, data.matchcount))
     file.Close()
 }

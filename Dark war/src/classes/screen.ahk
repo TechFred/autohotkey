@@ -5,6 +5,7 @@ class Screen {
     Name := ""
     Regex := ""
     searchOptions := MapToObject(Map("IgnoreLinebreaks", true, "SearchFunc", RegExMatch))
+    ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)
 
     __New(Name, RegionKey, Region, Regex := "", searchOptions := "") {
         this.Name := Name
@@ -34,8 +35,7 @@ class Screen {
             return false
         }
     }
-
-    WaitForMatch(LoopDelay := 8000, ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)) {
+    WaitForMatch(LoopDelay := 8000, ocrOptions := this.ocrOptions) {
         try {
             OCRResultObj := WaitFindText(this.Regex, Map(
                 "Click", false,
@@ -57,7 +57,8 @@ class Screen {
 class Screens {
     static Shelter := {
         World: Screen("World", "world_Shelter", Regions.icons.world_Shelter, "(?i)Shelter"),  ; If Shelter is detected -> World
-        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)World")  ; If World is detected -> Shelter
+        Shelter: Screen("Shelter", "world_Shelter", Regions.icons.world_Shelter, "(?i)..rld")  ; If World is detected -> Shelter
+        ; Note Word string is best with "casesense", 0, "grayscale", 0, "lang", en-us, "mode", 4, "scale", 3
     }
 
     static Titles := {
@@ -69,12 +70,12 @@ class Screens {
         Adventure: Screen("Adventure", "title", Regions.menus.top, "(?i)Adventure"),
         HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Her[o0] List"),
         VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
-        SeasonMgt: Screen("Season Management", "title", Regions.menus.top, "(?i)SeasoN M.{1,3}ageMe.{1,3}t")
+        SeasonMgt: Screen("Season Management", "title", Regions.menus.top, "(?i)Seaso. M.{1,3}ageMe.{1,3}t"),
     }
 
     static Mains := {
         Logged: Screen("Logged", "main", Regions.Events.main, "(?i)Logged"),
-        Android: Screen("Android", "main", Regions.Events.main, "(?i)JEUX POPULAIRE"),
+        Android: Screen("Android", "main", Regions.Events.main, "(?i)JEUX POPULAIRE|POPULAR GAMES TO PLAY"),
         Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
@@ -87,6 +88,9 @@ class Screens {
 
     static Bottom := {
         Loading: Screen("Loading", "bottom", Regions.menus.bottom, "(?i)Support.*DARkWAR.*SURV.val")
+    }
+    static Custom := {
+        BlueStacks: Screen("BlueStacks - Not Full Screen", "custom", Regions.AppRegion, "(?i)BlueStacks App Player")
     }
 
 }
@@ -110,3 +114,6 @@ GetScreenByName(name) {
     }
     return ""
 }
+
+;Fix
+Screens.Shelter.Shelter.ocrOptions := Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 3)

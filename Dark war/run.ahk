@@ -14,7 +14,7 @@ OutputDebug "Starting script - " A_ScriptDir
 
 debug := true
 debug := false
-6
+
 
 GetOCRRegion := true
 GetOCRRegion := false

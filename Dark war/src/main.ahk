@@ -143,7 +143,7 @@ Complete_run(u) {
 
     CrashDetection()
     iconHelpClick()
-    Task()
+   ; Task()
 
     ;BattleRewards
     LoggerInstance.info("Battle Rewards")
@@ -189,13 +189,13 @@ Complete_run(u) {
     LoggerInstance.info("Events")
     CrashDetection()
     iconHelpClick()
-    events()
+    ;events()
 
     ;premiumCenter
     LoggerInstance.info("Premium Center")
     CrashDetection()
     iconHelpClick()
-    premiumCenter()
+   ; premiumCenter()
 
     ;End script
     LoggerInstance.info("Ending script")

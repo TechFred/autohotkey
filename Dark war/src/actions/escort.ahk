@@ -10,7 +10,13 @@ ImagesGift := [
 Escorts() {
     if iconEscortClick().found {
 
-        ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 200, 5, O_escort_menu)
+       WaitFindText("(?i)Escort", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 4000,
+            "Region", Regions.menus.bottom,
+            "ocrOptions", Map("scale", 1)
+        ))
         LoggerInstance.Debug("Escort menu")
 
         i := 0

@@ -39,7 +39,7 @@ WinActivateGame() {
     WindowsisActivated := false
     if (WinExist(winTitle)) {
         LoggerInstance.debug("Trying to activate window")
-        WinRestore(winTitle)
+        ;WinRestore(winTitle)
         WinSetAlwaysOnTop(1, winTitle)
         WinActivate(winTitle)
         WinWaitActive(winTitle, "", 10)
@@ -47,12 +47,17 @@ WinActivateGame() {
         if WinWaitActive(winTitle, "", 10) {
             LoggerInstance.debug("Window is active")
             WindowsisActivated := true
-            WinRestore(winTitle)
+            ;WinRestore(winTitle)
             Sleep(2000)
-            ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
-            MouseClick("left", 352, 15, 2)
-            ;MouseMove(100, 15)
+            if !ToggleFullScreen(){
+                LoggerInstance.debug("warn Fullscreen not toggled")
+                QuitGame()
+            }
             
+            ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
+            ;MouseClick("left", 352, 15, 2)
+            ;MouseMove(100, 15)
+
         }
 
     }
@@ -88,5 +93,20 @@ listAllWindows() {
         LoggerInstance.debug ("Window ID: " this_id " Title: " this_title " Class: " this_class)
 
     }
+
+}
+
+ToggleFullScreen() {
+    r:= false
+    loop 10 {
+        if Screens.Custom.BlueStacks.WaitForMatch(1000) {
+            LoggerInstance.info("Toggling Fullscreen")
+            Send "{F11}"
+            Sleep(4000)
+        } else {
+            return true
+        }
+    }
+    return false
 
 }

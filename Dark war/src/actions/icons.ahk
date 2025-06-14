@@ -51,7 +51,7 @@ iconHealClick() {
 }
 
 iconAllianceClick() {
-    if goToShelter() != SCREEN_SHELTER {
+    if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
@@ -61,7 +61,7 @@ iconAllianceClick() {
 
 iconEscortClick() {
 
-    if goToShelter() != SCREEN_SHELTER {
+    if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
@@ -79,7 +79,7 @@ iconOptimiseClick() {
         O_optimise_reddot
     ]
 
-    if goToShelter() != SCREEN_SHELTER {
+    if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
@@ -99,7 +99,7 @@ iconCombatClick() {
         O_iconCombat2
     ]
 
-    if goToShelter() != SCREEN_SHELTER {
+    if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
@@ -126,7 +126,7 @@ iconEventsClick() {
 
 iconBattleRewardsClick() {
 
-    if goToShelter() != SCREEN_SHELTER {
+    if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
@@ -151,9 +151,4 @@ iconVipClick() {
     return ImageFinderInstance.LoopFindImage(iconVip, Regions.AllRegion, 50, 1000, true, 500, 5)
 }
 
-iconLensClick() {
-    if (goToWorld() = SCREEN_WORLD) {
-        ClickCenter(Regions.icons.lens, 2000)
-    }
 
-}

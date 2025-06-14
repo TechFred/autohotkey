@@ -9,5 +9,7 @@ ImagesEnergy := [O_GetEnergy1, O_GetEnergy2, O_GetEnergy3, O_GetEnergy4]
 
 GetEnergy(){
 
+
+    
 return ImageFinderInstance.FindAnyImageObjects(1000, false, ImagesEnergy*).found
 }

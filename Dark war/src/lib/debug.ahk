@@ -73,7 +73,7 @@ CheckDebug() {
         ; ===============================
         if debug {
             ;HighlightRegionInWindow(Regions.events.bottom, 5000)
-            getCurrentScreenOCR()
+            CrashDetection()
             /*
             HighlightRegionInWindow(Regions.menus.top, 5000)
             HighlightRegionInWindow(Regions.events.main, 5000)

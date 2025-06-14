@@ -56,7 +56,7 @@ LoginAndSetUser(CurrentUser) {
         ))
 
         username := RegExReplace(CurrentUser.name, "[ilo]", ".")
-        username := "(?i)\[.{1,6}\]" username  ; Contains [...]Username
+        username := "(?i)\[.{1,6}\]\s?" username  ; Contains [...]Username
         WaitFindText(username, Map(
             "Click", true,
             "ClickDelay", 1000,

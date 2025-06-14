@@ -24,18 +24,23 @@ CrashDetection() {
             LoggerInstance.Warn("Logout screen detected, rerunning crash detection")
             CrashDetection()
             return
-
+        } else if scr.name = Screens.mains.Charactermgt.name {
+            iconPlayerClickBlind()
+            iconPlayerClickBlind()
+            iconPlayerClickBlind()
+            clickAnyBack()
         }
 
     }
+    /*
+        if (getCurrentScreen() = SCREEN_ANDROID) {
+            Checkfix_Screen_Android()
+            throw Error("Game crashed")  ; C:\Users\Fred\Git\autohotkey\Dark war\src\lib\CrashDetection.ahk (13) : ==> Expected a String but got a Class.
+    
+        }
+    */
 
-    if (getCurrentScreen() = SCREEN_ANDROID) {
-        Checkfix_Screen_Android()
-        throw Error("Game crashed")  ; C:\Users\Fred\Git\autohotkey\Dark war\src\lib\CrashDetection.ahk (13) : ==> Expected a String but got a Class.
-
-    }
-
-    if (getCurrentScreen() = SCREEN_UNKNOWN) {
+    if (!scr) {
         WinActivateGame()
         Checkfix_Screen_Unknown()
 
@@ -47,14 +52,20 @@ Checkfix_Screen_Android() {
 
     i := 0
     loop {
-        if (getCurrentScreen() = SCREEN_ANDROID) {
-            return (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, true, 50, 5).found)
+        if (Screens.mains.Android.WaitForMatch()) {
+            return WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
         }
         i += 1
     }
 
     if (i > 20) {
-        LoggerInstance.warn("Current screen " getCurrentScreen())
+
+        scr := getCurrentScreenOCR()
+        if (scr) {
+            LoggerInstance.warn("Android screen not found, current screen: " scr.name)
+        } else {
+            LoggerInstance.warn("Android screen not found, current screen unknown")
+        }
         RestartGame()
     }
 }

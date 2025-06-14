@@ -4,11 +4,11 @@ O_iconseasonmgt := Image("icon_seasonmgt_transblack.bmp", 100, Regions.menus.lef
 
 IconSeasonmgtClick() {
     if goToWorldOCR() {
+        return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconseasonmgt)
+    } else {
         LoggerInstance.Warn("Error, World not found - Quitting")
-        return
+        return false
     }
-
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconseasonmgt)
 }
 
 SeasonMgt() {

@@ -79,7 +79,7 @@ class Screens {
         Guy: Screen("Guy", "main", Regions.Events.main, "(?i)Guy"),
         Team: Screen("Team Details", "main", Regions.Events.main, "(?i)Team Details"),
         Techs: Screen("Alliance Techs", "main", Regions.Events.main, "(?i)Alliance Techs"),
-        Create: Screen("Create New Character", "main", Regions.Events.main, "(?i)Create New Character"),
+        Charactermgt: Screen("Character management", "main", Regions.Events.main, "(?i)Create New Character"),
         Loading: Screen("Android", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
         Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks"),
         Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another"),

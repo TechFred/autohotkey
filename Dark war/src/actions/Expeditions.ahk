@@ -16,7 +16,7 @@ Expeditions() {
         loop 10 {
             if (ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 200, 10, O_expeditionChestAnimation).found) {
                 LoggerInstance.Debug("Chest found")
-                ClaimOCR(4000,,Regions.menus.bottom)
+                ClaimOCR(4000,,Regions.AllRegion)
                 ;Claim(4000, 1)
                 RemoveCongratOCR()
                 ;Remove_Congrat()

@@ -83,7 +83,8 @@ class Screens {
         Loading: Screen("Android", "main", Regions.Events.main, "(?i)Support.*DARkWAR.*SURV.val"),
         Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks"),
         Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another"),
-        Healing: Screen("Healing", "main", Regions.Events.main, "(?i)Heal Wounded Units")
+        Healing: Screen("Healing", "main", Regions.Events.main, "(?i)Heal Wounded Units"),
+        GetEnergy: Screen("Get Energy", "main", Regions.Events.main, "(?i)Get Energy")
     }
 
     static Bottom := {
@@ -116,4 +117,6 @@ GetScreenByName(name) {
 }
 
 ;Fix
-Screens.Shelter.Shelter.ocrOptions := Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 3)
+Screens.Shelter.Shelter.ocrOptions := Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+; "casesense", 0, "grayscale", 0, "lang", en-us, "mode", 4, "scale", 5
+;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3)

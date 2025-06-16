@@ -36,7 +36,6 @@ debugmodeOCR := false
 #include src\lib\logger.ahk
 #include src\lib\imagefinder.ahk
 #include src\lib\clicks.ahk
-#include src\lib\GetEnergy.ahk
 #include src\lib\loadingwait.ahk
 #include src\lib\CrashDetection.ahk
 #include src\lib\Reddot.ahk

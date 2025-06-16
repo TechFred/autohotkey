@@ -18,14 +18,14 @@ getCurrentScreen() {
     centerShelter()
 
     LoggerInstance.debug("Detecting current screen")
-    if (ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
+    if Screens.Shelter.Shelter.WaitForMatch(2000) {
         LoggerInstance.debug("Detected: shelter screen")
         return SCREEN_SHELTER
 
-    } else if (ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, false, 50, 5).found) {
+    } else if Screens.Shelter.World.WaitForMatch(2000) {
         LoggerInstance.debug("Detected: world screen")
         return SCREEN_WORLD
-    } else if (ImageFinderInstance.LoopFindImage(AndroidIcon, Regions.AllRegion, 50, 5000, false, 50, 2).found) {
+    } else if Screens.mains.Android.WaitForMatch(2000) {
         LoggerInstance.debug("Detected: Android screen")
         return SCREEN_ANDROID
     } else {
@@ -46,12 +46,11 @@ goToWorldOCR() {
             LoggerInstance.debug("Not in world clicking on world icon")
             ClickCenter(Regions.icons.world_Shelter, 5000)
         }
-        sleep (2000)
+        Sleep (2000)
     } until InWorld
 
     return InWorld
 }
-
 
 goToShelterOCR() {
     centerShelter()
@@ -65,12 +64,11 @@ goToShelterOCR() {
             LoggerInstance.debug("Not in Shelter clicking on world icon")
             ClickCenter(Regions.icons.world_Shelter, 5000)
         }
-        sleep (2000)
+        Sleep (2000)
     } until InShelter
 
     return InShelter
 }
-
 
 goToWorld() {
     centerShelter()
@@ -95,27 +93,27 @@ getCurrentScreenOCR() {
     ocrOptions := Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0)
 
     ; Search titles
-    ocrOptionsRegion(ocrOptions, Regions.menus.top)
-    Title := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+    optTitle := ocrOptionsRegion(ocrOptions, Regions.menus.top)
+    Title := OCR.FromWindow(winTitle, MapToObject(optTitle))
 
     ; search World-Shelter
-    ocrOptionsRegion(ocrOptions, Regions.icons.world_Shelter)
-    WorldShelter := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+    optWorldShelter := ocrOptionsRegion(Screens.Shelter.Shelter.ocrOptions, Regions.icons.world_Shelter)
+    WorldShelter := OCR.FromWindow(winTitle, MapToObject(optWorldShelter))
 
     ; search Main
-    ocrOptionsRegion(ocrOptions, Regions.Events.main)
-    Main := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+    optMain := ocrOptionsRegion(ocrOptions, Regions.Events.main)
+    Main := OCR.FromWindow(winTitle, MapToObject(optMain))
 
     ; search Bottom
-    ocrOptionsRegion(ocrOptions, Regions.menus.bottom)
-    Bottom := OCR.FromWindow(winTitle, MapToObject(ocrOptions))
+    optBottom := ocrOptionsRegion(ocrOptions, Regions.menus.bottom)
+    Bottom := OCR.FromWindow(winTitle, MapToObject(optBottom))
 
     ocrResults := Map(
         "title", Title,
         "world_Shelter", WorldShelter,
         "main", Main,
         "bottom", Bottom,
-        "custom", Main ; Comment skip
+        "custom", Main  ; Comment skip
     )
 
     FlatScreens := GetAllScreensFlat()

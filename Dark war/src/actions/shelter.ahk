@@ -43,8 +43,11 @@ goToWorldOCR() {
             InWorld := true
             break
         } else {
-            LoggerInstance.debug("Not in world clicking on world icon")
-            ClickCenter(Regions.icons.world_Shelter, 5000)
+            LoggerInstance.debug("Not in world clicking on world icon if found")
+            if (Screens.shelter.shelter.WaitForMatch(3000)) {
+                ClickCenter(Regions.icons.world_Shelter, 5000)
+            }
+
         }
         Sleep (2000)
     } until InWorld
@@ -61,8 +64,10 @@ goToShelterOCR() {
             InShelter := true
             break
         } else {
-            LoggerInstance.debug("Not in Shelter clicking on world icon")
-            ClickCenter(Regions.icons.world_Shelter, 5000)
+            LoggerInstance.debug("Not in world clicking on shelter icon if found")
+            if (Screens.shelter.world.WaitForMatch(3000)) {
+                ClickCenter(Regions.icons.world_Shelter, 5000)
+            }
         }
         Sleep (2000)
     } until InShelter

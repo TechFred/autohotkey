@@ -22,12 +22,16 @@ ImagesAPC1 := [O_APC1_1, O_APC1_2]
 maxloop := 60
 
 iconLensClick() {
-    goToWorldOCR()
-    ClickCenter(Regions.icons.lens, 2000)
+    if goToWorldOCR() {
+        ClickCenter(Regions.icons.lens, 2000)
+    } else {
+        LoggerInstance.warn("Error, not in world")
+    }
 
 }
 
 boomers() {
+    goToWorldOCR()
     if (Screens.shelter.world.WaitForMatch(5000)) {
 
         i := 0

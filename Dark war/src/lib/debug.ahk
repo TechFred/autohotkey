@@ -73,7 +73,7 @@ CheckDebug() {
         ; ===============================
         if debug {
             ;HighlightRegionInWindow(Regions.icons.levelup, 5000)
-            food()
+            boomers()
 
             ;HighlightRegionInWindow(Regions.events.bottom, 5000)
             ;CrashDetection()

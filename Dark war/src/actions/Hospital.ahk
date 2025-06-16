@@ -40,16 +40,19 @@ Hospital(DoLoop := true) {
                     LoggerInstance.Debug("Select All")
                     ImageFinderInstance.FindAnyImageObjects(500, true, O_heal_selectall)
                     if ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 10, 10, O_heal_grayed).found {
-                        ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 250, 10, O_heal_0)
+                        if ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 250, 10, O_heal_0).found {
+                            ; Heal 60 troops
+                            SendText("60")
+                            Sleep(500)
+                            Send("{Enter}")
+                            Sleep(750)
+                            ImageFinderInstance.FindAnyImageObjects(1000, true, O_heal_btn)
+                            ImageFinderInstance.FindAnyImageObjects(2000, true, O_heal_alliance)
+                            LoggerInstance.Debug("Healing in progress...")
+                        } else {
+                            ImageFinderInstance.FindAnyImageObjects(500, true, O_heal_selectall)
+                        }
 
-                        ; Heal 60 troops
-                        SendText("60")
-                        Sleep(500)
-                        Send("{Enter}")
-                        Sleep(750)
-                        ImageFinderInstance.FindAnyImageObjects(1000, true, O_heal_btn)
-                        ImageFinderInstance.FindAnyImageObjects(2000, true, O_heal_alliance)
-                        LoggerInstance.Debug("Healing in progress...")
                         break
                     }
 

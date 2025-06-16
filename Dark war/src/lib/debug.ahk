@@ -72,6 +72,9 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
+            ;HighlightRegionInWindow(Regions.icons.levelup, 5000)
+            food()
+
             ;HighlightRegionInWindow(Regions.events.bottom, 5000)
             ;CrashDetection()
             /*
@@ -81,7 +84,7 @@ CheckDebug() {
             sleep (5000)
             
             */
-boomers()
+
 
         }
         BlockInput("MouseMoveOff")

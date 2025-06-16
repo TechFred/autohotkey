@@ -6,16 +6,20 @@ levelup() {
 
     if ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 10, 60, O_levelup).found {
         LoggerInstance.Info("Found Levelup")
-        MouseClick("left",1236, 71)
+        MouseClick("left", Positions.icons.levelupchat[1], Positions.icons.levelupchat[2])
         Sleep(1000)
         ClaimOCR(1000)
-        Claim(1000,1)
-        MouseClick("left", 1084, 655)
-        Sleep(1000)
+        WaitFindText("(?i)open", Map(
+            "Click", true,
+            "ClickDelay", 3000,
+            "LoopDelay", 8000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1)
+        ))
         iconPlayerClickBlind()
         iconPlayerClickBlind()
-        clickAnyback()
-        levelup() ;check if another levelup
+        clickAnyBack()
+        levelup()  ;check if another levelup
     }
-    
+
 }

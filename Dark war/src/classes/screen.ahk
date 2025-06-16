@@ -117,4 +117,6 @@ GetScreenByName(name) {
 }
 
 ;Fix
-Screens.Shelter.Shelter.ocrOptions := Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3)
+Screens.Shelter.Shelter.ocrOptions := Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+; "casesense", 0, "grayscale", 0, "lang", en-us, "mode", 4, "scale", 5
+;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3)

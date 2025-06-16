@@ -45,7 +45,7 @@ class Regions {
         player: [656, 1, 736, 77],
         back: [658,976,748,1071],
         heal: [908, 767, 970, 828], ; bad
-        levelup: [915,953,1129,1011], 
+        levelup: [979,896,1147,1029], 
         Heroes: [661, 955, 776, 1074],
         Seasonmgt: [843, 635, 878, 676],
         help: [1135, 741, 1196, 801]
@@ -91,7 +91,8 @@ class Regions {
 class Positions {
     static icons := {
         survivor: [687, 27, 694, 36],
-        heroes: [689, 1026, 695, 1033]
+        heroes: [689, 1026, 695, 1033],
+        levelupchat: [1120,40,1120,40]
     }
     Static boomers := {
         boomers : [844,771,844,771],

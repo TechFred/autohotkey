@@ -33,7 +33,7 @@ boomers() {
         i := 0
 
         loop {
-            if GetEnergyOCR() {
+            if Screens.mains.GetEnergy.WaitForMatch(200) {
                 LoggerInstance.Info("Out of energy -> quitting")
                 ExitBoomers()
                 return
@@ -107,8 +107,10 @@ boomers() {
                     i += 1
                     if (i > maxloop OR GetEnergyOCR()) {
                         LoggerInstance.Info("Bommer loop: " i " Or out of energy -> Quitting")
-                        TakeScreenshot()
-                        LoggerInstance.warn("Screenshot taken, error")
+                        if (i > maxloop) {
+                            TakeScreenshot()
+                            LoggerInstance.warn("Screenshot taken, error")
+                        }
                         ExitBoomers()
                         return
                     }

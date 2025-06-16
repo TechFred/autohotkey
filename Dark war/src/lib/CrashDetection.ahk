@@ -1,8 +1,11 @@
 #Requires AutoHotkey v2.0
 
 CrashDetection() {
-
+LoggerInstance.warn("====CrashDetection====")
     scr := getCurrentScreenOCR()
+
+    
+    
 
     if scr {
         if scr.name = Screens.mains.Android.name {
@@ -29,8 +32,11 @@ CrashDetection() {
             iconPlayerClickBlind()
             iconPlayerClickBlind()
             clickAnyBack()
-        } else if scr.name = Screens.custom.BlueStacks {
+        } else if scr.name = Screens.custom.BlueStacks.name {
             ToggleFullScreen()
+
+        } else if scr.name = Screens.mains.GetEnergy.name {
+            ExitBoomers()
         }
 
     }
@@ -51,15 +57,16 @@ CrashDetection() {
 
 }
 
+; Logique nulle. À réviser. 
 Checkfix_Screen_Android() {
 
     i := 0
     loop {
-        if (Screens.mains.Android.WaitForMatch()) {
+        if (Screens.mains.Android.WaitForMatch(3000)) {
             return WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
         }
         i += 1
-    }
+    } until (i > 20)
 
     if (i > 20) {
 
@@ -85,9 +92,9 @@ Checkfix_Screen_Unknown() {
             clickAnyX()
             clickAnyX()
             clickAnyX()
-            iconPlayerClick()
-            iconPlayerClick()
-            iconPlayerClick()
+            iconPlayerClickBlind()
+            iconPlayerClickBlind()
+            iconPlayerClickBlind()
             clickAnyBack()
             clickAnyBack()
             splash()

@@ -4,7 +4,7 @@ TakeScreenshot() {
     LoggerInstance.debug("Taking screenshot...")
 
     Run('powershell -ExecutionPolicy Bypass -File "' A_ScriptDir '\TakeScreenshot.ps1"')
-    Sleep(2000)  ; Wait for the PowerShell script to finish
+    Sleep(4000)  ; Wait for the PowerShell script to finish
 
     /*
     ; Take screenshot and save to PNG file

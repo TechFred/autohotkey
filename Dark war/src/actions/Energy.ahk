@@ -6,8 +6,8 @@ energy() {
     iconPlayerClickBlind()
     iconPlayerClickBlind()
     if (ImageFinderInstance.FindAnyImageObjects(true, 2000, O_energy_plus).found) {
-        claim(5000, 2)
-        clickAnyX()
+        ClaimLoopOCR(5000, 5)
+        iconPlayerClickBlind()
     }
     iconPlayerClickBlind()
     iconPlayerClickBlind()

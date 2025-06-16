@@ -73,22 +73,23 @@ CheckDebug() {
         ; ===============================
         if debug {
             ;HighlightRegionInWindow(Regions.events.bottom, 5000)
-            CrashDetection()
+            ;CrashDetection()
             /*
             HighlightRegionInWindow(Regions.menus.top, 5000)
             HighlightRegionInWindow(Regions.events.main, 5000)
             HighlightRegionInWindow(Regions.events.bottom, 5000)
             sleep (5000)
+            
             */
-        
-        }
+boomers()
 
+        }
         BlockInput("MouseMoveOff")
         BlockInput("Off")
         WinSetAlwaysOnTop(0, winTitle)
         ExitApp()
-
     }
+
 }
 
 DebugNormal() {
@@ -118,7 +119,6 @@ DebugNormal() {
     CrashDetection()
     iconHelpClick()
 
-   
 }
 
 debugOCRRegion() {
@@ -164,8 +164,8 @@ debugOCRRegionOptions(ocrOptions) {
     ;LoggerInstance.Debug("==== Special ====")
     ;debugGetTextRegion(Regions.AppRegion, ocrOptions)
 
-    ;LoggerInstance.Debug("==== World ====")
-    ;debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
+    LoggerInstance.Debug("==== World ====")
+    debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
 
 }
 
@@ -243,15 +243,6 @@ debugaction2() {
     TakeScreenshot()
 }
 
-
-
-
-
-
-
-
-
-
 /* Backups
 
  ;res := ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 1000, false, 50, 5)
@@ -300,23 +291,23 @@ debugaction2() {
     LoggerInstance.Debug(result.Text)
 
     ;CoordMode "Mouse", "Screen"
-    
+
     LoggerInstance.Debug("search")
     loop {
         search := " Survivor Profile "
         Sleep 500 ; Small delay to wait for the InputBox to close
         result := OCR.FromWindow(winTitle, { scale: 5 })
         LoggerInstance.Debug(Result.Text)
-    
+
         found := result.FindString(search, { IgnoreLinebreaks: True })
-    
+
         LoggerInstance.Debug(found.x "," found.y)
         found.Highlight()
         ; found := result.FindStrings(search, {IgnoreLinebreaks: false})
-    
+
         break
     }
-    
+
 
     ; O_reddot_number_transblack := Image("reddot_number_transblack.bmp", 60, Regions.events.bottom, TransBlack)
     ; O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
@@ -326,4 +317,4 @@ debugaction2() {
     ; MouseMove(res.x, res.y)
     ; MsgBox "Found: " res.Found "`nx: " res.x "`ny: " res.y
 
-    */
+*/

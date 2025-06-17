@@ -29,6 +29,8 @@ O_iconCombat := Image("combat.bmp", 50, Regions.icons.combat)
 O_iconCombat2 := Image("combat2.bmp", 50, Regions.icons.combat)
 
 O_icontruck := Image("escort_truck.bmp", 100, Regions.menus.left)
+O_icontruck_tb := Image("escort_truck_transblack.bmp", 50, Regions.menus.left, TransBlack)
+
 ;lO_icontruck_BattleRewards := Image("escort_truck.bmp", 100, Regions.icons.battle_rewards)
 
 O_iconEvents_reddot := Image("Events_reddot.bmp", 50, Regions.icons.events)
@@ -61,12 +63,14 @@ iconAllianceClick() {
 
 iconEscortClick() {
 
+    truckgroup := [O_icontruck_tb, O_icontruck]
+
     if !goToShelterOCR() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
 
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_icontruck)
+    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, truckgroup*)
 }
 
 iconOptimiseClick() {
@@ -84,9 +88,9 @@ iconOptimiseClick() {
         return
     }
     res := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, imageObjects*)
-    if res.found = true{
-        MouseClick("left", res.x, res.y+10)
-        sleep (1000)
+    if res.found = true {
+        MouseClick("left", res.x, res.y + 10)
+        Sleep (1000)
     }
 
     return res
@@ -116,8 +120,8 @@ iconPremiumCenterClick() {
 
 iconEventsClick() {
 
-        imageObjects := [
-        O_iconevents,
+    imageObjects := [
+        O_iconEvents,
         O_iconEvents_reddot
     ]
 
@@ -134,8 +138,6 @@ iconBattleRewardsClick() {
     return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconbattlerewards)
 }
 
-
-
 iconPlayerClick() {
     return ImageFinderInstance.LoopFindImage(iconPlayer, Regions.icons.player, 50, 1000, true, 500, 5)
 }
@@ -150,5 +152,3 @@ iconHeroesClickBlind(DelayClick := 2000) {
 iconVipClick() {
     return ImageFinderInstance.LoopFindImage(iconVip, Regions.AllRegion, 50, 1000, true, 500, 5)
 }
-
-

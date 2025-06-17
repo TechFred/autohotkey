@@ -68,7 +68,7 @@ CheckDebug() {
         }
 
         if debugimage {
-            DebugimageObject(O_iconseasonmgt)
+            DebugimageObject(O_icontruck_tb)
         }
         ; ===============================
         if debug {

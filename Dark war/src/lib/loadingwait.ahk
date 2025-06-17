@@ -12,12 +12,12 @@ LoadingWait() {
         ;currentscreen := getCurrentScreen()
 
         ; If shelter is shown for more than 6 seconds, break
-        if (Screens.Shelter.Shelter.WaitForMatch(LoopDelay := 250)) {
+        if (Screens.Shelter.Shelter.WaitForMatch(250)) {
 
             ;shelter found, trying multiples times
             loop 5 {
                 Sleep (1000)
-                if (Screens.Shelter.Shelter.WaitForMatch(LoopDelay := 500)) {
+                if (Screens.Shelter.Shelter.WaitForMatch(500)) {
                     World += 1
                     LoggerInstance.debug("World found : " World)
                     if (World >= 4) {
@@ -32,13 +32,13 @@ LoadingWait() {
             }
         }
 
-        if (Screens.Mains.Guy.WaitForMatch(LoopDelay := 250)) {
+        if (Screens.Mains.Guy.WaitForMatch(250)) {
             LoggerInstance.Info("Splash guy found")
             Sleep(5000)
             return true
         }
         ; If android icon, click on it.
-        if (Screens.Mains.Android.WaitForMatch(LoopDelay := 250)) {
+        if (Screens.Mains.Android.WaitForMatch(250)) {
             LoggerInstance.Warn("Android screen")
             WaitFindText("Dark War", Map("Click", true, "ClickDelay", 10000, "LoopDelay", 8000, "Region", Regions.AllRegion))
 

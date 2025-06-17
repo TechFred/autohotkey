@@ -27,6 +27,6 @@
         "regex": "(?i)Goofy",
         "order": 3,
         "boomer_run": false,
-        "energy_run": true
+        "energy_run": false
     }
 ]

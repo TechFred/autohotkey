@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 
 CrashDetection() {
-LoggerInstance.warn("====CrashDetection====")
+LoggerInstance.debug("Running CrashDetection")
     scr := getCurrentScreenOCR()
 
     
@@ -59,7 +59,7 @@ LoggerInstance.warn("====CrashDetection====")
 
 ; Logique nulle. À réviser. 
 Checkfix_Screen_Android() {
-
+LoggerInstance.warn("Running Android Checkfix_Screen_Android")
     i := 0
     loop {
         if (Screens.mains.Android.WaitForMatch(3000)) {
@@ -81,6 +81,7 @@ Checkfix_Screen_Android() {
 }
 
 Checkfix_Screen_Unknown() {
+    LoggerInstance.warn("Running Android Checkfix_Screen_Unknown")
     i := 0
     if (getCurrentScreen() = SCREEN_UNKNOWN) {
         LoggerInstance.warn("Unknow screen - Trying to find a working screen")
@@ -113,6 +114,8 @@ Checkfix_Screen_Unknown() {
 }
 
 RestartGame() {
+        LoggerInstance.warn("Running Android RestartGame")
+
     try ProcessClose("HD-Player.exe")
     WinWaitClose(winTitle)
     Sleep 10000

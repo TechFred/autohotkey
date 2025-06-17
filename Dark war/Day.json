@@ -26,7 +26,7 @@
         "img": "switch_minibalafre.bmp",
         "regex": "(?i)Goofy",
         "order": 3,
-        "boomer_run": true,
-        "energy_run": true
+        "boomer_run": false,
+        "energy_run": false
     }
 ]

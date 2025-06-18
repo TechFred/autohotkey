@@ -102,5 +102,9 @@ class Positions {
     static titan := {
         claim: [829, 776, 829, 776]
     }
+        static combat := {
+        claim: [1171,788,1171,788],
+        claim2: [936,772,912,713]
+    }
 
 }

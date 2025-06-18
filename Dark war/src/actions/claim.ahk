@@ -104,7 +104,7 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
             "ClickDelay", ClickDelay,
             "LoopDelay", 1000,
             "Region", Region,
-            "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 5)
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 3)
             ;"ocrOptions", Map("lang", "en-us", "scale", 5, "grayscale", 0, "mode", 4, "casesense", 0)
         ))  ; ("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
 

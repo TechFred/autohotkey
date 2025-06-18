@@ -83,6 +83,7 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
+            combat()
             ;vip()
 
             
@@ -137,18 +138,18 @@ DebugNormal() {
 debugOCRRegion() {
 
     list_oocrOption := [
-        Map("lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0,),
-        Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0,),
+        ;Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
+        ;Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
         Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 225)  ;texte blanc
     ]
 
     ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
-    ;OCR.DisplayImage := true
+    OCR.DisplayImage := true
 
     i := 0
     for opt in list_oocrOption {

@@ -107,7 +107,7 @@ iconCombatClick() {
         LoggerInstance.Warn("Error, Shelter not found - Quitting")
         return
     }
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, imageObjects*)
+    return ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 500, 5, imageObjects*)
 }
 
 iconPackShopClick() {

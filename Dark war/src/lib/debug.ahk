@@ -71,28 +71,26 @@ CheckDebug() {
             ;DebugimageObject(rednumber2)
             ;Sleep(11000)
             ;HighlightAllImages(redtest)
-            founds := ImageSearchAll(O_Events_exclamation_transblack)
+            founds := ImageSearchAll(O_reddot_transblack)
 
             for img in founds {
                 Region := [img.x, img.y, img.x + 20, img.y + 20]
                 HighlightRegionInWindow(Region)
             }
             LoggerInstance.debug("Done")
-            sleep(10000)
-            
+            Sleep(10000)
+
         }
         ; ===============================
         if debug {
-            ;HighlightRegionInWindow(Regions.icons.levelup, 5000)
-            boomers()
+            ;vip()
 
-            ;HighlightRegionInWindow(Regions.events.bottom, 5000)
-            ;CrashDetection()
+            
             /*
-            HighlightRegionInWindow(Regions.menus.top, 5000)
-            HighlightRegionInWindow(Regions.events.main, 5000)
-            HighlightRegionInWindow(Regions.events.bottom, 5000)
-            sleep (5000)
+            
+                        HighlightRegionInWindow(Regions.events.main, 5000)
+                        HighlightRegionInWindow(Regions.events.bottom, 5000)
+                        sleep (5000)
             
             */
 
@@ -100,6 +98,8 @@ CheckDebug() {
         BlockInput("MouseMoveOff")
         BlockInput("Off")
         WinSetAlwaysOnTop(0, winTitle)
+        LoggerInstance.Debug("Debug done")
+        Sleep(10000)
         ExitApp()
     }
 
@@ -118,7 +118,7 @@ DebugNormal() {
 
     ;events
     CrashDetection()
-    iconEventsClick()
+    iconeventsClick()
     events()
 
     ;premiumCenter
@@ -143,10 +143,12 @@ debugOCRRegion() {
         Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
-        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,)
+        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 225)  ;texte blanc
     ]
 
     ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
+    ;OCR.DisplayImage := true
 
     i := 0
     for opt in list_oocrOption {
@@ -317,7 +319,7 @@ ImageSearchAll(img, x1 := 0, y1 := 0, x2 := 'Screen', y2 := 'Screen') {
         while f := ImageSearch(&foundX, &foundY, x, y, x2, y2, transcolor " *" tolerance " " path) {
             if (lastFoundY = 0 || lastFoundY = foundY) {
                 found.Push({ x: foundX, y: foundY })
-                LoggerInstance.debug("Found: " f " x: " FoundX " y: " FoundY)
+                LoggerInstance.debug("Found: " f " x: " foundX " y: " foundY)
                 x := foundX + 20
                 lastFoundY := foundY
             } else

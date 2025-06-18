@@ -23,7 +23,7 @@ O_iconHeal := Image("Heal.bmp", 50, Regions.icons.heal)
 O_optimise_reddot := Image("Reddot.bmp", 50, Regions.icons.optimise)
 
 ;O_iconbattlerewards := Image("battle_rewards_icon.bmp", 50, Regions.icons.battle_rewards)
-O_iconbattlerewards := Image("battle_rewards_icon_transblack.bmp", 25, Regions.menus.left, TransBlack)
+O_iconbattlerewards := Image("battle_rewards_icon_transblack.bmp", 50, Regions.menus.left, TransBlack)
 
 O_iconCombat := Image("combat.bmp", 50, Regions.icons.combat)
 O_iconCombat2 := Image("combat2.bmp", 50, Regions.icons.combat)
@@ -114,10 +114,9 @@ iconPackShopClick() {
     return ImageFinderInstance.LoopFindImage(iconPackShop, Regions.icons.pack_shop, 50, 1000, true, 500, 5)
 }
 
-iconPremiumCenterClick() {
-    return ImageFinderInstance.LoopFindImage(iconPremiumCenter, Regions.icons.premium_center, 50, 2000, true, 500, 5)
-}
 
+
+/*
 iconEventsClick() {
 
     imageObjects := [
@@ -127,7 +126,7 @@ iconEventsClick() {
 
     return ImageFinderInstance.LoopFindAnyImageObjects(2000, true, 500, 5, imageObjects*)
 }
-
+*/
 iconBattleRewardsClick() {
 
     if !goToShelterOCR() {
@@ -142,13 +141,22 @@ iconPlayerClick() {
     return ImageFinderInstance.LoopFindImage(iconPlayer, Regions.icons.player, 50, 1000, true, 500, 5)
 }
 iconPlayerClickBlind(DelayClick := 2000) {
-    LoggerInstance.debug("iconPlayerClickBlind")
-    ClickCenter(Regions.icons.player, DelayClick)
+    if !Screens.mains.Android.WaitForMatch(50) {
+        LoggerInstance.debug("iconPlayerClickBlind")
+        ClickCenter(Regions.icons.player, DelayClick)
+    } else {
+        CrashDetection()
+    }
 }
 
 iconHeroesClickBlind(DelayClick := 2000) {
-    LoggerInstance.debug("iconHeroesClickBlind")
-    ClickCenter(Regions.icons.heroes, DelayClick)
+    if !Screens.mains.Android.WaitForMatch(50) {
+        LoggerInstance.debug("iconHeroesClickBlind")
+        ClickCenter(Regions.icons.heroes, DelayClick)
+    } else {
+        CrashDetection()
+    }
+
 }
 
 iconVipClick() {

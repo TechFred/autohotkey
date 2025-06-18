@@ -4,24 +4,35 @@ O_iconTasks := Image("daily_task.bmp", 50, Regions.icons.tasks)
 
 Task() {
 
-    if (iconTasksClick().found) {
-        ClaimAllOCR(, Regions.DailyTasks.ClaimAll)
-        ClaimOCR(, , Regions.DailyTasks.Claim)
+    if (iconTasksClick().found && Screens.Mains.Daily.WaitForMatch()) {
 
-        clickAnyX()
+        ;ClaimAllOCR(, Regions.DailyTasks.ClaimAll)
+        ;ClaimOCR(, , Regions.DailyTasks.Claim)
 
-        loop 20{
-            ExitTask()
-        } until Screens.Shelter.shelter.WaitForMatch(250) || Screens.Shelter.world.WaitForMatch(250)
+        ClaimAllOCR(, Regions.events.main)
+        ClaimLoopOCR(, 10, Regions.events.main)
+
+        loop 3 {
+            if ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_reddot_number_transblack).found {
+                ClaimAllOCR(, Regions.events.main)
+                ClaimLoopOCR(, 10, Regions.events.main)
+            } else {
+                break
+            }
+        }
+        ;clickAnyX()
+        iconPlayerClickBlind()  ; exit
+        ExitTask()  ; failsafe exit
 
     }
+
 }
 
 ExitTask() {
-    if (Screens.mains.Daily.WaitForMatch()) {
+    if (Screens.mains.Daily.WaitForMatch(3000)) {
 
-        loop 20 {
-            MouseClick("left", 847, 1024)
+        loop 5 {
+            iconPlayerClickBlind()
 
         } until Screens.Shelter.shelter.WaitForMatch(250) || Screens.Shelter.world.WaitForMatch(250)
 
@@ -29,6 +40,15 @@ ExitTask() {
 }
 
 iconTasksClick() {
+    _icon := O_reddot_number_transblack.Clone(, Regions.icons.tasks)
+
     goToShelterOCR()
-    return ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 500, 5, O_iconTasks)
+    _i := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, _icon)
+
+    if _i.found {
+        MouseClick("left", _i.x - 10, _i.y + 10)
+        Sleep(2000)
+    }
+
+    return _i
 }

@@ -32,8 +32,6 @@ try {
 ;image Stats
 LoadImageStatsFromCSV()
 
-
-
 ; Activate the game window
 ;if WinExist(winTitle) {
 ;    WinMaximize(winTitle)
@@ -46,7 +44,6 @@ BlockInput("MouseMove")
 
 ; Starting
 LoggerInstance.Info("Starting script - " A_ScriptDir)
-
 
 if debug = false AND GetOCRRegion = false {
     StartDarkWar()
@@ -63,7 +60,7 @@ if Screens.mains.Healing.WaitForMatch(250) {
     LoggerInstance.Info("Healing found, starting Healing")
     Hospital()
     ExitApp()
-} 
+}
 Hospital()
 
 if Screens.Shelter.World.WaitForMatch(250) {
@@ -143,7 +140,7 @@ Complete_run(u) {
 
     CrashDetection()
     iconHelpClick()
-   ; Task()
+    Task()
 
     ;BattleRewards
     LoggerInstance.info("Battle Rewards")
@@ -185,17 +182,29 @@ Complete_run(u) {
         }
     }
 
+    ;Pack Shop
+    LoggerInstance.info("VIP")
+    CrashDetection()
+    iconHelpClick()
+    vip()
+
     ;events
     LoggerInstance.info("Events")
     CrashDetection()
     iconHelpClick()
-    ;events()
+    events()
 
     ;premiumCenter
     LoggerInstance.info("Premium Center")
     CrashDetection()
     iconHelpClick()
-   ; premiumCenter()
+    premiumCenter()
+
+    ;Pack Shop
+    LoggerInstance.info("Pack Shop")
+    CrashDetection()
+    iconHelpClick()
+    pack_shop()
 
     ;End script
     LoggerInstance.info("Ending script")
@@ -204,10 +213,6 @@ Complete_run(u) {
 }
 
 QuitGame(0)
-
-
-
-
 
 ; ===== HOTKEY: ESC to exit =====
 Esc:: {

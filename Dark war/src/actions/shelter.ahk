@@ -66,7 +66,7 @@ goToShelterOCR() {
         } else {
             LoggerInstance.debug("Not in world clicking on shelter icon if found")
             if (Screens.shelter.world.WaitForMatch(3000)) {
-                ClickCenter(Regions.icons.world_Shelter, 5000)
+                ClickCenter(Regions.icons.world_Shelter, 10000)
             }
         }
         Sleep (2000)
@@ -81,14 +81,14 @@ goToWorld() {
     ImageFinderInstance.LoopFindImage(worldIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
     return getCurrentScreenOCR()
 }
-
+/*
 goToShelter() {
     centerShelter()
     LoggerInstance.debug("Navigating to shelter screen")
     ImageFinderInstance.LoopFindImage(shelterIcon, Regions.icons.world_Shelter, 50, 5000, true, 50, 5)
     return getCurrentScreen()
 }
-
+*/
 centerShelter() {
     LoggerInstance.debug("Attempting to center on shelter")
     return ImageFinderInstance.LoopFindAnyImageObjects(3000, true, 20, 5, world_shelter_icon_2).found

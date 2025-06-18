@@ -30,4 +30,13 @@ class Image {
     Clone(Tolerance := this.tolerance, Region := this.region) {
         return Image(this.path, Tolerance, Region, this.transcolor)
     }
+
+    ClickOffsetTopLeft(ClickDelay := 2000) {
+        img := ImageFinderInstance.FindAnyImageObjects(1000, false, this)
+        if img {
+            MouseClick("left", img.x + 10, img.y + 10)
+
+        }
+        return img
+    }
 }

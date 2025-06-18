@@ -89,27 +89,29 @@ Remove_Congrat() {
 
 ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
     LoggerInstance.Debug("Searching Claim OCR")
-    match := WaitFindText("(?i)\bclaim\b", Map(
+    match := WaitFindText("(?i)\bclaim\b(?!\s+again)", Map(
         "Click", true,
         "ClickDelay", ClickDelay,
         "LoopDelay", LoopDelay,
         "Region", Region,
-        "ocrOptions", Map("lang", "en-us", "scale", 3, "grayscale", 0, "mode", 4, "casesense", 0)
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 1)
+        ;"ocrOptions", Map("lang", "en-us", "scale", 3, "grayscale", 0, "mode", 4, "casesense", 0)
     ))
-
+/*
     if !(match) {
-        match := WaitFindText("(?i)\bclaim\b", Map(
+        match := WaitFindText("(?i)\bclaim\b(?!\s+again)", Map(
             "Click", true,
             "ClickDelay", ClickDelay,
             "LoopDelay", 1000,
             "Region", Region,
-            "ocrOptions", Map("lang", "en-us", "scale", 5, "grayscale", 0, "mode", 4, "casesense", 0)
-        )) ; ("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 5)
+            ;"ocrOptions", Map("lang", "en-us", "scale", 5, "grayscale", 0, "mode", 4, "casesense", 0)
+        ))  ; ("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
 
     }
-
+*/
     ;ocrOptions := Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4)
-    RemoveCongratOCR(, LoopDelay := 1)
+    RemoveCongratOCR(, 1)
 
     return match
 }
@@ -119,7 +121,7 @@ ClaimAllOCR(ClickDelay := 3000, Region := Regions.AllRegion, ocrOptions := Map("
     match := WaitFindText("(?i)claim.all", Map(
         "Click", true,
         "ClickDelay", ClickDelay,
-        "LoopDelay", 3000,
+        "LoopDelay", 2000,
         "Region", Region,
         "ocrOptions", ocrOptions
     ))
@@ -157,7 +159,7 @@ ClaimLoopOCR(ClickDelay := 1000, LoopCount := 100, Region := Regions.AllRegion) 
     j := 0
     i := 0
     loop {
-        match := ClaimOCR(ClickDelay, 1000, Regions.AllRegion)
+        match := ClaimOCR(ClickDelay, 500, Regions.AllRegion)
         if (match) {
 
             i := 0

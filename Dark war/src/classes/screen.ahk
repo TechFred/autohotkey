@@ -71,6 +71,7 @@ class Screens {
         HeroList: Screen("Hero List", "title", Regions.menus.top, "(?i)Her[o0] List"),
         VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
         SeasonMgt: Screen("Season Management", "title", Regions.menus.top, "(?i)Seaso. M.{1,3}ageMe.{1,3}t"),
+        pack_shop: Screen("Pack Shop", "title", Regions.menus.top, "(?i)Pack S.op"),
     }
 
     static Mains := {

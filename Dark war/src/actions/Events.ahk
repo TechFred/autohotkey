@@ -15,14 +15,6 @@ O_Titan_title := Image("Titan_title.bmp", 50, Regions.AllRegion)
 O_claim_green_main := O_claim_green.Clone()
 O_claim_green_main.region := Regions.Events.main
 
-O_reddot_transblack_main := O_reddot_transblack.Clone()
-O_reddot_transblack_main.region := Regions.Events.main
-
-O_reddot_number_transblack_bottom := O_reddot_number_transblack.Clone()
-O_reddot_number_transblack_bottom.region := Regions.events.bottom
-
-O_reddot_number_transblack_main := O_reddot_number_transblack.Clone(, Regions.events.Main)
-
 ImagesExclamation := [
     O_Events_exclamation_transblack_Right,
     O_Events_exclamation_transblack_LEFT
@@ -35,70 +27,171 @@ ImagesNew := [
 ]
 
 events() {
-    iconEventsClick()
-    if ImageFinderInstance.FindAnyImageObjects(1000, false, Events_title).found {
-        LoggerInstance.Debug("Events menu")
-
-        i := 0
-        loop 20 {
-            ShadowCalls()
-            TitanClaim()
-
-            ;ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack)
-
-            ;Manque probablement le clic sur les élements en rouges reddot dans le bas.
-
-            if ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_bottom).found {
-                LoggerInstance.Debug("Red number found in menu")
-                ClickReddot(1000, Regions.events.main)  ;If reddot, click on it
-                ImageFinderInstance.FindAnyImageObjects(2000, true, O_reddot_number_transblack_main)
-                ClaimOCR(,, Regions.events.main)  ;Claim all in the main menu
-                ClaimAllOCR()
-
-            } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesNew*).found) {
-
-            } else if (ImageFinderInstance.FindAnyImageObjects(2000, true, ImagesExclamation*).found) {
-
-            } else {
-                LoggerInstance.Debug("Nothing found, looping: " i)
-                i += 1
-            }
-
-            if !(ImageFinderInstance.FindAnyImageObjects(1000, false, Events_title).found) {  ;If events menu is not found, go back
-                LoggerInstance.Debug("Events title not found -> going back")
-                clickAnyX()
-                iconPlayerClickBlind()
-            }
-            ClickReddot(1000, Regions.menus.bottom)  ;Click on reddot in the menu
-
-        } until i > 5
-    }
-    clickAnyBack()
+    iconRegionRedDotNbClick(Regions.icons.events)
+    EventsLoop(Screens.Titles.events)
 }
 
-;O_reddot_number_transblack
+premium() {
+    iconRegionRedDotNbClick(Regions.icons.premium_center)
+    EventsLoop(Screens.Titles.Premium)
+}
 
-;O_Events_exclamation_transblack
+pack_shop() {
+    iconRegionRedDotNbClick(Regions.icons.pack_shop)
+    EventsLoop(Screens.Titles.pack_shop)
+}
 
-ShadowCalls() {
+EventsLoop(screen) {
 
-    ;If Ally mission present, good menu
-    if ImageFinderInstance.FindAnyImageObjects(1000, false, ShadowCalls_AllyMissions).found {
-        LoggerInstance.Debug("Found ShadowsCalls - Ally Mission")
+    reddotBottom := O_reddot_transblack.Clone(, Regions.events.Bottom)
+    rednumberBottom := O_reddot_number_transblack.Clone(, Regions.events.Bottom)
 
-        ;Personnal missions
-        ImageFinderInstance.FindAnyImageObjects(2000, true, O_claim_green_main)
+    i := 0
+    loopsmax := 5
 
-        loop 5 {
-            ImageFinderInstance.FindAnyImageObjects(1000, true, ShadowCalls_AllyMissions)
-            ;Click Help
-            ImageFinderInstance.FindAnyImageObjects(2000, true, O_claim_green_main)
-            ImageFinderInstance.FindAnyImageObjects(1000, true, ShadowCall_Assist_title)
-            ImageFinderInstance.FindAnyImageObjects(1000, true, ShadowCall_Congrat_bob)
-        }
+    if screen.WaitForMatch() {
+        LoggerInstance.Debug("Menu - " screen.name)
+
+        loop 20 {
+            if (ImageFinderInstance.FindAnyImageObjects(1000, true, reddotBottom).found) || (ImageFinderInstance.FindAnyImageObjects(1000, true, rednumberBottom).found) || ClickNew(Regions.events.bottom) {
+                LoggerInstance.Debug("Found reddot in menu")
+                i := 0
+                EventsClaims(screen)
+            } else if (ExclamationClick().found) {
+                i := 0
+            } else if (!screen.WaitForMatch(2000)) {
+                iconPlayerClickBlind(250)
+                clickAnyBack()
+            } else {
+                i += 1
+                Sleep(1000)
+            }
+
+        } until i >= loopsmax
+        ExitEvents(screen)
+    }
+
+}
+
+EventsClaims(screen) {
+    reddotMain := O_reddot_transblack.Clone(, Regions.events.main)
+    rednumberMain := O_reddot_number_transblack.Clone(, Regions.events.Main)
+    loopsmax := 3
+    i := 0
+
+    isEvents := screen.name = Screens.titles.events.name
+    isPremium := screen.name = Screens.titles.Premium.name
+
+    ;Biomutant
+    ;FactionTrials
+    if (screen.name = Screens.titles.events.name) && (ShadowCalls() || TitanClaim()) {  ; Or Other specials.
+        LoggerInstance.Debug("Begin special claiming")
+
+        ;Nothing to do. Return
+        return
+    } else {
+        LoggerInstance.Debug("Begin normal claiming")
+        ClaimAllOCR(, Regions.Events.main)  ; Slow! Voir comment accélérer
+        ClaimLoopOCR(, , Regions.events.main)  ; slow! Voir comment accélérer
+        iconPlayerClickBlind(250)  ;Go back
+        iconPlayerClickBlind(250)  ;Go back
+
+        loop 20 {
+            if (reddotMain.ClickOffsetTopLeft(1000).found) || (ImageFinderInstance.FindAnyImageObjects(1000, true, rednumberMain).found) {
+                LoggerInstance.Debug("Found reddot in main")
+                i := 0
+                ClaimAllOCR(, Regions.Events.main)
+                ClaimLoopOCR(, , Regions.events.main)
+
+                ;ClaimFree
+                WaitFindText("(?i)\bFree\b", Map(
+                    "Click", true,
+                    "ClickDelay", 1000,
+                    "LoopDelay", 250,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 225)  ;Bouton jaune, texte blanc
+                ))
+                iconPlayerClickBlind(250)
+                if !screen.WaitForMatch(2000) {
+                    LoggerInstance.Debug("Not in Event menu")
+                    iconPlayerClickBlind(250)  ;Go back
+                    iconPlayerClickBlind(250)  ;Go back
+
+                    clickAnyBack()
+
+                }
+
+            } else {
+                i += 1
+                Sleep(1000)
+            }
+
+        } until i >= loopsmax
 
     }
 
+}
+
+ReturnEvents() {
+
+    Isevents := Screens.Titles.events.WaitForMatch()
+    if !Isevents {
+        LoggerInstance.debug("Not in event, trying to go back")
+        loop 5 {
+            iconPlayerClickBlind(1000)
+            Isevents := Screens.Titles.events.WaitForMatch()
+
+        } until Isevents
+    }
+    ;if not found, crash!
+    if !Isevents() {
+        CrashDetection()
+    }
+    return Isevents
+}
+
+ShadowCalls() {
+    IsShadowCall := false
+    IsShadowCall := (WaitFindText("(?i)S.adow Calls", Map(
+        "Click", false,
+        "ClickDelay", 2000,
+        "LoopDelay", 1000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+    )))
+
+    if IsShadowCall {
+        LoggerInstance.Debug("Found ShadowsCalls - Ally Mission")
+
+        ;personal missions
+        ClaimOCR(2000, 2000, Regions.events.main)
+        RemoveCongratOCR(, , Regions.events.main)
+
+        ;ally missions
+        if (WaitFindText("(?i)Ally Missions", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 1000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+        ))) {
+
+            loop 5 {
+                ;click help
+                if WaitFindText("(?i)Help", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 2000,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+                )) {
+                    RemoveSuccessful()
+                }
+
+            }
+        }
+    }
+    return IsShadowCall
 }
 
 BioMutant() {
@@ -106,9 +199,118 @@ BioMutant() {
 }
 
 TitanClaim() {
-    if ImageFinderInstance.FindAnyImageObjects(1000, false, O_Titan_title).found {
-        MouseClick("left", 970, 712, 2)
+    rednumberMain := O_reddot_number_transblack.Clone(, Regions.events.Main)
+
+    IsTitan := false
+    IsTitan := (WaitFindText("(?i)Titan", Map(
+        "Click", false,
+        "ClickDelay", 2000,
+        "LoopDelay", 1000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1)
+    )))
+
+    if IsTitan {
+        if ImageFinderInstance.FindAnyImageObjects(1000, false, rednumberMain).found {
+            ClaimLoopOCR(, 5, Regions.events.main)
+            iconPlayerClickBlind(250)
+            iconPlayerClickBlind(250)
+
+        }
+        MouseClick("left", Positions.titan.claim[1], Positions.titan.claim[2])
         Sleep(2000)
-        Remove_Congrat()
+
     }
+
+}
+
+iconeventsClick() {
+    _icon := O_reddot_number_transblack.Clone(, Regions.icons.events)
+
+    goToShelterOCR()
+    _i := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, _icon)
+
+    if _i.found {
+        MouseClick("left", _i.x - 10, _i.y + 10)
+        Sleep(2000)
+    }
+
+    return _i
+}
+
+RemoveSuccessful() {
+    WaitFindText("(?i)Successful", Map(
+        "Click", true,
+        "ClickDelay", 1000,
+        "LoopDelay", 1,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3)
+    ))
+
+}
+
+ExitEvents(screen) {
+    if (screen.WaitForMatch(3000)) {
+
+        loop 5 {
+            clickAnyBack()
+
+        } until Screens.Shelter.shelter.WaitForMatch(250) || Screens.Shelter.world.WaitForMatch(250)
+
+    }
+}
+
+ExclamationClick() {
+    _r := ImageFinderInstance.FindAnyImageObjects(1000, false, O_Events_exclamation_transblack)
+
+    if _r.found {
+        MouseClick("left", _r.x, _r.y + 10)
+        Sleep(2000)
+    }
+
+    return _r
+
+}
+
+iconRegionRedDotNbClick(Region) {
+    _icon := O_reddot_number_transblack.Clone(, Region)
+
+    goToShelterOCR()
+    _i := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, _icon)
+
+    if _i.found {
+        ClickCenter(Region, 3000)
+    }
+
+    return _i
+}
+
+vip() {
+    rd := O_reddot_number_transblack.Clone(, Regions.events.main)
+
+    LoggerInstance.debug("VIP")
+    goToShelterOCR()
+    iconPlayerClickBlind(2000)
+    ImageFinderInstance.FindAnyImageObjects(1000, true, rd)
+    m := ClaimOCR(, 1000, Regions.events.main)
+    if m {
+        LoggerInstance.debug("Claiming VIP")
+        MouseClick("left", m.x, m.y + 15)
+    }
+
+    iconPlayerClickBlind(250)
+    clickAnyBack()
+    iconPlayerClickBlind(250)
+    clickAnyBack()
+}
+
+ClickNew(region := Regions.AllRegion) {
+    return WaitFindText("(?i)\bNew\b", Map(
+        "Click", true,
+        "ClickDelay", 1000,
+        "LoopDelay", 500,
+        "Region", region,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 1)  ;texte blanc
+    ))
+
 }

@@ -9,7 +9,7 @@
 class Regions {
     static AppRegion := [0, 0, 1950, 1024]
     static AppMaximize := [595, 6, 628, 36]
-    static AllRegion := [656,0,1263,1079]
+    static AllRegion := [656, 0, 1263, 1079]
 
     static general := {
         splash: Regions.AllRegion
@@ -25,8 +25,8 @@ class Regions {
     }
 
     static DailyTasks := {
-        ClaimAll: [738, 803, 1452, 938], ; bad
-        Claim: [1188, 328, 1350, 864] ; bad
+        ClaimAll: [738, 803, 1452, 938],  ; bad
+        Claim: [1188, 328, 1350, 864]  ; bad
     }
 
     static icons := {
@@ -37,23 +37,23 @@ class Regions {
         combat: [663, 823, 725, 891],
         escort: [662, 682, 726, 755],
         alliance: [1189, 734, 1252, 806],
-        pack_shop: [1253, 34, 1382, 98],
+        pack_shop: [1136,0,1263,62],
         premium_center: [1183, 77, 1263, 164],
         events: [1188, 161, 1259, 237],
         battle_rewards: [664, 751, 722, 820],
         tasks: [661, 890, 728, 947],
         player: [656, 1, 736, 77],
-        back: [658,976,748,1071],
-        heal: [908, 767, 970, 828], ; bad
-        levelup: [979,896,1147,1029], 
+        back: [658, 976, 748, 1071],
+        heal: [729,745,801,893],  
+        levelup: [979, 896, 1147, 1029],
         Heroes: [661, 955, 776, 1074],
         Seasonmgt: [843, 635, 878, 676],
         help: [1135, 741, 1196, 801]
     }
 
     static Events := {
-        main: [655,60,1264,980],
-        bottom: [656,959,1305,1079]
+        main: [655, 60, 1264, 980],
+        bottom: [656, 959, 1305, 1079]
     }
 
     static Profile := {
@@ -84,7 +84,7 @@ class Regions {
     }
 
     static Boomers := {
-        boomers: [794,702,962,849]
+        boomers: [794, 702, 962, 849]
     }
 }
 
@@ -92,12 +92,15 @@ class Positions {
     static icons := {
         survivor: [687, 27, 694, 36],
         heroes: [689, 1026, 695, 1033],
-        levelupchat: [1120,40,1120,40]
+        levelupchat: [1120, 40, 1120, 40]
     }
-    Static boomers := {
-        boomers : [844,771,844,771],
-        search : [1118,1009,1118,1009],
-        march1: [759,899,759,899]
+    static boomers := {
+        boomers: [844, 771, 844, 771],
+        search: [1118, 1009, 1118, 1009],
+        march1: [759, 899, 759, 899]
+    }
+    static titan := {
+        claim: [829, 776, 829, 776]
     }
 
 }

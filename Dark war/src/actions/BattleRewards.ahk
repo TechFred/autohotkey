@@ -2,7 +2,7 @@
 
 BattleRewards() {
     iconBattleRewardsClick()
-    Claim_All()
+    ClaimAllOCR()
     ;clickAnyX()
     ;clickAnyBack()
 }

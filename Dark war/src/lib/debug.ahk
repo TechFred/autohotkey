@@ -83,7 +83,8 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            combat()
+                ClaimAllOCR()
+
             ;vip()
 
             

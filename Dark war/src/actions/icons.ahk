@@ -142,10 +142,12 @@ iconPlayerClick() {
     return ImageFinderInstance.LoopFindImage(iconPlayer, Regions.icons.player, 50, 1000, true, 500, 5)
 }
 iconPlayerClickBlind(DelayClick := 2000) {
+    LoggerInstance.debug("iconPlayerClickBlind")
     ClickCenter(Regions.icons.player, DelayClick)
 }
 
 iconHeroesClickBlind(DelayClick := 2000) {
+    LoggerInstance.debug("iconHeroesClickBlind")
     ClickCenter(Regions.icons.heroes, DelayClick)
 }
 

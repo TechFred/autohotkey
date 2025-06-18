@@ -3,6 +3,12 @@
 O_reddot_transblack_local := Image("reddot_transblack.bmp", 50, Regions.AllRegion, TransBlack)
 O_reddot_transblack_local_2 := Image("reddot_transblack_2.bmp", 50, Regions.AllRegion, TransBlack)
 O_reddot_transblack_local_3 := Image("reddot_transblack_3.bmp", 50, Regions.AllRegion, TransBlack)
+redtest := Image("reddottest2.bmp", 50, Regions.AllRegion, TransBlack)
+
+rednumber2 := Image("Rednumber_test2.bmp", 100, Regions.AllRegion, TransBlack)
+rednumber1 := Image("Rednumber_test1.bmp", 75, Regions.AllRegion, TransBlack)
+rednumber3 := Image("Rednumber_test3.bmp", 25, Regions.AllRegion, TransBlack)
+
 
 reddot_group := [O_reddot_transblack_local, O_reddot_transblack_local_2, O_reddot_transblack_local_3]
 

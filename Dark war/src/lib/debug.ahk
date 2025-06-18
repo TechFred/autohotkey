@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 
-HighlightRegion(region, duration := 5000) {
+HighlightRegion(region, duration := 10000) {
     ; Create GUI with no border and transparent background
     guiobj := Gui("+AlwaysOnTop -Caption +ToolWindow +LastFound")
     guiobj.BackColor := "Red"
@@ -16,7 +16,7 @@ HighlightRegion(region, duration := 5000) {
     WinSetTransparent(150, "ahk_id " guiobj.Hwnd)
 
     ; Wait, then destroy
-    Sleep(duration)
+    ;Sleep(duration)
     SetTimer (*) => guiobj.Destroy(), -duration
 
 }
@@ -39,7 +39,7 @@ HighlightRegionInWindow(region, duration := 5000) {
         WinSetTransparent(150, "ahk_id " guiobj.Hwnd)
 
         ; Auto destroy after duration
-        Sleep(duration)
+        ;Sleep(duration)
         SetTimer (*) => guiobj.Destroy(), -duration
     } catch as e {
         MsgBox "Error highlighting region: " e.Message
@@ -68,7 +68,18 @@ CheckDebug() {
         }
 
         if debugimage {
-            DebugimageObject(O_icontruck_tb)
+            ;DebugimageObject(rednumber2)
+            ;Sleep(11000)
+            ;HighlightAllImages(redtest)
+            founds := ImageSearchAll(O_Events_exclamation_transblack)
+
+            for img in founds {
+                Region := [img.x, img.y, img.x + 20, img.y + 20]
+                HighlightRegionInWindow(Region)
+            }
+            LoggerInstance.debug("Done")
+            sleep(10000)
+            
         }
         ; ===============================
         if debug {
@@ -84,7 +95,6 @@ CheckDebug() {
             sleep (5000)
             
             */
-
 
         }
         BlockInput("MouseMoveOff")
@@ -242,8 +252,80 @@ debugaction() {
 }
 
 debugaction2() {
-
     TakeScreenshot()
+}
+
+HighlightAllImages(img) {
+
+    path := (ImageFinderInstance.assetsPath img.path)
+    tolerance := img.tolerance
+    transcolor := img.transcolor
+    Region := img.region
+    ; Get screen dimensions
+    screenWidth := Region[3]
+    screenHeight := Region[4]
+
+    ; Start coordinates
+    x := Region[1]
+    y := Region[2]
+
+    ; Loop to find all occurrences
+    while true {
+        LoggerInstance.debug("searching")
+        found := ImageSearch(&FoundX, &FoundY, x, y, screenWidth, screenHeight, transcolor " *" tolerance " " path)
+
+        if !found {
+            LoggerInstance.debug("not found")
+            break
+        }
+        LoggerInstance.debug("Found: " found " x: " FoundX " y: " FoundY)
+
+        ; Get image dimensions
+        imgW := 20
+        imgH := 20
+
+        ; Highlight found region
+        Region := [FoundX, FoundY, FoundX + imgW, FoundY + imgH]
+        HighlightRegionInWindow(Region)
+
+        ; Move search origin past the found image
+        x := FoundX + imgW
+        if x >= screenWidth {
+            x := 0
+            y := FoundY + imgH
+            if y >= screenHeight {
+                break
+            }
+        }
+    }
+}
+
+ImageSearchAll(img, x1 := 0, y1 := 0, x2 := 'Screen', y2 := 'Screen') {
+
+    path := (ImageFinderInstance.assetsPath img.path)
+    tolerance := img.tolerance
+    transcolor := img.transcolor
+    Region := img.region
+
+    x2 := x2 = 'Screen' ? A_ScreenWidth : x2
+    y2 := y2 = 'Screen' ? A_ScreenHeight : y2
+    found := []
+    y := y1
+    loop {
+        x := x1
+        lastFoundY := 0
+        while f := ImageSearch(&foundX, &foundY, x, y, x2, y2, transcolor " *" tolerance " " path) {
+            if (lastFoundY = 0 || lastFoundY = foundY) {
+                found.Push({ x: foundX, y: foundY })
+                LoggerInstance.debug("Found: " f " x: " FoundX " y: " FoundY)
+                x := foundX + 20
+                lastFoundY := foundY
+            } else
+                break
+        }
+        y := lastFoundY + 20
+    } until (x = x1) && !f
+    return found
 }
 
 /* Backups

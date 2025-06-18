@@ -35,7 +35,7 @@ class ImageFinder {
         } catch as e {
             LoggerInstance.Warn("Error in FindImage: " e.Message)
             LoggerInstance.Debug("Image path: " this.assetsPath path)
-            LoggerInstance.Debug("Image path: " x1 "," y1 "," x2 "," y2 "," transcolor " *" tolerance " " this.assetsPath path)
+            LoggerInstance.Debug("Command: " x1 "," y1 "," x2 "," y2 "," transcolor " *" tolerance " " this.assetsPath path)
             LoggerInstance.Debug("Screen: " A_ScreenWidth " x " A_ScreenHeight)
             WinGetClientPos &wx, &wy, &wWidth, &wHeight, "A"
             LoggerInstance.Debug("Client size: " wWidth "x" wHeight)

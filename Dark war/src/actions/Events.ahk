@@ -31,7 +31,7 @@ events() {
     EventsLoop(Screens.Titles.events)
 }
 
-premium() {
+premiumCenter() {
     iconRegionRedDotNbClick(Regions.icons.premium_center)
     EventsLoop(Screens.Titles.Premium)
 }

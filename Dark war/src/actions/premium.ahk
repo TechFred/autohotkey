@@ -2,7 +2,7 @@
 
 O_premium_title := Image("premium_title.bmp", 25, Regions.AllRegion)
 
-premiumCenter() {
+_premiumCenter() {
 
     iconPremiumCenterClick()
 

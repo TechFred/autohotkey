@@ -142,7 +142,7 @@ AllianceWars() {
             "ClickDelay", 2000,
             "LoopDelay", 4000,
             "Region", Regions.events.bottom,
-            "ocrOptions", Map("scale", 5)
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 1)
         ))
 
         WaitFindText("(?i)Enable", Map(

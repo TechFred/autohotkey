@@ -139,16 +139,16 @@ debugOCRRegion() {
 
     list_oocrOption := [
         ;Map("lang", "en-us", "scale", 4, "grayscale", 0, "casesense", 0,),
-        ;Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
-        ;Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
-        ;Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
-        ;Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 1, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
         ;Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
         ;Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 200),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 0, "monochrome", 0),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 0),
-        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3, "invertcolors", 1, "monochrome", 200)  ;texte blanc
+        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 200)  ;texte blanc
     ]
 
     ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
@@ -172,18 +172,22 @@ debugOCRRegionOptions(ocrOptions) {
 
     LoggerInstance.Debug("==== Event Main ====")
     debugGetTextRegion(Regions.Events.main, ocrOptions)
+
     LoggerInstance.Debug("==== menus top ====")
     debugGetTextRegion(Regions.menus.top, ocrOptions)
+OCR.DisplayImage := true
     LoggerInstance.Debug("==== menus Bottom ====")
     debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+OCR.DisplayImage := false
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
 
+    /*
     OCR.DisplayImage := true
     LoggerInstance.Debug("==== Special ====")
     debugGetTextRegion(Regions.icons.events, ocrOptions)
     OCR.DisplayImage := false
-
+    */
     ;LoggerInstance.Debug("==== World ====")
     ;debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
 

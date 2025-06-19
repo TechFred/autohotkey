@@ -1,14 +1,16 @@
 #Requires AutoHotkey v2.0
 O_escort_menu := Image("escort.bmp", 50, Regions.menus.bottom)
 O_escort_expeditionGift := Image("expedition_gift.bmp", 100, Regions.AllRegion)
-O_escort_escortGift := Image("escort_gift.bmp", 20, Regions.AllRegion)
+O_escort_escortGift := Image("escort_gift.bmp", 40, Regions.events.main)
+O_escort_escortGift2 := Image("escort_gift2.bmp", 40, Regions.events.main)
 
 
 
 
 ImagesGift := [
     O_escort_expeditionGift,
-    O_escort_escortGift
+    O_escort_escortGift,
+    O_escort_escortGift2
 ]
 Escorts() {
     if iconEscortClick().found {

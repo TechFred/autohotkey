@@ -75,7 +75,7 @@ debugmodeOCR := false
 #include src\actions\StartGame.ahk
 #include src\actions\Events.ahk
 #include src\actions\levelup.ahk
-#include src\actions\premium.ahk
+;#include src\actions\premium.ahk
 #include src\actions\Hospital.ahk
 #Include src\actions\Seasonmgt.ahk
 

@@ -92,7 +92,7 @@ EventsClaims(screen) {
     } else {
         LoggerInstance.Debug("Begin normal claiming")
         ClaimAllOCR(, Regions.Events.main)  ; Slow! Voir comment accélérer
-        ClaimLoopOCR(, , Regions.events.main)  ; slow! Voir comment accélérer
+        ClaimLoopOCR(,10 , Regions.events.main)  ; slow! Voir comment accélérer
         iconPlayerClickBlind(250)  ;Go back
         iconPlayerClickBlind(250)  ;Go back
 
@@ -101,7 +101,7 @@ EventsClaims(screen) {
                 LoggerInstance.Debug("Found reddot in main")
                 i := 0
                 ClaimAllOCR(, Regions.Events.main)
-                ClaimLoopOCR(, , Regions.events.main)
+                ClaimLoopOCR(,10 , Regions.events.main)
 
                 ;ClaimFree
                 WaitFindText("(?i)\bFree\b", Map(

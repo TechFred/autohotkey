@@ -35,6 +35,7 @@ class Image {
         img := ImageFinderInstance.FindAnyImageObjects(1000, false, this)
         if img {
             MouseClick("left", img.x + 10, img.y + 10)
+            Sleep(ClickDelay)
 
         }
         return img

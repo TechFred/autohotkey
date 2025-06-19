@@ -94,8 +94,10 @@ ClaimOCR(ClickDelay := 1000, LoopDelay := 5000, Region := Regions.AllRegion) {
         "ClickDelay", ClickDelay,
         "LoopDelay", LoopDelay,
         "Region", Region,
-        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 1)
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 1)
         ;"ocrOptions", Map("lang", "en-us", "scale", 3, "grayscale", 0, "mode", 4, "casesense", 0)
+        ;"casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", en-us, "mode", 4, "monochrome", 200, "scale", 1
+        ;"casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", en-us, "mode", 4, "monochrome", 200, "scale", 1
     ))
 /*
     if !(match) {
@@ -159,7 +161,7 @@ ClaimLoopOCR(ClickDelay := 1000, LoopCount := 100, Region := Regions.AllRegion) 
     j := 0
     i := 0
     loop {
-        match := ClaimOCR(ClickDelay, 500, Regions.AllRegion)
+        match := ClaimOCR(ClickDelay, 500, Region)
         if (match) {
 
             i := 0

@@ -89,7 +89,7 @@ EventsClaims(screen) {
 
     ;Biomutant
     ;FactionTrials
-    if (screen.name = Screens.titles.events.name) && (ShadowCalls() || TitanClaim()) {  ; Or Other specials.
+    if (screen.name = Screens.titles.events.name) && (ShadowCalls() || TitanClaim() || FactionTrials()) {  ; Or Other specials.
         LoggerInstance.Debug("Begin special claiming")
 
         ;Nothing to do. Return
@@ -153,6 +153,20 @@ ReturnEvents() {
         CrashDetection()
     }
     return Isevents
+}
+
+FactionTrials() {
+    FactionTrials := false
+    FactionTrials := (WaitFindText("(?i)Facti.. TR.a.s", Map(
+        "Click", false,
+        "ClickDelay", 2000,
+        "LoopDelay", 1000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 1)
+    )))
+
+    ;do nothing here
+    return FactionTrials
 }
 
 ShadowCalls() {
@@ -291,18 +305,22 @@ iconRegionRedDotNbClick(Region) {
 }
 
 vip() {
-    rd := O_reddot_number_transblack.Clone(, Regions.events.main)
+    rdn := O_reddot_number_transblack.Clone(, Regions.events.main)
+    rd := O_reddot_transblack.Clone(, Regions.events.main)
 
     LoggerInstance.debug("VIP")
     goToShelterOCR()
     iconPlayerClickBlind(2000)
-    ImageFinderInstance.FindAnyImageObjects(1000, true, rd)
+    ImageFinderInstance.FindAnyImageObjects(1000, true, rdn)
+    rd.ClickOffsetTopLeft()
+
+    /*
     m := ClaimOCR(, 1000, Regions.events.main)
     if m {
         LoggerInstance.debug("Claiming VIP")
-        MouseClick("left", m.x, m.y + 15)
+        MouseClick("left", m.x, m.y - 25)
     }
-
+    */
     iconPlayerClickBlind(250)
     clickAnyBack()
     iconPlayerClickBlind(250)
@@ -310,7 +328,8 @@ vip() {
 }
 
 ClickNew(region := Regions.AllRegion) {
-    return WaitFindText("(?i)\bNew\b", Map(
+
+    match := WaitFindText("(?i)\bNew\b", Map(
         "Click", true,
         "ClickDelay", 1000,
         "LoopDelay", 500,
@@ -318,4 +337,14 @@ ClickNew(region := Regions.AllRegion) {
         "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 3)  ;texte blanc
     ))
 
+    if !match {
+        WaitFindText("(?i)\bNew\b", Map(
+            "Click", true,
+            "ClickDelay", 1000,
+            "LoopDelay", 500,
+            "Region", region,
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 1)  ;texte blanc
+        ))
+    }
+    return match
 }

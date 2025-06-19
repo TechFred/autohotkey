@@ -83,7 +83,7 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            ClaimAllOCR()
+            ClaimLoopOCR(5000, 5, Regions.events.main)
 
             ;vip()
 
@@ -148,7 +148,8 @@ debugOCRRegion() {
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 200),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 0, "monochrome", 0),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 0),
-        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 200)  ;texte blanc
+        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 200),
+        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3, "invertcolors", 1, "monochrome", 200)  ;texte blanc
     ]
 
     ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
@@ -166,7 +167,7 @@ debugOCRRegion() {
 }
 
 debugOCRRegionOptions(ocrOptions) {
-
+    OCR.DisplayImage := true
     LoggerInstance.debug("`n`n++++ OCR Region ++++")
     LoggerInstance.debug(MapToLogString(ocrOptions))
 
@@ -174,13 +175,16 @@ debugOCRRegionOptions(ocrOptions) {
     debugGetTextRegion(Regions.Events.main, ocrOptions)
 
     LoggerInstance.Debug("==== menus top ====")
-    debugGetTextRegion(Regions.menus.top, ocrOptions)
-OCR.DisplayImage := true
+    ;debugGetTextRegion(Regions.menus.top, ocrOptions)
+
     LoggerInstance.Debug("==== menus Bottom ====")
-    debugGetTextRegion(Regions.menus.bottom, ocrOptions)
-OCR.DisplayImage := false
+    ;debugGetTextRegion(Regions.menus.bottom, ocrOptions)
+
     LoggerInstance.Debug("==== All ====")
-    debugGetTextRegion(Regions.AllRegion, ocrOptions)
+    ;debugGetTextRegion(Regions.AllRegion, ocrOptions)
+
+
+    OCR.DisplayImage := false
 
     /*
     OCR.DisplayImage := true

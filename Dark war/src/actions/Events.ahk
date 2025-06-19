@@ -27,7 +27,12 @@ ImagesNew := [
 ]
 
 events() {
-    iconRegionRedDotNbClick(Regions.icons.events)
+    if (ClickNew(Regions.icons.events)) {
+
+    } else {
+        iconRegionRedDotNbClick(Regions.icons.events)
+    }
+
     EventsLoop(Screens.Titles.events)
 }
 
@@ -92,7 +97,7 @@ EventsClaims(screen) {
     } else {
         LoggerInstance.Debug("Begin normal claiming")
         ClaimAllOCR(, Regions.Events.main)  ; Slow! Voir comment accélérer
-        ClaimLoopOCR(,10 , Regions.events.main)  ; slow! Voir comment accélérer
+        ClaimLoopOCR(, 10, Regions.events.main)  ; slow! Voir comment accélérer
         iconPlayerClickBlind(250)  ;Go back
         iconPlayerClickBlind(250)  ;Go back
 
@@ -101,7 +106,7 @@ EventsClaims(screen) {
                 LoggerInstance.Debug("Found reddot in main")
                 i := 0
                 ClaimAllOCR(, Regions.Events.main)
-                ClaimLoopOCR(,10 , Regions.events.main)
+                ClaimLoopOCR(, 10, Regions.events.main)
 
                 ;ClaimFree
                 WaitFindText("(?i)\bFree\b", Map(
@@ -310,7 +315,7 @@ ClickNew(region := Regions.AllRegion) {
         "ClickDelay", 1000,
         "LoopDelay", 500,
         "Region", region,
-        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 225, "scale", 1)  ;texte blanc
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 3)  ;texte blanc
     ))
 
 }

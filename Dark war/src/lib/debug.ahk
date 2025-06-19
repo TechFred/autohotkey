@@ -83,11 +83,10 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-                ClaimAllOCR()
+            ClaimAllOCR()
 
             ;vip()
 
-            
             /*
             
                         HighlightRegionInWindow(Regions.events.main, 5000)
@@ -146,11 +145,13 @@ debugOCRRegion() {
         ;Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
         ;Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
         ;Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
-        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 1, "invertcolors", 1, "monochrome", 225)  ;texte blanc
+        ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 200),
+        ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 0, "monochrome", 0),
+        ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 0),
+        Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 3, "invertcolors", 1, "monochrome", 200)  ;texte blanc
     ]
 
     ;"Region", Regions.events.main,"lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0
-    OCR.DisplayImage := true
 
     i := 0
     for opt in list_oocrOption {
@@ -178,11 +179,13 @@ debugOCRRegionOptions(ocrOptions) {
     LoggerInstance.Debug("==== All ====")
     debugGetTextRegion(Regions.AllRegion, ocrOptions)
 
-    ;LoggerInstance.Debug("==== Special ====")
-    ;debugGetTextRegion(Regions.AppRegion, ocrOptions)
+    OCR.DisplayImage := true
+    LoggerInstance.Debug("==== Special ====")
+    debugGetTextRegion(Regions.icons.events, ocrOptions)
+    OCR.DisplayImage := false
 
-    LoggerInstance.Debug("==== World ====")
-    debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
+    ;LoggerInstance.Debug("==== World ====")
+    ;debugGetTextRegion(Regions.icons.world_Shelter, ocrOptions)
 
 }
 

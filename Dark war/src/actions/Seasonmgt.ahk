@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 
-O_iconseasonmgt := Image("icon_seasonmgt_transblack.bmp", 100, Regions.menus.left, TransBlack)
+O_iconseasonmgt := Image("icon_seasonmgt_transblack.bmp", 50, Regions.menus.left, TransBlack)
 
 IconSeasonmgtClick() {
     if goToWorldOCR() {

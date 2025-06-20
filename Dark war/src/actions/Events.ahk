@@ -57,6 +57,9 @@ EventsLoop(screen) {
     if screen.WaitForMatch() {
         LoggerInstance.Debug("Menu - " screen.name)
 
+        startTime := A_TickCount
+        maxDuration := 3 * 60 * 1000  ; 3 minutes in milliseconds
+
         loop 20 {
             if (ImageFinderInstance.FindAnyImageObjects(1000, true, reddotBottom).found) || (ImageFinderInstance.FindAnyImageObjects(1000, true, rednumberBottom).found) || ClickNew(Regions.events.bottom) {
                 LoggerInstance.Debug("Found reddot in menu")
@@ -65,14 +68,22 @@ EventsLoop(screen) {
             } else if (ExclamationClick().found) {
                 i := 0
             } else if (!screen.WaitForMatch(2000)) {
-                iconPlayerClickBlind(250)
                 clickAnyBack()
+                iconPlayerClickBlind(250)
+
             } else {
                 i += 1
                 Sleep(1000)
             }
 
-        } until i >= loopsmax
+        } until i >= loopsmax || A_TickCount - startTime < maxDuration
+
+        loop 5 {
+            if (!screen.WaitForMatch(250)) {
+                clickAnyBack()
+                iconPlayerClickBlind(250)
+            }
+        }
         ExitEvents(screen)
     }
 
@@ -81,7 +92,7 @@ EventsLoop(screen) {
 EventsClaims(screen) {
     reddotMain := O_reddot_transblack.Clone(, Regions.events.main)
     rednumberMain := O_reddot_number_transblack.Clone(, Regions.events.Main)
-    loopsmax := 3
+    loopsmax := 2
     i := 0
 
     isEvents := screen.name = Screens.titles.events.name
@@ -97,16 +108,16 @@ EventsClaims(screen) {
     } else {
         LoggerInstance.Debug("Begin normal claiming")
         ClaimAllOCR(, Regions.Events.main)  ; Slow! Voir comment accélérer
-        ClaimLoopOCR(, 10, Regions.events.main)  ; slow! Voir comment accélérer
+        ClaimLoopOCR(, 2, Regions.events.main)  ; slow! Voir comment accélérer
         iconPlayerClickBlind(250)  ;Go back
         iconPlayerClickBlind(250)  ;Go back
 
-        loop 20 {
+        loop 5 {
             if (reddotMain.ClickOffsetTopLeft(1000).found) || (ImageFinderInstance.FindAnyImageObjects(1000, true, rednumberMain).found) {
                 LoggerInstance.Debug("Found reddot in main")
                 i := 0
                 ClaimAllOCR(, Regions.Events.main)
-                ClaimLoopOCR(, 10, Regions.events.main)
+                ClaimLoopOCR(, 3, Regions.events.main)
 
                 ;ClaimFree
                 WaitFindText("(?i)\bFree\b", Map(

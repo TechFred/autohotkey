@@ -6,7 +6,7 @@
         "img": "switch_NIILeBalafre.bmp",
         "regex": "(?i)personal",
         "order": 2,
-        "boomer_run": false,
+        "boomer_run": true,
         "energy_run": true
     },
     {
@@ -16,7 +16,7 @@
         "img": "switch_balafre.bmp",
         "regex": "(?i)comming",
         "order": 1,
-        "boomer_run": false,
+        "boomer_run": true,
         "energy_run": true
     },
     {

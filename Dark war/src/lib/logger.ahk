@@ -19,12 +19,14 @@ class Logger {
             return  ; skip because below minimum level
 
         timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm:ss")
-        entry := "[" level "] " timestamp " - " msg 
+        entry := "[" level "] " timestamp " - " msg
 
-        FileAppend(entry "`n", this.debugLog)  ; Always write to debug log
+        this.WriteWithRetry(entry, this.debugLog)
+
+        ; Always write to debug log
 
         if (level != "DEBUG") {
-            FileAppend(entry "`n", this.infoLog)  ; Only INFO and WARN go here
+            this.WriteWithRetry(entry, this.infoLog)  ; Only INFO and WARN go here
         }
 
         OutputDebug(entry)
@@ -46,4 +48,17 @@ class Logger {
         FileDelete(this.infoLog)
         FileDelete(this.debugLog)
     }
+
+    WriteWithRetry(text, filePath, retries := 5, delayMs := 200) {
+        loop retries {
+            try {
+                FileAppend(text "`n", filePath)
+                return true  ; Success
+            } catch {
+                Sleep delayMs
+            }
+        }
+        return false  ; Failed after all retries
+    }
+
 }

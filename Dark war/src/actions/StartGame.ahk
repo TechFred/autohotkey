@@ -49,11 +49,11 @@ WinActivateGame() {
             WindowsisActivated := true
             ;WinRestore(winTitle)
             Sleep(2000)
-            if !ToggleFullScreen(){
+            if !ToggleFullScreen() {
                 LoggerInstance.debug("warn Fullscreen not toggled")
                 QuitGame()
             }
-            
+
             ;ImageFinderInstance.LoopFindAnyImageObjects(4000, true, 200, 10, O_winmaximise)
             ;MouseClick("left", 352, 15, 2)
             ;MouseMove(100, 15)
@@ -67,18 +67,7 @@ WinActivateGame() {
 QuitGame(code := 99) {
     BlockInput("MouseMoveOff")
     TakeScreenshot()
-    if WinExist(winTitle) {
-        ; Close the window gracefully
-        WinClose(winTitle)
-        LoggerInstance.Info("Close HD-Player.exe")
-
-        ; If the process doesn't close, force it
-        Sleep(5000)
-        if WinExist(winTitle) {
-            ProcessClose("HD-Player.exe")
-            LoggerInstance.warn("Force closed HD-Player.exe")
-        }
-    }
+    CloseApplication()
     LoggerInstance.Info("Done with code: " code)
     ExitApp(code)
 }
@@ -97,7 +86,7 @@ listAllWindows() {
 }
 
 ToggleFullScreen() {
-    r:= false
+    r := false
     loop 10 {
         if Screens.Custom.BlueStacks.WaitForMatch(1000) {
             LoggerInstance.info("Toggling Fullscreen")
@@ -109,4 +98,19 @@ ToggleFullScreen() {
     }
     return false
 
+}
+
+CloseApplication() {
+    if WinExist(winTitle) {
+        ; Close the window gracefully
+        WinClose(winTitle)
+        LoggerInstance.Info("Close HD-Player.exe")
+
+        ; If the process doesn't close, force it
+        Sleep(5000)
+        if WinExist(winTitle) {
+            ProcessClose("HD-Player.exe")
+            LoggerInstance.warn("Force closed HD-Player.exe")
+        }
+    }
 }

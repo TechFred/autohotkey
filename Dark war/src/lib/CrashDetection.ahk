@@ -1,11 +1,8 @@
 #Requires AutoHotkey v2.0
 
 CrashDetection() {
-LoggerInstance.debug("Running CrashDetection")
+    LoggerInstance.debug("Running CrashDetection")
     scr := getCurrentScreenOCR()
-
-    
-    
 
     if scr {
         if scr.name = Screens.mains.Android.name {
@@ -57,9 +54,9 @@ LoggerInstance.debug("Running CrashDetection")
 
 }
 
-; Logique nulle. À réviser. 
+; Logique nulle. À réviser.
 Checkfix_Screen_Android() {
-LoggerInstance.warn("Running Android Checkfix_Screen_Android")
+    LoggerInstance.warn("Running Android Checkfix_Screen_Android")
     i := 0
     loop {
         if (Screens.mains.Android.WaitForMatch(3000)) {
@@ -114,9 +111,9 @@ Checkfix_Screen_Unknown() {
 }
 
 RestartGame() {
-        LoggerInstance.warn("Running Android RestartGame")
+    LoggerInstance.warn("RestartGame")
 
-    try ProcessClose("HD-Player.exe")
+    CloseApplication()
     WinWaitClose(winTitle)
     Sleep 10000
     StartDarkWar()

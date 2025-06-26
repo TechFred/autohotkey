@@ -23,6 +23,10 @@ debugimage := false
 
 debugmodeOCRDeeper := false
 debugmodeOCR := false
+
+ForceRestartGame := false
+ForceRestartGame := true
+
 /*
 ====== Includes ======
 */

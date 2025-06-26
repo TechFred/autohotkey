@@ -47,7 +47,7 @@ LoggerInstance.Info("Starting script - " A_ScriptDir)
 
 if debug = false AND GetOCRRegion = false {
     if ForceRestartGame{
-        RestartGame()
+        CloseApplication()
     }
     StartDarkWar()
 }

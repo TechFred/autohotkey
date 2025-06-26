@@ -114,8 +114,7 @@ RestartGame() {
     LoggerInstance.warn("RestartGame")
 
     CloseApplication()
-    WinWaitClose(winTitle)
-    Sleep 10000
+    Sleep 30000
     StartDarkWar()
     throw Error("Game crashed")
 }

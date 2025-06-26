@@ -46,7 +46,7 @@ BlockInput("MouseMove")
 LoggerInstance.Info("Starting script - " A_ScriptDir)
 
 if debug = false AND GetOCRRegion = false {
-    if ForceRestartGame{
+    if ForceRestartGame {
         CloseApplication()
     }
     StartDarkWar()
@@ -208,6 +208,12 @@ Complete_run(u) {
     CrashDetection()
     iconHelpClick()
     pack_shop()
+
+    ;Season 2
+    LoggerInstance.info("Season 2")
+    CrashDetection()
+    iconHelpClick()
+    Season2()
 
     ;End script
     LoggerInstance.info("Ending script")

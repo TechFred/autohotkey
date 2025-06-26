@@ -46,6 +46,42 @@ pack_shop() {
     EventsLoop(Screens.Titles.pack_shop)
 }
 
+Season2() {
+    IsSeason2 := WaitFindText("(?i)eason 2", Map(
+        "Click", false,
+        "ClickDelay", 2000,
+        "LoopDelay", 1000,
+        "Region", Regions.events.main,
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 3)
+    ))
+
+    if IsSeason2 {
+
+        LoggerInstance.debug("Season 2")
+        if (ClickNew(Regions.icons.Season2)) {
+
+        } else {
+            ;iconRegionRedDotNbClick(Regions.icons.Season2)
+        }
+
+        ;collect influence
+        if goToWorldOCR() {
+            LoggerInstance.debug("Collect influence")
+            iconRegionRedDotNbClick(Regions.icons.flag)
+            if Screens.mains.Sandwalker.WaitForMatch(2000) {
+                EventsClaims(Screens.mains.Sandwalker)
+                ExitEvents(Screens.mains.Sandwalker)
+            }
+
+            goToShelterOCR()
+        }
+
+    } else {
+        LoggerInstance.debug("not season 2")
+    }
+
+}
+
 EventsLoop(screen) {
 
     reddotBottom := O_reddot_transblack.Clone(, Regions.events.Bottom)
@@ -76,8 +112,10 @@ EventsLoop(screen) {
                 Sleep(1000)
             }
 
-        } until i >= loopsmax || A_TickCount - startTime < maxDuration
+        } until i >= loopsmax || A_TickCount - startTime > maxDuration
 
+        LoggerInstance.Debug("Ending - " screen.name)
+        LoggerInstance.Debug("loopmax:" loopsmax ", i:" i ", A_TickCount:" A_TickCount ", startTime:" startTime ", maxDuration" maxDuration)
         loop 5 {
             if (!screen.WaitForMatch(250)) {
                 clickAnyBack()
@@ -113,7 +151,7 @@ EventsClaims(screen) {
         iconPlayerClickBlind(250)  ;Go back
 
         loop 5 {
-            if (reddotMain.ClickOffsetTopLeft(1000).found) || (ImageFinderInstance.FindAnyImageObjects(1000, true, rednumberMain).found) {
+            if (reddotMain.ClickOffsetTopLeft(1000).found) || (rednumberMain.ClickOffsetTopLeft(1000).found) {
                 LoggerInstance.Debug("Found reddot in main")
                 i := 0
                 ClaimAllOCR(, Regions.Events.main)
@@ -130,10 +168,9 @@ EventsClaims(screen) {
                 iconPlayerClickBlind(250)
                 if !screen.WaitForMatch(2000) {
                     LoggerInstance.Debug("Not in Event menu")
-                    iconPlayerClickBlind(250)  ;Go back
-                    iconPlayerClickBlind(250)  ;Go back
-
                     clickAnyBack()
+                    iconPlayerClickBlind(250)  ;Go back
+                    iconPlayerClickBlind(250)  ;Go back
 
                 }
 
@@ -193,8 +230,15 @@ ShadowCalls() {
     if IsShadowCall {
         LoggerInstance.Debug("Found ShadowsCalls - Ally Mission")
 
-        ;personal missions
-        ClaimOCR(2000, 2000, Regions.events.main)
+        ;personnal mission
+        LoggerInstance.Debug("Searching Claim ShadowsCalls")
+        match := WaitFindText("(?i)\bclaim\b(?!\s+again)", Map(
+            "Click", true,
+            "ClickDelay", 2000,
+            "LoopDelay", 2000,
+            "Region", Regions.events.main,
+            "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+        ))
         RemoveCongratOCR(, , Regions.events.main)
 
         ;ally missions
@@ -213,14 +257,16 @@ ShadowCalls() {
                     "ClickDelay", 2000,
                     "LoopDelay", 2000,
                     "Region", Regions.events.main,
-                    "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+                    "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
                 )) {
                     RemoveSuccessful()
                 }
 
             }
         }
+
     }
+
     return IsShadowCall
 }
 
@@ -305,7 +351,7 @@ ExclamationClick() {
 iconRegionRedDotNbClick(Region) {
     _icon := O_reddot_number_transblack.Clone(, Region)
 
-    goToShelterOCR()
+
     _i := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, _icon)
 
     if _i.found {

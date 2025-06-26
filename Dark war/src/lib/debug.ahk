@@ -83,7 +83,8 @@ CheckDebug() {
         }
         ; ===============================
         if debug {
-            ClaimLoopOCR(5000, 5, Regions.events.main)
+            Season2()
+            ;ClaimLoopOCR(5000, 5, Regions.events.main)
 
             ;vip()
 
@@ -143,8 +144,8 @@ debugOCRRegion() {
         Map("lang", "en-us", "scale", 1, "grayscale", 0, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 3, "grayscale", 1, "casesense", 0, "mode", 4,),
         Map("lang", "en-us", "scale", 3, "grayscale", 0, "casesense", 0, "mode", 4,),
-        ;Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
-        ;Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 5, "grayscale", 1, "casesense", 0, "mode", 4,),
+        Map("lang", "en-us", "scale", 5, "grayscale", 0, "casesense", 0, "mode", 4,),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 200),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 0, "monochrome", 0),
         ;Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5, "invertcolors", 1, "monochrome", 0),
@@ -167,7 +168,7 @@ debugOCRRegion() {
 }
 
 debugOCRRegionOptions(ocrOptions) {
-    OCR.DisplayImage := true
+    ;OCR.DisplayImage := true
     LoggerInstance.debug("`n`n++++ OCR Region ++++")
     LoggerInstance.debug(MapToLogString(ocrOptions))
 
@@ -183,13 +184,12 @@ debugOCRRegionOptions(ocrOptions) {
     LoggerInstance.Debug("==== All ====")
     ;debugGetTextRegion(Regions.AllRegion, ocrOptions)
 
-
     OCR.DisplayImage := false
 
     /*
     OCR.DisplayImage := true
     LoggerInstance.Debug("==== Special ====")
-    debugGetTextRegion(Regions.icons.events, ocrOptions)
+    debugGetTextRegion(Regions.icons.Season2, ocrOptions)
     OCR.DisplayImage := false
     */
     ;LoggerInstance.Debug("==== World ====")

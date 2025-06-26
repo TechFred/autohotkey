@@ -31,9 +31,23 @@ class Image {
         return Image(this.path, Tolerance, Region, this.transcolor)
     }
 
+    ;Top right officiellement?
     ClickOffsetTopLeft(ClickDelay := 2000) {
         img := ImageFinderInstance.FindAnyImageObjects(1000, false, this)
-        if img {
+        if img.found {
+            LoggerInstance.debug("clicking image:" img.x - 10 ", " img.y + 10)
+            MouseClick("left", img.x - 10, img.y + 10)
+            Sleep(ClickDelay)
+
+        }
+        return img
+    }
+
+
+        ClickOffsetTopRight(ClickDelay := 2000) {
+        img := ImageFinderInstance.FindAnyImageObjects(1000, false, this)
+        if img.found {
+            LoggerInstance.debug("clicking image:" img.x - 10 ", " img.y + 10)
             MouseClick("left", img.x + 10, img.y + 10)
             Sleep(ClickDelay)
 

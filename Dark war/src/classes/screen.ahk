@@ -72,6 +72,7 @@ class Screens {
         VIP: Screen("VIP", "title", Regions.menus.top, "(?i)VIP"),
         SeasonMgt: Screen("Season Management", "title", Regions.menus.top, "(?i)Seaso. M.{1,3}ageMe.{1,3}t"),
         pack_shop: Screen("Pack Shop", "title", Regions.menus.top, "(?i)Pack S.op"),
+        Season2: Screen("Golden empire", "title", Regions.menus.top, "(?i)Golden empire"),
     }
 
     static Mains := {
@@ -85,7 +86,8 @@ class Screens {
         Daily: Screen("Daily Tasks", "main", Regions.Events.main, "(?i)Daily Tasks"),
         Logout: Screen("Logout", "main", Regions.Events.main, "(?i)logged in on another"),
         Healing: Screen("Healing", "main", Regions.Events.main, "(?i)Heal Wounded Units"),
-        GetEnergy: Screen("Get Energy", "main", Regions.Events.main, "(?i)Get Energy")
+        GetEnergy: Screen("Get Energy", "main", Regions.Events.main, "(?i)Get Energy"),
+        Sandwalker: Screen("Sand walker", "main", Regions.Events.main, "(?i)Sandwalker"),
     }
 
     static Bottom := {

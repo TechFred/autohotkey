@@ -21,7 +21,7 @@
     },
     {
         "name": "MiniBalafré",
-        "active": true,
+        "active": false,
         "state": 148,
         "img": "switch_minibalafre.bmp",
         "regex": "(?i)Goofy",

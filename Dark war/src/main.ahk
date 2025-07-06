@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 
 ;Instances
-LoggerInstance := Logger(A_ScriptDir, "DEBUG")
+LoggerInstance := Logger(A_ScriptDir "\logs\", "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
 ; import file

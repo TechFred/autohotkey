@@ -58,11 +58,11 @@ Season2() {
     if IsSeason2 {
 
         LoggerInstance.debug("Season 2")
-        if (ClickNew(Regions.icons.Season2)) {
+        ;if (ClickNew(Regions.icons.Season2)) {
 
-        } else {
+        ;} else {
             ;iconRegionRedDotNbClick(Regions.icons.Season2)
-        }
+        ;}
 
         ;collect influence
         if goToWorldOCR() {

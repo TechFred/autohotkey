@@ -228,7 +228,7 @@ Complete_run(u) {
 QuitGame(0)
 
 ; ===== HOTKEY: ESC to exit =====
-q::Esc
+q::Send("{F11}")
 Esc:: {
     BlockInput("MouseMoveOff")
     BlockInput("Off")

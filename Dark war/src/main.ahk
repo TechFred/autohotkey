@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 
 ;Instances
-LoggerInstance := Logger(A_ScriptDir, "DEBUG")
+LoggerInstance := Logger(A_ScriptDir "\logs\", "DEBUG")
 ImageFinderInstance := ImageFinder(A_ScriptDir "\assets\images\")
 
 ; import file
@@ -42,6 +42,26 @@ LoadImageStatsFromCSV()
 ; Input
 BlockInput("MouseMove")
 
+; Special conditions and actions
+
+if WinExist(winTitle) && WinActivateGame() {
+    LoggerInstance.Info("Already active, checking special conditions - " A_ScriptDir)
+    Sleep(2000)
+
+    if Screens.mains.Healing.WaitForMatch(250) {
+        LoggerInstance.Info("Healing found, starting Healing")
+        Hospital()
+        ExitApp()
+    }
+    Hospital()
+
+    if Screens.Shelter.World.WaitForMatch(250) {
+        LoggerInstance.Info("World screen detected, starting Boomers")
+        boomers()
+        ExitApp
+    }
+}
+
 ; Starting
 LoggerInstance.Info("Starting script - " A_ScriptDir)
 
@@ -55,22 +75,6 @@ if debug = false AND GetOCRRegion = false {
 
 ; ======= Debugging =======
 CheckDebug()
-
-; Special
-Sleep(2000)
-
-if Screens.mains.Healing.WaitForMatch(250) {
-    LoggerInstance.Info("Healing found, starting Healing")
-    Hospital()
-    ExitApp()
-}
-Hospital()
-
-if Screens.Shelter.World.WaitForMatch(250) {
-    LoggerInstance.Info("World screen detected, starting Boomers")
-    boomers()
-    ExitApp
-}
 
 ;sorts users
 
@@ -224,6 +228,7 @@ Complete_run(u) {
 QuitGame(0)
 
 ; ===== HOTKEY: ESC to exit =====
+q::Esc
 Esc:: {
     BlockInput("MouseMoveOff")
     BlockInput("Off")

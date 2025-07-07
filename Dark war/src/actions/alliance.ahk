@@ -126,7 +126,7 @@ AllianceWars() {
         "LoopDelay", 4000,
         "Region", Regions.events.main,
         ;"ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
-        "ocrOptions", Map("scale", 1)
+        "ocrOptions", Map("casesense", 0, "grayscale", 0, "invertcolors", 1, "lang", "en-us", "mode", 4, "monochrome", 200, "scale", 2)
     )) {
         ;Team Up tab
         WaitFindText("(?i)Team Up", Map(

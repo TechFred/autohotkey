@@ -16,7 +16,7 @@ debug := true
 debug := false
 
 GetOCRRegion := true
-;GetOCRRegion := false
+GetOCRRegion := false
 
 debugimage := true
 debugimage := false

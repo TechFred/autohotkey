@@ -16,7 +16,7 @@
         "img": "switch_balafre.bmp",
         "regex": "(?i)comming",
         "order": 2,
-        "boomer_run": true,
+        "boomer_run": false,
         "energy_run": false
     },
     {

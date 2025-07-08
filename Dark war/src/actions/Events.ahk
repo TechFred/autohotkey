@@ -61,7 +61,7 @@ Season2() {
         ;if (ClickNew(Regions.icons.Season2)) {
 
         ;} else {
-            ;iconRegionRedDotNbClick(Regions.icons.Season2)
+        ;iconRegionRedDotNbClick(Regions.icons.Season2)
         ;}
 
         ;collect influence
@@ -261,6 +261,24 @@ ShadowCalls() {
                 )) {
                     RemoveSuccessful()
                 }
+                if WaitFindText("(?i)Hélp", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 2000,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+                )) {
+                    RemoveSuccessful()
+                }
+                if WaitFindText("(?i)Hélé", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 2000,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 0, "lang", "en-us", "mode", 4, "scale", 5)
+                )) {
+                    RemoveSuccessful()
+                }
 
             }
         }
@@ -350,7 +368,6 @@ ExclamationClick() {
 
 iconRegionRedDotNbClick(Region) {
     _icon := O_reddot_number_transblack.Clone(, Region)
-
 
     _i := ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 500, 5, _icon)
 

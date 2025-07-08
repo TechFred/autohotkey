@@ -252,7 +252,7 @@ ShadowCalls() {
 
             loop 5 {
                 ;click help
-                if WaitFindText("(?i)Help", Map(
+                if WaitFindText("(?i)H.lp", Map(
                     "Click", true,
                     "ClickDelay", 2000,
                     "LoopDelay", 2000,

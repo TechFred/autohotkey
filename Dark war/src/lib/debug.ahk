@@ -175,10 +175,10 @@ debugOCRRegionOptions(ocrOptions) {
     LoggerInstance.debug(MapToLogString(ocrOptions))
 
     LoggerInstance.Debug("==== Event Main ====")
-    debugGetTextRegion(Regions.Events.main, ocrOptions)
+    ;debugGetTextRegion(Regions.Events.main, ocrOptions)
 
     LoggerInstance.Debug("==== menus top ====")
-    ;debugGetTextRegion(Regions.menus.top, ocrOptions)
+    debugGetTextRegion(Regions.menus.top, ocrOptions)
 
     LoggerInstance.Debug("==== menus Bottom ====")
     ;debugGetTextRegion(Regions.menus.bottom, ocrOptions)

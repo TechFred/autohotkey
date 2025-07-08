@@ -68,9 +68,9 @@ Season2() {
         if goToWorldOCR() {
             LoggerInstance.debug("Collect influence")
             iconRegionRedDotNbClick(Regions.icons.flag)
-            if Screens.mains.Sandwalker.WaitForMatch(2000) {
-                EventsClaims(Screens.mains.Sandwalker)
-                ExitEvents(Screens.mains.Sandwalker)
+            if Screens.Titles.SeasonMgt.WaitForMatch(2000) {
+                EventsClaims(Screens.Titles.SeasonMgt)
+                ExitEvents(Screens.Titles.SeasonMgt)
             }
 
             goToShelterOCR()

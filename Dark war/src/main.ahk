@@ -75,7 +75,6 @@ if debug = false AND GetOCRRegion = false {
 
 ; ======= Debugging =======
 CheckDebug()
-
 ;sorts users
 
 ;Login and start
@@ -228,10 +227,17 @@ Complete_run(u) {
 QuitGame(0)
 
 ; ===== HOTKEY: ESC to exit =====
-q::Send("{F11}")
+q:: {
+    BlockInput("MouseMoveOff")
+    BlockInput("Off")
+    WinSetAlwaysOnTop(0, winTitle)
+    Send "{F11}"
+    ExitApp()
+}
 Esc:: {
     BlockInput("MouseMoveOff")
     BlockInput("Off")
     WinSetAlwaysOnTop(0, winTitle)
+    Send "{F11}"
     ExitApp()
 }

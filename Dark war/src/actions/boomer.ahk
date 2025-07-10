@@ -64,13 +64,30 @@ boomers() {
 
             iconLensClick()
 
-            WaitFindText("(?i)Boom.r", Map(
+            if !(WaitFindText("(?i)Boom.r", Map(
                 "Click", true,
                 "ClickDelay", 2000,
                 "LoopDelay", 250,
                 "Region", Regions.events.main,
                 "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
-            ))
+            ))) {
+
+                WaitFindText("(?i)Rally", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 250,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+                ))
+
+                WaitFindText("(?i)Boom.r", Map(
+                    "Click", true,
+                    "ClickDelay", 2000,
+                    "LoopDelay", 250,
+                    "Region", Regions.events.main,
+                    "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
+                ))
+            }
 
             WaitFindText("(?i)Search", Map(
                 "Click", true,

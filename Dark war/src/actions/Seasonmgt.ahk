@@ -18,7 +18,7 @@ SeasonMgt() {
         if Screens.titles.SeasonMgt.WaitForMatch(3000) {
             LoggerInstance.debug("SeasonMgt found")
 
-            WaitFindText("(?i)Collect", Map(
+            WaitFindText("(?i)ollect", Map(
                 "Click", true,
                 "ClickDelay", 2000,
                 "LoopDelay", 8000,

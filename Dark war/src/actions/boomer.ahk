@@ -75,18 +75,19 @@ boomers() {
                 WaitFindText("(?i)Rally", Map(
                     "Click", true,
                     "ClickDelay", 2000,
-                    "LoopDelay", 250,
+                    "LoopDelay", 1000,
                     "Region", Regions.events.main,
                     "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
                 ))
 
-                WaitFindText("(?i)Boom.r", Map(
+                WaitFindText("(?i)Bo.m.r", Map(
                     "Click", true,
                     "ClickDelay", 2000,
                     "LoopDelay", 250,
                     "Region", Regions.events.main,
                     "ocrOptions", Map("casesense", 0, "grayscale", 1, "lang", "en-us", "mode", 4, "scale", 1)
                 ))
+
             }
 
             WaitFindText("(?i)Search", Map(

@@ -19,7 +19,9 @@ Healdone := [
     O_heal_riders
 ]
 
-Hospital(DoLoop := true) {
+HealDone_folder := LoadImagesFrom("heal_done", Regions.icons.heal)
+
+Hospital(DoLoop := true, quantity := 60) {
     if Screens.mains.Healing.WaitForMatch() {
         LoggerInstance.Debug("Healing found")
         ;Healed := false
@@ -42,7 +44,7 @@ Hospital(DoLoop := true) {
                     if ImageFinderInstance.LoopFindAnyImageObjects(1000, false, 10, 10, O_heal_grayed).found {
                         if ImageFinderInstance.LoopFindAnyImageObjects(1000, true, 250, 10, O_heal_0).found {
                             ; Heal 60 troops
-                            SendText("60")
+                            SendText(String(quantity))
                             Sleep(500)
                             Send("{Enter}")
                             Sleep(750)
@@ -74,12 +76,12 @@ Hospital(DoLoop := true) {
     }
 }
 
-HospitalStatus() {
+HospitalStatus(quantity := 60) {
 
     if ImageFinderInstance.FindAnyImageObjects(2000, true, O_redcross).found {
         LoggerInstance.Debug("Redcross found - Clicking")
-        Hospital(DoLoop := false)
-    } else if ImageFinderInstance.FindAnyImageObjects(2000, true, Healdone*).found {
+        Hospital(DoLoop := false, quantity)
+    } else if ImageFinderInstance.FindAnyImageObjects(2000, true, HealDone_folder*).found {
         LoggerInstance.Debug("Healing done - Clicking")
         HospitalStatus()
     }
@@ -97,3 +99,15 @@ ExitHospital() {
     }
 
 }
+
+LoadImagesFrom(subfolder, iconRegion) {
+    out := []
+    fullPath := A_ScriptDir "\assets\images\" subfolder
+    loop files fullPath "\*.bmp" {
+        relPath := subfolder "\" A_LoopFileName
+        out.Push(Image(relPath, 50, iconRegion))
+    }
+    return out
+}
+
+

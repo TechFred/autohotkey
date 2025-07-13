@@ -23,7 +23,7 @@ try {
     LoggerInstance.Info("loading " configPath)
     configContent := FileRead(configPath, "UTF-8")
     Users := importuser(configPath)
-} catch {
+} catch as e {
     LoggerInstance.warn("Failed to load " configPath)
     LoggerInstance.Warn("Crash importing users: " e.Message)
     QuitGame(2)
@@ -44,16 +44,15 @@ BlockInput("MouseMove")
 
 ; Special conditions and actions
 
-if WinExist(winTitle) && WinActivateGame() {
+if WinExist(winTitle) && WinActivateGame() && !debug{
     LoggerInstance.Info("Already active, checking special conditions - " A_ScriptDir)
     Sleep(2000)
 
     if Screens.mains.Healing.WaitForMatch(250) {
         LoggerInstance.Info("Healing found, starting Healing")
-        Hospital()
+        Hospital(NORMAL_HEAL)
         ExitApp()
     }
-    Hospital()
 
     if Screens.Shelter.World.WaitForMatch(250) {
         LoggerInstance.Info("World screen detected, starting Boomers")

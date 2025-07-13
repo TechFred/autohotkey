@@ -14,7 +14,10 @@ importuser(path) {
                     u["regex"],
                     u["order"],
                     u["boomer_run"],
-                    u["energy_run"]
+                    u["energy_run"],
+                    u["heal_mode"],
+                    u["boomer_heal"],
+                    u["normal_heal"]
                 )
             )
 

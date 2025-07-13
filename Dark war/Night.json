@@ -7,7 +7,10 @@
         "regex": "(?i)personal",
         "order": 2,
         "boomer_run": true,
-        "energy_run": true
+        "energy_run": true,
+        "heal_mode": false,
+        "normal_heal": 60,
+        "boomer_heal": 500
     },
     {
         "name": "UnknownWildling",
@@ -17,7 +20,10 @@
         "regex": "(?i)comming",
         "order": 1,
         "boomer_run": true,
-        "energy_run": true
+        "energy_run": true,
+        "heal_mode": false,
+        "normal_heal": 60,
+        "boomer_heal": 500
     },
     {
         "name": "MiniBalafré",
@@ -27,6 +33,9 @@
         "regex": "(?i)Goofy",
         "order": 3,
         "boomer_run": false,
-        "energy_run": true
+        "energy_run": true,
+        "heal_mode": false,
+        "normal_heal": 60,
+        "boomer_heal": 500
     }
 ]

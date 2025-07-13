@@ -119,7 +119,7 @@ boomers() {
                     ; Loop for 60 secondes
                     startTime := A_TickCount  ; Get current time in milliseconds
                     loop {
-                        HospitalStatus()
+                        HospitalStatus(BOOMER_HEAL)
                         iconHelpClick()
                         Sleep (1000)  ; To avoid too much loops
                     } until (A_TickCount - startTime > 60000)

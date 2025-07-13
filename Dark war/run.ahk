@@ -12,20 +12,6 @@ SetWorkingDir(A_ScriptDir)
 
 OutputDebug "Starting script - " A_ScriptDir
 
-debug := true
-debug := false
-
-GetOCRRegion := true
-GetOCRRegion := false
-
-debugimage := true
-debugimage := false
-
-debugmodeOCRDeeper := false
-debugmodeOCR := false
-
-ForceRestartGame := false
-ForceRestartGame := true
 
 /*
 ====== Includes ======

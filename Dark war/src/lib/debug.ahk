@@ -81,9 +81,23 @@ CheckDebug() {
             Sleep(10000)
 
         }
-        ; ===============================
+        ; ===================================================================================================================================================
         if debug {
-            Season2()
+                ;premiumCenter
+    LoggerInstance.info("Premium Center")
+    iconHelpClick()
+    premiumCenter()
+
+    ;Pack Shop
+    LoggerInstance.info("Pack Shop")
+    iconHelpClick()
+    pack_shop()
+
+    ;Season 2
+    LoggerInstance.info("Season 2")
+
+    iconHelpClick()
+    Season2()
             ;ClaimLoopOCR(5000, 5, Regions.events.main)
 
             ;vip()

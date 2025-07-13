@@ -8,8 +8,11 @@ class User {
     order := 0
     boomer_run := false
     energy_run := false
+    heal_mode := false
+    boomer_heal := 500 
+    normal_heal := 60
 
-    __New(name, active, state, imgPath, regex, order, boomer_run, energy_run) {
+    __New(name, active, state, imgPath, regex, order, boomer_run, energy_run, heal_mode, boomer_heal, normal_heal) {
         this.name := name
         this.active := active
         this.state := state
@@ -18,6 +21,10 @@ class User {
         this.order := order
         this.boomer_run := boomer_run
         this.energy_run := energy_run
+        this.heal_mode := heal_mode
+        this.boomer_heal := boomer_heal
+        this.normal_heal := normal_heal
+
     }
 }
 

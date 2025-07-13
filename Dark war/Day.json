@@ -7,7 +7,7 @@
         "regex": "(?i)personal",
         "order": 1,
         "boomer_run": true,
-        "energy_run": false
+        "energy_run": true
     },
     {
         "name": "UnknownWildling",

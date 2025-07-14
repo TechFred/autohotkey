@@ -14,7 +14,7 @@ global GetOCRRegion := true
 global debugimage := true
 
 
-;global debug := false
+global debug := false
 global debugimage := false
 global GetOCRRegion := false
 
